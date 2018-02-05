@@ -11,7 +11,7 @@ class CalculateTotalMinutes:
         ev_point_dict = {i:ev_points_lst.count(i) for i in ev_points_lst}
         return ev_point_dict
 
-    def _total_minutes(self, my_dict,wait_time):
+    def _total_minutes(self, my_dict, wait_time):
         ls = [self._sum_of_normal_numbers(x) for x in my_dict.values()]
         total = sum(ls)
         collective_wait_timeval = total * wait_time
