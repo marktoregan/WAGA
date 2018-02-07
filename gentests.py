@@ -18,13 +18,13 @@ def get_fitness(genes):
 
 def mutate(genes, fnGetFitness):
     count = random.randint(2, len(genes))
-    initialFitness = fnGetFitness(genes)
+    initial_fitness = fnGetFitness(genes)
     while count > 0:
         count -= 1
         indexA, indexB = random.sample(range(len(genes)), 2)
         genes[indexA], genes[indexB] = genes[indexB], genes[indexA]
         fitness = fnGetFitness(genes)
-        if fitness > initialFitness:
+        if fitness > initial_fitness:
             return
 
 
@@ -45,24 +45,24 @@ class WagaTests(unittest.TestCase):
 
     def solve(self, ev_locations, optimal_sequence):
 
-        def fnCreate():
+        def _create():
             stops = [random.choice(ev_locations) for x in range(8)]
             return stops
 
-        def fnDisplay(candidate):
+        def _display(candidate):
             display(candidate, start_time)
 
-        def fnGetFitness(genes):
+        def _get_fitness(genes):
             #print("------->{}".format(genes))
             return get_fitness(genes)
 
-        def fnMutate(genes):
-            mutate(genes, fnGetFitness)
+        def _mutate(genes):
+            mutate(genes, _get_fitness)
 
         start_time = datetime.datetime.now()
-        optimal_fitness = fnGetFitness(optimal_sequence)
-        best = genetic.get_best(fnGetFitness, None, optimal_fitness, None,
-                                fnDisplay, fnMutate, fnCreate, maxAge=500, poolSize=25)
+        optimal_fitness = _get_fitness(optimal_sequence)
+        best = genetic.get_best(_get_fitness, None, optimal_fitness, None,
+                                _display, _mutate, _create, maxAge=500, poolSize=25)
 
         self.assertTrue(not optimal_fitness > best.Fitness)
 
