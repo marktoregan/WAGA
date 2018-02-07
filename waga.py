@@ -5,9 +5,8 @@ import calculatetotalminutes as ctm
 import fitness as fit
 
 
-class XxX:
-    def __init__(self, genes):
-        self.genes = genes
+class Waga:
+    #def __init__(self):
 
     def get_fitness(self, genes):
         calc = ctm.CalculateTotalMinutes(genes)
@@ -45,11 +44,11 @@ class XxX:
         def _get_fitness(genes):
             return self.get_fitness(genes)
 
-        def fn_mutate(genes):
+        def _mutate(genes):
             self.mutate(genes, _get_fitness)
 
         start_time = datetime.datetime.now()
         optimal_fitness = _get_fitness(optimal_sequence)
         best = genetic.get_best(_get_fitness, None, optimal_fitness, None,
-                                    _display, fn_mutate, _create, maxAge=500, poolSize=25)
-        return best, optimal_fitness
+                                    _display, _mutate, _create, maxAge=500, poolSize=25)
+        return optimal_fitness, best
