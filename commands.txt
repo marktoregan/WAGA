@@ -1,0 +1,11 @@
+$ git merge master
+$ git checkout master
+$ git merge development
+
+########################
+
+(on branch development) $ git merge master
+(resolve any merge conflicts if there are any)
+git checkout master
+git merge development (there won't be any conflicts now)
+
