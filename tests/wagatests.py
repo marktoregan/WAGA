@@ -3,14 +3,14 @@
 
 import unittest
 
-from src import waga as xxx
+from src import waga as ga
 
 
 class WagaTests(unittest.TestCase):
     gene_set = ['a', 'b', 'c', 'd', 'e']
 
     def test_10_journeys_5_points(self):
-        x = xxx.Waga()
+        x = ga.Waga()
 
         optimal_fitness, best = x.solve(['a', 'b', 'c', 'd', 'e'], ['a', 'b', 'c', 'd', 'e', 'a'])
         self.assertTrue(optimal_fitness == best.Fitness)
