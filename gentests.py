@@ -7,12 +7,13 @@ import unittest
 import random
 import genetic
 import calculatetotalminutes as ctm
+import fitness as fit
 
 
 def get_fitness(genes):
     calc = ctm.CalculateTotalMinutes(genes)
     total_time = calc.total_wait_time(25)
-    return Fitness(total_time)
+    return fit.Fitness(total_time)
 
 
 def mutate(genes, fnGetFitness):
@@ -64,17 +65,6 @@ class WagaTests(unittest.TestCase):
                                 fnDisplay, fnMutate, fnCreate, maxAge=500, poolSize=25)
 
         self.assertTrue(not optimal_fitness > best.Fitness)
-
-
-class Fitness:
-    def __init__(self, total_time):
-        self.TotalTime = total_time
-
-    def __gt__(self, other):
-        return self.TotalTime < other.TotalTime
-
-    def __str__(self):
-        return "{:0.2f}".format(self.TotalTime)
 
 
 if __name__ == '__main__':
