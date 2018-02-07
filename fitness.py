@@ -7,3 +7,9 @@ class Fitness:
 
     def __str__(self):
         return "{:0.2f}".format(self.TotalTime)
+
+    def __eq__(self, other):
+        return self.TotalTime == other.TotalTime
+
+    #def __lt__(self, other):
+    #    return self.TotalTime > other.TotalTime
