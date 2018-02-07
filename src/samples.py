@@ -1,5 +1,6 @@
 import random
-import calculatetotalminutes as ctm
+
+from src import calculatetotalminutes as ctm
 
 genes = ["a", "b", "c", "d", "e"]
 

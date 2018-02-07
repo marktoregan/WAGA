@@ -21,7 +21,7 @@ import random
 import unittest
 from itertools import chain
 
-import genetic
+from src import genetic
 
 
 def get_fitness(genes, idToLocationLookup):

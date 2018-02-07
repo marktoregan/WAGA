@@ -2,7 +2,8 @@
 # Author: Mark O'Regan <mark.t.oregan@mycit.ie>
 
 import unittest
-import waga as xxx
+
+from src import waga as xxx
 
 
 class WagaTests(unittest.TestCase):

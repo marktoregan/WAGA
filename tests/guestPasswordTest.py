@@ -19,7 +19,7 @@ import datetime
 import random
 import unittest
 
-import genetic
+from src import genetic
 
 
 def get_fitness(guess, target):

@@ -1,5 +1,6 @@
 import unittest
-import calculatetotalminutes as ctm
+
+from src import calculatetotalminutes as ctm
 
 
 class CalculateTotalMinutesTests(unittest.TestCase):

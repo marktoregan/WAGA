@@ -1,8 +1,10 @@
 import datetime
 import random
-import genetic
-import calculatetotalminutes as ctm
-import fitness as fit
+
+from src import calculatetotalminutes as ctm
+from src import genetic
+
+from src import fitness as fit
 
 
 class Waga:
@@ -50,5 +52,5 @@ class Waga:
         start_time = datetime.datetime.now()
         optimal_fitness = _get_fitness(optimal_sequence)
         best = genetic.get_best(_get_fitness, None, optimal_fitness, None,
-                                    _display, _mutate, _create, maxAge=500, poolSize=25)
+                                _display, _mutate, _create, maxAge=500, poolSize=25)
         return optimal_fitness, best
