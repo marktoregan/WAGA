@@ -12,7 +12,7 @@ class WagaTests(unittest.TestCase):
     def test_10_journeys_5_points(self):
         x = ga.Waga()
 
-        optimal_fitness, best = x.solve(['a', 'b', 'c', 'd', 'e'], ['a', 'b', 'c', 'd', 'e', 'a'])
+        optimal_fitness, best = x.solve(['a', 'b', 'c', 'd', 'e'], ['a', 'b', 'c', 'd', 'e', 'a','b'], 7)
         self.assertTrue(optimal_fitness == best.Fitness)
 
 

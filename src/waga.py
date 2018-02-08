@@ -34,10 +34,11 @@ class Waga:
             candidate.Strategy.name,
             timeDiff))
 
-    def solve(self, ev_locations, optimal_sequence):
+    def solve(self, ev_locations, optimal_sequence,size):
 
         def _create():
-            stops = [random.choice(ev_locations) for x in range(6)]
+            stops = [random.choice(ev_locations) for x in range(size
+                                                                )]
             return stops
 
         def _display(candidate):
