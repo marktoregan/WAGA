@@ -37,4 +37,6 @@ result = calc.total_wait_time(25)
 print(result)
 
 
-Sample larger than population or is negative
+ev = [0,1]
+stops = [random.choice(ev) for x in range(2)]
+print(stops)

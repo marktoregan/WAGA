@@ -12,4 +12,3 @@ class GeneticAlgoritm:
         self.mutation_rate = mutation_rate
         self.crossover_rate = crossover_rate
         self.elitism_count = elitism_count
-        
