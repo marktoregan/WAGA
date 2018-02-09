@@ -1,7 +1,8 @@
 from collections import defaultdict
 
 class Graph:
-  def __init__(self):
+
+  def init(self):
     self.nodes = set()
     self.edges = defaultdict(list)
     self.distances = {}
@@ -11,58 +12,57 @@ class Graph:
 
   def add_edge(self, from_node, to_node, distance):
     self.edges[from_node].append(to_node)
-    self.edges[to_node].append(from_node)
     self.distances[(from_node, to_node)] = distance
 
 
-def dijsktra(graph, initial):
+def dijkstra(graph, initial):
   visited = {initial: 0}
-  path = {}
+  path = defaultdict(list)
 
   nodes = set(graph.nodes)
 
   while nodes:
-    min_node = None
-    for node in nodes:
-      if node in visited:
-        if min_node is None:
-          min_node = node
-        elif visited[node] < visited[min_node]:
-          min_node = node
+      min_node = None
+      for node in nodes:
+          if node in visited:
+              if min_node is None:
+                  min_node = node
+              elif visited[node] < visited[min_node]:
+                  min_node = node
 
-    if min_node is None:
-      break
+      if min_node is None:
+          break
 
-    nodes.remove(min_node)
-    current_weight = visited[min_node]
+      nodes.remove(min_node)
+      current_weight = visited[min_node]
 
-    for edge in graph.edges[min_node]:
-      weight = current_weight + graph.distances[(min_node, edge)]
-      if edge not in visited or weight < visited[edge]:
-        visited[edge] = weight
-        path[edge] = min_node
+      for edge in graph.edges[min_node]:
+          weight = current_weight + graph.distances[(min_node, edge)]
+          if edge not in visited or weight < visited[edge]:
+              visited[edge] = weight
+              path[edge].append(min_node)
+  return path
 
-  return visited, path
+g = Graph()
 
+g.add_node('A')
+g.add_node('B')
+g.add_node('C')
+g.add_node('D')
+g.add_node('E')
+g.add_node('F')
+g.add_node('G')
 
-if __name__ == '__main__':
-  g = Graph()
-  g.add_node('a')
-  g.add_node('b')
-  g.add_node('c')
+g.add_edge('A','B',12)
+g.add_edge('A','C',7)
+g.add_edge('B','D',1)
+g.add_edge('B','A',12)
+g.add_edge('D','E',8)
+g.add_edge('C','F',3)
+g.add_edge('D','G',5)
+g.add_edge('F','B',1)
+g.add_edge('F','G',2)
+g.add_edge('C','D',13)
+g.add_edge('E','B',6)
 
-  g.add_edge('a', 'b', 10)
-  g.add_edge('b', 'a', 10)
-  g.add_edge('b', 'c', 10)
-  g.add_edge('c', 'b', 10)
-  g.add_edge('a', 'c', 15)
-  g.add_edge('c', 'a', 15)
-
-  v, p = dijsktra(g, 'a')
-
-  print("how well does it work? {} {}".format(v,p))
-
-  # returns ({'a': 0}, {})
-  #s = [(0,0),(1,1),(2,2),(2,1)]
-
-  #print('hi')
+print(dijkstra(g, 'A')['B'])

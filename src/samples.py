@@ -35,3 +35,6 @@ est_ev_points = ['a', 'e', 'd', 'b', 'e']
 calc = ctm.CalculateTotalMinutes(est_ev_points)
 result = calc.total_wait_time(25)
 print(result)
+
+
+Sample larger than population or is negative
