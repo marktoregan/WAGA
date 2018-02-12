@@ -40,3 +40,5 @@ print(result)
 ev = [0,1]
 stops = [random.choice(ev) for x in range(2)]
 print(stops)
+
+def __gt__():
