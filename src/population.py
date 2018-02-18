@@ -2,18 +2,24 @@ from src import individual as ind
 import random
 
 
-class Population:
+class Population(object):
 
-    def __init__(self, population_size, chromosomeLength=0):
-        self.population_fitness = -1;
-        self.population = ind.Individual(population_size)
+    def __init__(self, **kwargs):
+        self.population_fitness = -2
+        self.population_size = kwargs.get("population_size", 0)
+        self.chromosome_length = kwargs.get("chromosome_length", 0)
+        self.population = []
+        if self.population_size > 0:
+            self.population = [ind.Individual() for i in range(self.population_size)]
+        if self.chromosome_length > 0:
+            self.population = [ind.Individual(chromosome_length=self.chromosome_length)
+                               for i in self.population]
 
-        if not chromosomeLength == 0:
-            pops = list
-            for individualCount in range(0,population_size):
-                ind1 = ind.Individual(chromosome_length=chromosomeLength)
-                self.population[individualCount] = ind1
+    def __iter__(self):
+        return (x for x in self.population)
 
+    def get_fittest():
+        return
     #    public Individual getFittest(int offset) {
     #       Arrays.sort(this.population, new Comparator<Individual>() {                  
     #

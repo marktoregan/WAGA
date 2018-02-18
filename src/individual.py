@@ -1,29 +1,14 @@
 import random
 
 
-class Individual:
+class Individual(object):
 
-    def __init__(self, chromosome, chromosome_length=0):
-        if chromosome_length == 0:
-            self.chromosome = chromosome
-        else:
-            ev = [0, 1]
-            stops = [random.choice(ev) for x in range(chromosome_length)]
-            self.chromosome = stops
+    def __init__(self, **kwargs):
         self.fitness = -1
-
-    def __str__(self):
-        output = ""
-        for gene in self.chromosome:
-            output += self.chromosome[gene]
-        return output
-
-    def __eq__(self, other):
-        return ""
-
-    def __gt__(self, other):
-        return "greater"
-
-    def __lt__(self, other):
-        return ""
-            #self.Node == other.Node and self.Adjacent == other.Adjacent
+        if kwargs is not None:
+            self.chromosome_length = kwargs.get("chromosome_length", 0)
+            self.chromosome = kwargs.get("chromosome", None)
+        if self.chromosome_length > 0:
+            ev = ['a', 'b', 'c']
+            stops = [random.choice(ev) for x in range(self.chromosome_length)]
+            self.chromosome = stops
