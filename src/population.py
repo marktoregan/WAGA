@@ -15,11 +15,13 @@ class Population(object):
             self.population = [ind.Individual(chromosome_length=self.chromosome_length)
                                for i in self.population]
 
-    def __iter__(self):
-        return (x for x in self.population)
+   # def __iter__(self):
+    #    return (x for x in self.population)
 
-    def get_fittest():
-        return
+    def get_fittest(self, other):
+        #if self.TotalTime < other.TotalTime
+
+        return self.population[offset]
     #    public Individual getFittest(int offset) {
     #       Arrays.sort(this.population, new Comparator<Individual>() {                  
     #
