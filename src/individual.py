@@ -12,3 +12,9 @@ class Individual(object):
             ev = ['a', 'b', 'c']
             stops = [random.choice(ev) for x in range(self.chromosome_length)]
             self.chromosome = stops
+
+    def __repr__(self):
+        return '{}: {} '.format(self.__class__.__name__, self.fitness)
+
+    def __lt__(self, other):
+        return self.fitness < other.fitness

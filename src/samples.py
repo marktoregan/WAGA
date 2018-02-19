@@ -6,13 +6,13 @@ import itertools
 
 i = ind.Individual(chromosome=[9, 0])
 
-print("{}".format(i.chromosome))
+#print("{}".format(i.chromosome))
 
 l = list(range(10))
-print(l)
+#print(l)
 
 l = [None] * 10
-print(l)
+#print(l)
 
 
 
@@ -23,19 +23,18 @@ aa = [i for i in sc.population]
 for a in aa:
     print("aa  {}".format(a.fitness))
 
-def compare(a, b):
-    if a < b:
-        return -4
-    if a > b:
-        return 0
+fit = sc.get_fittest(0)
+print("fittest  {}".format(fit.fitness))
 
+#lst1 = [1,5,6,7,3,98,1,4,0,9]
+#di = dict(enumerate(lst1))
+#print(di)
 
+#res = min(di, key=di.get)
+#print("lowest {}".format(res))
+#di = {key: value for (key, value) in lst}
 
-myList = [1, 2, 3, 4, 5, 3, 4, 6, 8, -2]
-for a, b in itertools.combinations(myList, 2):
-    r = compare(a, b)
-    print(r)
+#di = {lambda x: x in lst}
 
-results = [x for x in itertools.combinations(myList, 2)]
-
-print("res {}".format(results))
+#for k, v in di.items():
+#    print("k {} v {}".format(k, v))

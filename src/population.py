@@ -18,26 +18,10 @@ class Population(object):
    # def __iter__(self):
     #    return (x for x in self.population)
 
-    def get_fittest(self, other):
-        #if self.TotalTime < other.TotalTime
+    def get_fittest(self, index):
+        self.population = sorted(self.population)
+        return self.population[index]
 
-        return self.population[offset]
-    #    public Individual getFittest(int offset) {
-    #       Arrays.sort(this.population, new Comparator<Individual>() {                  
-    #
-    #       @Override                  
-    #       public int compare(Individual o1, Individual o2) {  
-    #           if (o1.getFitness() > o2.getFitness()) {                              
-    #               return -1;                        
-    #           }
-    #           else if (o1.getFitness() < o2.getFitness()) { 
-    #               return 1;
-    #           }
-    #           return 0;
-    #       }
-    #       });
-    #       return this.population[offset];
-    #   }
 
     def suffle(self):
         self.population = random.suffle(self.population)
