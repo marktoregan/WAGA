@@ -15,13 +15,9 @@ class Population(object):
             self.population = [ind.Individual(chromosome_length=self.chromosome_length)
                                for i in self.population]
 
-   # def __iter__(self):
-    #    return (x for x in self.population)
-
     def get_fittest(self, index):
         self.population = sorted(self.population)
         return self.population[index]
-
 
     def suffle(self):
         self.population = random.suffle(self.population)

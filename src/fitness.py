@@ -3,6 +3,9 @@ class Fitness:
         self.TotalTime = total_time
 
     def __gt__(self, other):
+        return self.TotalTime > other.TotalTime
+
+    def __lt__(self, other):
         return self.TotalTime < other.TotalTime
 
     def __str__(self):
@@ -10,6 +13,3 @@ class Fitness:
 
     def __eq__(self, other):
         return self.TotalTime == other.TotalTime
-
-    #def __lt__(self, other):
-    #    return self.TotalTime > other.TotalTime
