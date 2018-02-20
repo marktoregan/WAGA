@@ -9,3 +9,8 @@ $ git merge development
 git checkout master
 git merge development (there won't be any conflicts now)
 
+######## remove folder#########
+git rm -r folder
+
+## delete branch on orgin
+git push origin --delete dijkstra_explore
