@@ -5,7 +5,7 @@
 #mutatePopulation
 
 
-class GeneticAlgoritm:
+class GeneticAlgorithm:
 
     def __init__(self, population_size, mutation_rate, crossover_rate, elitism_count):
         self.population_size = population_size

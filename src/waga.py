@@ -1,118 +1,70 @@
-import datetime
-import random
-from itertools import chain
-from src import calculatetotalminutes as ctm
-from src import genetic
-from src import fitness as fit
+from src import geneticalgorithm as ga
 
 
 class Waga:
-    #def __init__(self):
 
-    def get_fitness(self, genes):
-        calc = ctm.CalculateTotalMinutes(genes)
-        total_time = calc.total_wait_time(25)
-        return fit.Fitness(total_time)
+    def __init__(self):
+        pass
 
-    def mutate(self, genes, fnGetFitness):
-        print('entering mutate')
-        count = random.randint(2, len(genes))
-        initial_fitness = fnGetFitness(genes)
-        while count > 0:
-            count -= 1
-            indexA, indexB = random.sample(range(len(genes)), 2)
-            genes[indexA], genes[indexB] = genes[indexB], genes[indexA]
-            fitness = fnGetFitness(genes)
-            if fitness > initial_fitness:
-                return
+    def main(self):
+        #Timetable  timetable = initializeTimetable();
 
-    def display(self, candidate, start_time):
-        timeDiff = datetime.datetime.now() - start_time
-        print("{}\t{}\t{}\t{}".format(
-            ' '.join(map(str, candidate.Genes)),
-            candidate.Fitness,
-            candidate.Strategy.name,
-            timeDiff))
+        #GeneticAlgorithm ga = new  GeneticAlgorithm(100, 0.01, 0.9, 2, 5);
 
-    def crossover(self, parentGenes, donorGenes, fnGetFitness):
-        print('entering crossover')
-        pairs = {Pair(donorGenes[0], donorGenes[-1]): 0}
+        #population = ga.initPopulation(timetable);
 
-        for i in range(len(donorGenes) - 1):
-            pairs[Pair(donorGenes[i], donorGenes[i + 1])] = 0
+        #ga.evalPopulation(population, timetable);
 
-        tempGenes = parentGenes[:]
-        if Pair(parentGenes[0], parentGenes[-1]) in pairs:
-            # find a discontinuity
-            found = False
-            for i in range(len(parentGenes) - 1):
-                if Pair(parentGenes[i], parentGenes[i + 1]) in pairs:
-                    continue
-                tempGenes = parentGenes[i + 1:] + parentGenes[:i + 1]
-                found = True
-                break
-            if not found:
-                return None
+        generation = 1
 
-        runs = [[tempGenes[0]]]
-        for i in range(len(tempGenes) - 1):
-            if Pair(tempGenes[i], tempGenes[i + 1]) in pairs:
-                runs[-1].append(tempGenes[i + 1])
-                continue
-            runs.append([tempGenes[i + 1]])
+        while generation <= 10:
 
-        initialFitness = fnGetFitness(parentGenes)
-        count = random.randint(2, 20)
-        runIndexes = range(len(runs))
-        while count > 0:
-            count -= 1
-            for i in runIndexes:
-                if len(runs[i]) == 1:
-                    continue
-                if random.randint(0, len(runs)) == 0:
-                    runs[i] = [n for n in reversed(runs[i])]
-            #print('runIndexes {}'.format(runIndexes))
-            indexA, indexB = random.sample(runIndexes, 2)
-            runs[indexA], runs[indexB] = runs[indexB], runs[indexA]
-            childGenes = list(chain.from_iterable(runs))
-            if fnGetFitness(childGenes) > initialFitness:
-                return childGenes
-        return childGenes
+            print("gen {}".format(generation))
+            generation += 1
 
-    def solve(self, ev_locations, optimal_sequence,size):
+                #while (ga.isTerminationConditionMet(generation, 1000) == false
+        #    & & ga.isTerminationConditionMet(population) == false)
+        #     {
+        #
+        #         System.out.println("G" + generation + " Best fitness: " + population.getFittest(0).getFitness());
+        #
+        #         // Apply crossover
+        #         population = ga.crossoverPopulation(population);
+        #
+        #         // Apply mutation
+        #         population = ga.mutatePopulation(population, timetable);
+        #
+        #         // Evaluate population
+        #         ga.evalPopulation(population, timetable);
+        #
+        #         // Increment the current generation
+        #         generation++;
+        #     }
+        #
+        # timetable.createClasses(population.getFittest(0));
+        # System.out.println();
+        # System.out.println("Solution found in " + generation + " generations");
+        # System.out.println("Final solution fitness: " + population.getFittest(0).getFitness());
+        # System.out.println("Clashes: " + timetable.calcClashes());
+        #
+        # System.out.println();
+        # Class  classes[] = timetable.getClasses();
+        # int classIndex = 1;
+        # for (Class bestClass: classes) {
+        #     System.out.println("Class " + classIndex + ":");
+        # System.out.println("Module: " + timetable.getModule(bestClass.getModuleId()).getModuleName());
+        # System.out.println("Group: " + timetable.getGroup(bestClass.getGroupId()).getGroupId());
+        # System.out.println("Room: " + timetable.getRoom(bestClass.getRoomId()).getRoomNumber());
+        # System.out.println("Professor: " + timetable.getProfessor(bestClass.getProfessorId()).getProfessorName());
+        # System.out.println("Time: " + timetable.getTimeslot(bestClass.getTimeslotId()).getTimeslot());
+        # System.out.println("-----");
+        # classIndex + +;
+        # }
+        # }
 
-        def _create():
-            stops = [random.choice(ev_locations) for x in range(size)]
-            return stops
 
-        def _display(candidate):
-            self.display(candidate, start_time)
-
-        def _get_fitness(genes):
-            return self.get_fitness(genes)
-
-        def _mutate(genes):
-            self.mutate(genes, _get_fitness)
-
-        def _crossover(parent, donor):
-            return self.crossover(parent, donor, _get_fitness)
-            #self.mutate(genes, _get_fitness)
-
-        start_time = datetime.datetime.now()
-        optimal_fitness = _get_fitness(optimal_sequence)
-        best = genetic.get_best(_get_fitness, None, optimal_fitness, None,
-                                _display, _mutate, _create, maxAge=500, poolSize=25, crossover=_crossover)
-        return optimal_fitness, best
-
-class Pair:
-    def __init__(self, node, adjacent):
-        if node < adjacent:
-            node, adjacent = adjacent, node
-        self.Node = node
-        self.Adjacent = adjacent
-
-    def __eq__(self, other):
-        return self.Node == other.Node and self.Adjacent == other.Adjacent
-
-    def __hash__(self):
-        return hash(self.Node) * 397 ^ hash(self.Adjacent)
+if __name__ == '__main__':
+    waga = Waga()
+    waga.main()
+    #gal = ga.GeneticAlgoritm(100, 0.01, 0.95, 0)
+    print('hello')
