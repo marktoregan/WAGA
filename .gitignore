@@ -3,4 +3,5 @@
 .idea/modules.xml
 .idea/vcs.xml
 .idea/workspace.xml
-__pycache__
+*.pyc
+*pyo
