@@ -5,7 +5,9 @@ import unittest
 
 from src import waga as ga
 
-
+"""
+The Watts Available Test class 
+"""
 class WagaTests(unittest.TestCase):
     gene_set = ['a', 'b', 'c', 'd', 'e']
 
