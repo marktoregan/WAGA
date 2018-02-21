@@ -1,6 +1,7 @@
-from datetime import datetime
-from src import mapconfig as md
 import math
+from datetime import datetime
+
+from src.config import mapconfig as md
 
 
 class Journey(object):

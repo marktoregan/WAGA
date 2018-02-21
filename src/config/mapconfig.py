@@ -10,7 +10,7 @@ class MapConfig(object):
     def read(self):
         try:
             print('open')
-            with open("../src/config.yaml", 'r') as f:
+            with open("../src/config/config.yaml", 'r') as f:
                 print('success')
                 return yaml.load(f)
         except FileNotFoundError:
