@@ -11,10 +11,12 @@ class Journey(object):
         :param kwargs: start_time, starting_point, end_point, stops, ev_id
         """
         self.start_time = kwargs.get("start_time", datetime.now())
-        self.starting_point = kwargs.get("starting_point", '0,0')
-        self.end_point = kwargs.get("end_point", '0,10')
+        self.starting_point = kwargs.get("starting_point", [0, 0])
+        self.end_point = kwargs.get("end_point", [0, 10])
         self.stops = kwargs.get("stops", ['a'])
         self.ev_id = kwargs.get("ev_id", 0)
+        self.last_visited_ev_point = kwargs.get("last_visited_ev_point", [0, 5])
+        self.current_location= kwargs.get("current_point", [0, 5])
 
     def _euclidean_distance(self, point1, point2):
         """
@@ -34,7 +36,7 @@ class Journey(object):
         total_distance_km = euclidean * mpd.legend_distance
         return total_distance_km
 
-    def journey_time_minutes(self, ev):
+    def distance_in_minutes(self, ev):
         """
         :param electric vehicle instance:
         :return: time = distance / speed
