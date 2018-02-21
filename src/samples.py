@@ -38,3 +38,4 @@ print("fittest  {}".format(fit.fitness))
 
 #for k, v in di.items():
 #    print("k {} v {}".format(k, v))
+

@@ -1,4 +1,5 @@
 from datetime import datetime
+from src import mapconfig as md
 import math
 
 
@@ -13,7 +14,8 @@ class Journey(object):
         euclidean = math.sqrt(((point1[0]-point2[0])**2)+((point1[1]-point2[1])**2))
         return euclidean
 
-    def journey_distance(self, legend_km):
+    def journey_distance(self):
         euclidean = self._euclidean_distance(self.starting_point, self.end_point)
-        total_distance_km = euclidean * legend_km
+        mpd = md.MapConfig()
+        total_distance_km = euclidean * mpd.legend_distance
         return total_distance_km
