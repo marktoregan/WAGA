@@ -34,11 +34,12 @@ class Journey(object):
         total_distance_km = euclidean * mpd.legend_distance
         return total_distance_km
 
-    def journey_time(self, ev):
+    def journey_time_minutes(self, ev):
         """
         :param electric vehicle instance:
         :return: time = distance / speed
         """
         distance = self.journey_distance()
         time = distance / ev.max_speed
+        time = time * 60
         return time

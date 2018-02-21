@@ -1,5 +1,6 @@
 import unittest
 from src import journey as jny
+from src import electricvehicle as ev
 
 
 class JourneyTest(unittest.TestCase):
@@ -10,4 +11,7 @@ class JourneyTest(unittest.TestCase):
         self.assertEquals(340, distance)
 
     def test_(self):
-        pass
+        journey = jny.Journey(starting_point=[0, 0], end_point=[17, 0])
+        evcar = ev.ElectricVehicle(ev_id=0, range=80, max_speed=120)
+        time = journey.journey_time_minutes(evcar)
+        self.assertEquals(170, time)
