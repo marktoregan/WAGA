@@ -8,3 +8,6 @@ class JourneyTest(unittest.TestCase):
         journey = jny.Journey(starting_point=[0, 0], end_point=[17, 0])
         distance = journey.journey_distance()
         self.assertEquals(340, distance)
+
+    def test_(self):
+        pass
