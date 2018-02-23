@@ -2,7 +2,7 @@ import random
 from src import individual as ind
 from src import population as pop
 from functools import reduce
-
+from datetime import datetime, timedelta
 
 
 i = ind.Individual(chromosome=[9, 0])
@@ -63,6 +63,12 @@ print(d)
 #print(less_than_zero)
 
 
+stops = {"stops": {"ev_point_id": 1,
+                   "arrival_time": datetime.now(),
+                   "departure_time": 0,
+                   "wait_time": 0}}
 
-
-
+ct = stops["stops"]["arrival_time"]
+now_plus_10 = ct + timedelta(minutes=10)
+print("{}".format(ct))
+print("{}".format(now_plus_10))
