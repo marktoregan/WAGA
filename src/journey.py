@@ -1,7 +1,8 @@
 import math
 from datetime import datetime
-
+from src import ev_charge_point as ecp
 from src.config import mapconfig as md
+from src import electricvehicle as ev
 
 
 class Journey(object):
@@ -15,8 +16,9 @@ class Journey(object):
         self.end_point = kwargs.get("end_point", [0, 10])
         self.stops = kwargs.get("stops", ['a'])
         self.ev_id = kwargs.get("ev_id", 0)
-        self.last_visited_ev_point = kwargs.get("last_visited_ev_point", [0, 5])
-        self.current_location= kwargs.get("current_point", [0, 5])
+        self.current_location = kwargs.get("current_point", [0, 5])
+        self.stops = dict(kwargs.get({"stops", [{"ev_point_id": 1, "arrival_time": 0, "departure_time": 0,
+                                                 "wait_time": 0}]}))
 
     def _euclidean_distance(self, point1, point2):
         """
@@ -36,12 +38,21 @@ class Journey(object):
         total_distance_km = euclidean * mpd.legend_distance
         return total_distance_km
 
-    def distance_in_minutes(self, ev):
+    def distance_in_minutes(self, ev, distance):
         """
-        :param electric vehicle instance:
+        :param ev instance, distance:
         :return: time = distance / speed
         """
-        distance = self.journey_distance()
+        #distance = self.journey_distance()
         time = distance / ev.max_speed
         time = time * 60
         return time
+
+    def distance_from_charge_point_in_mins(self):
+        ev_cp = ecp.EvChargePoint(id=1, location=[0, 5], occupied=False [0, 0], time_occupied=False,
+                                              charge_time_required=25,
+                                              charge_type='xyz')
+        evcar = ev.ElectricVehicle(ev_id=0, range=80, max_speed=120)
+        distance = self._euclidean_distance(self.current_location, ev_cp.location)
+        time_from_cp = self.distance_in_minutes(evcar)
+        return time_from_cp
