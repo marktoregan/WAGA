@@ -3,6 +3,7 @@ from src import individual as ind
 from src import population as pop
 from functools import reduce
 from datetime import datetime, timedelta
+from collections import OrderedDict
 
 
 i = ind.Individual(chromosome=[9, 0])
@@ -72,3 +73,57 @@ ct = stops["stops"]["arrival_time"]
 now_plus_10 = ct + timedelta(minutes=10)
 print("{}".format(ct))
 print("{}".format(now_plus_10))
+
+a = datetime.now()
+b = datetime.now() + timedelta(minutes=10)
+c = datetime.now() + timedelta(minutes=10)
+d = datetime.now() + timedelta(minutes=10)
+
+#a9 = datetime.fromtimestamp(a).isoformat()
+
+
+def to_epoch(ee):
+    return datetime(ee.year, ee.month, ee.day, ee.hour, ee.second).timestamp()
+
+print('aaaa {} '.format(x))
+
+#d = {"aa": a, "bb": b, "cc": c, "dd": d}
+#s = [(k, d[k]) for k in sorted(d, key=d.get)]
+
+stop1 = {"stops": {"ev_point_id": 1,
+                   "arrival_time": a.isoformat(timespec='microseconds'),
+                   "departure_time": 'a',
+                   "wait_time": 0}}
+stop2 = {"stops": {"ev_point_id": 1,
+                   "arrival_time": b.isoformat(timespec='microseconds'),
+                   "departure_time": 'b',
+                   "wait_time": 0}}
+stop3 = {"stops": {"ev_point_id": 1,
+                   "arrival_time": c.isoformat(timespec='microseconds'),
+                   "departure_time": 'c',
+                   "wait_time": 0}}
+stop4 = {"stops": {"ev_point_id": 1,
+                   "arrival_time": d.isoformat(timespec='microseconds'),
+                   "departure_time": 'd',
+                   "wait_time": 0}}
+lst = list()
+lst.append(stop2)
+lst.append(stop4)
+lst.append(stop1)
+lst.append(stop3)
+
+#print(lst)
+#for k, v in s:
+    #print("{} : {}".format(k, v))
+
+newlist = sorted(lst, key=lambda k: k['stops']['arrival_time'])
+
+print(newlist)
+
+#foo = OrderedDict(sorted(lst, key=lambda x: x['stops']['arrival_time']))
+
+#sorted_items = sorted(my_dict.keys(), key=my_dict.get)
+#for key in sorted_items:
+ #   print my_dict[key], key
+
+#print(foo)
