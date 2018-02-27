@@ -119,11 +119,3 @@ lst.append(stop3)
 newlist = sorted(lst, key=lambda k: k['stops']['arrival_time'])
 
 print(newlist)
-
-#foo = OrderedDict(sorted(lst, key=lambda x: x['stops']['arrival_time']))
-
-#sorted_items = sorted(my_dict.keys(), key=my_dict.get)
-#for key in sorted_items:
- #   print my_dict[key], key
-
-#print(foo)
