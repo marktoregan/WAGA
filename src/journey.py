@@ -16,8 +16,9 @@ class Journey(object):
         self.end_point = kwargs.get("end_point", [0, 10])
         self.ev_id = kwargs.get("ev_id", 0)
         self.current_location = kwargs.get("current_point", [0, 5])
-        self.stops = dict(kwargs.get("stops", {"stops": {"ev_point_id": 1, "arrival_time": datetime.now(),
-                                               "departure_time": 0, "wait_time": 0}}))
+        self.stops = dict(kwargs.get("stops", {"stops": {"ev_point_id": 1,
+                                                         "arrival_time": datetime.now(),
+                                                         "departure_time": 0, "wait_time": 0}}))
 
     def _euclidean_distance(self, point1, point2):
         """
