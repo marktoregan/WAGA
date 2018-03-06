@@ -50,6 +50,7 @@ journeys.append(stop5)
 
 sorted_by_arrival_time = sorted(journeys, key=lambda k: k['stops']['arrival_time'])
 
+
 def calculate_depart_time(i, x):
     print('i')
     return x
@@ -67,11 +68,33 @@ for idx, val in enumerate(sorted_by_arrival_time):
             departure_time_wait = previous_depart_time - arrival_time
         else:
             departure_time_wait = timedelta(minutes=0)
-        mins = departure_time_wait.seconds/60
-        val['stops']['wait_time'] = mins
+        minutes = departure_time_wait.seconds/60
+        val['stops']['wait_time'] = minutes
         departure_time_wait += timedelta(minutes=25)
         dt = arrival_time + departure_time_wait
         val['stops']['departure_time'] = dt
         print("wait {} {}".format(idx, departure_time_wait))
 
 print(sorted_by_arrival_time)
+
+print("#################")
+print("calculate total time")
+
+total_time= 0
+for x in sorted_by_arrival_time:
+    #print(x)
+    arrive = x["stops"]["arrival_time"]
+    depart = x["stops"]["departure_time"]
+    diff = depart - arrive
+    total_min = diff.total_seconds()/60
+    total_time += total_min
+    print(total_time)
+
+    #total_mins += timedelta(diff)
+    #print(total_mins)
+
+# i now have the total time of a
+
+
+
+
