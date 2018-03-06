@@ -8,36 +8,36 @@ current_time5 = datetime(year=2018, month=2, day=27, hour=14, minute=22)
 
 charge_time = 25
 
-stop1 = {"stops": {"ev_point_id": 1,
+stop1 = {"ev_point_id": 1,
                    "arrival_time": current_time4,
                    "departure_time": 0,
                    "wait_time": 0,
-                   "charge_time": 25}}
+                   "charge_time": 25}
 
-stop2 = {"stops": {"ev_point_id": 2,
+stop2 = {"ev_point_id": 2,
                    "arrival_time": current_time1,
                    "departure_time": 0,
                    "wait_time": 0,
-                   "charge_time": 25}}
+                   "charge_time": 25}
 
 
-stop3 = {"stops": {"ev_point_id": 1,
+stop3 = {"ev_point_id": 1,
                    "arrival_time": current_time3,
                    "departure_time": 0,
                    "wait_time": 0,
-                   "charge_time": 25}}
+                   "charge_time": 25}
 
-stop4 = {"stops": {"ev_point_id": 2,
+stop4 = {"ev_point_id": 2,
                    "arrival_time": current_time2,
                    "departure_time": 0,
                    "wait_time": 0,
-                   "charge_time": 25}}
+                   "charge_time": 25}
 
-stop5 = {"stops": {"ev_point_id": 1,
+stop5 = {"ev_point_id": 1,
                    "arrival_time": current_time5,
                    "departure_time": 0,
                    "wait_time": 0,
-                   "charge_time": 25}}
+                   "charge_time": 25}
 
 journeys = list()
 
@@ -48,28 +48,28 @@ journeys.append(stop4)
 journeys.append(stop5)
 
 
-sorted_by_arrival_time = sorted(journeys, key=lambda k: k['stops']['arrival_time'])
+sorted_by_arrival_time = sorted(journeys, key=lambda k: k['arrival_time'])
 
 
 def calcualte_stops_waits(wait_time):
     for idx, val in enumerate(sorted_by_arrival_time):
         if idx == 0:
-            arrival_time = val['stops']['arrival_time']
+            arrival_time = val['arrival_time']
             departure_time_wait = arrival_time + timedelta(minutes=wait_time)
-            val['stops']['departure_time'] = departure_time_wait
+            val['departure_time'] = departure_time_wait
             print(f"wait {idx} or {wait_time}")
         else:
-            arrival_time = val['stops']['arrival_time']
-            previous_depart_time = sorted_by_arrival_time[idx-1]['stops']['departure_time']
+            arrival_time = val['arrival_time']
+            previous_depart_time = sorted_by_arrival_time[idx-1]['departure_time']
             if arrival_time < previous_depart_time:
                 departure_time_wait = previous_depart_time - arrival_time
             else:
                 departure_time_wait = timedelta(minutes=0)
             minutes = departure_time_wait.seconds/60
-            val['stops']['wait_time'] = minutes
+            val['wait_time'] = minutes
             departure_time_wait += timedelta(minutes=wait_time)
             dt = arrival_time + departure_time_wait
-            val['stops']['departure_time'] = dt
+            val['departure_time'] = dt
             print(f'wait {idx} and {departure_time_wait}')
 
 calcualte_stops_waits(25)
@@ -81,8 +81,8 @@ print("calculate total time")
 total_time= 0
 for x in sorted_by_arrival_time:
     #print(x)
-    arrive = x["stops"]["arrival_time"]
-    depart = x["stops"]["departure_time"]
+    arrive = x["arrival_time"]
+    depart = x["departure_time"]
     diff = depart - arrive
     total_min = diff.total_seconds()/60
     total_time += total_min
