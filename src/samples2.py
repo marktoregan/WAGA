@@ -14,7 +14,7 @@ stop1 = {"stops": {"ev_point_id": 1,
                    "wait_time": 0,
                    "charge_time": 25}}
 
-stop2 = {"stops": {"ev_point_id": 1,
+stop2 = {"stops": {"ev_point_id": 2,
                    "arrival_time": current_time1,
                    "departure_time": 0,
                    "wait_time": 0,
@@ -27,7 +27,7 @@ stop3 = {"stops": {"ev_point_id": 1,
                    "wait_time": 0,
                    "charge_time": 25}}
 
-stop4 = {"stops": {"ev_point_id": 1,
+stop4 = {"stops": {"ev_point_id": 2,
                    "arrival_time": current_time2,
                    "departure_time": 0,
                    "wait_time": 0,
@@ -51,30 +51,28 @@ journeys.append(stop5)
 sorted_by_arrival_time = sorted(journeys, key=lambda k: k['stops']['arrival_time'])
 
 
-def calculate_depart_time(i, x):
-    print('i')
-    return x
-
-for idx, val in enumerate(sorted_by_arrival_time):
-    if idx == 0:
-        arrival_time = val['stops']['arrival_time']
-        departure_time_wait = arrival_time + timedelta(minutes=25)
-        val['stops']['departure_time'] = departure_time_wait
-        print("wait {} {}".format(idx, 25))
-    else:
-        arrival_time = val['stops']['arrival_time']
-        previous_depart_time = sorted_by_arrival_time[idx-1]['stops']['departure_time']
-        if arrival_time < previous_depart_time:
-            departure_time_wait = previous_depart_time - arrival_time
+def calcualte_stops_waits(wait_time):
+    for idx, val in enumerate(sorted_by_arrival_time):
+        if idx == 0:
+            arrival_time = val['stops']['arrival_time']
+            departure_time_wait = arrival_time + timedelta(minutes=wait_time)
+            val['stops']['departure_time'] = departure_time_wait
+            print(f"wait {idx} or {wait_time}")
         else:
-            departure_time_wait = timedelta(minutes=0)
-        minutes = departure_time_wait.seconds/60
-        val['stops']['wait_time'] = minutes
-        departure_time_wait += timedelta(minutes=25)
-        dt = arrival_time + departure_time_wait
-        val['stops']['departure_time'] = dt
-        print("wait {} {}".format(idx, departure_time_wait))
+            arrival_time = val['stops']['arrival_time']
+            previous_depart_time = sorted_by_arrival_time[idx-1]['stops']['departure_time']
+            if arrival_time < previous_depart_time:
+                departure_time_wait = previous_depart_time - arrival_time
+            else:
+                departure_time_wait = timedelta(minutes=0)
+            minutes = departure_time_wait.seconds/60
+            val['stops']['wait_time'] = minutes
+            departure_time_wait += timedelta(minutes=wait_time)
+            dt = arrival_time + departure_time_wait
+            val['stops']['departure_time'] = dt
+            print(f'wait {idx} and {departure_time_wait}')
 
+calcualte_stops_waits(25)
 print(sorted_by_arrival_time)
 
 print("#################")
