@@ -56,17 +56,15 @@ sorted_by_arrival_time = sorted(journeys, key=lambda k: k['arrival_time'])
 
 def print_totals(arrival_time_array):
     total_time = 0
-    print( f'ar {arrival_time_array}' )
-
     for x in arrival_time_array:
-        print(x)
+        #print(x)
         arrive = x["arrival_time"]
         depart = x["departure_time"]
         diff = depart - arrive
         total_min = diff.total_seconds() / 60
         total_time += total_min
-        print(f'total of one group {total_time}')
-
+        print(f'total of group {total_time}')
+    return total_time
 
 
 def calculate_stops_waits(wait_time, charge_point):
@@ -75,7 +73,7 @@ def calculate_stops_waits(wait_time, charge_point):
             arrival_time = val['arrival_time']
             departure_time_wait = arrival_time + timedelta(minutes=wait_time)
             val['departure_time'] = departure_time_wait
-            print(f"wait {idx} or {wait_time}")
+            #print(f"wait {idx} or {wait_time}")
         else:
             arrival_time = val['arrival_time']
             previous_depart_time = charge_point[idx-1]['departure_time']
@@ -91,14 +89,16 @@ def calculate_stops_waits(wait_time, charge_point):
             #print(f'wait {idx} and {departure_time_wait}')
 
 
+tots = 0
 
 for group, items in groupby(sorted_by_arrival_time, key=lambda x: x['ev_point_id']):
     c_point = list(items)
-    calculate_stops_waits(25, list(items))
-    print_totals(list(items))
+    calculate_stops_waits(25, c_point)
+    tots += print_totals(c_point)
 
-print("#################")
-print("calculate total time")
+
+#print("#################")
+print(f"calculate total time {tots}")
 
 
 #print_totals()
