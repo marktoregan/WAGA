@@ -79,9 +79,9 @@ def calcualte_stops_waits(wait_time, charge_point):
 
 for group, items in groupby(sorted_by_arrival_time, key=lambda x: x['ev_point_id']):
     #print(f'Group {group} and items {list(items)}')
-    c_point = items.first()
-    print(f'{c_point}')
-    #calcualte_stops_waits(25, list(items))
+    c_point = list(items)
+    #print(f'{c_point}')
+    calcualte_stops_waits(25, list(items))
     #for thing in items:
      #   print (f' list(thing) ')
 
@@ -90,20 +90,21 @@ for group, items in groupby(sorted_by_arrival_time, key=lambda x: x['ev_point_id
 print("#################")
 print("calculate total time")
 
-total_time= 0
-for x in sorted_by_arrival_time:
-    print(x)
-    arrive = x["arrival_time"]
-    depart = x["departure_time"]
-    diff = depart - arrive
-    total_min = diff.total_seconds()/60
-    total_time += total_min
-    #print(total_time)
 
-    #total_mins += timedelta(diff)
-    #print(total_mins)
+def print_totals():
+    total_time = 0
+    for x in sorted_by_arrival_time:
+        print(x)
+        arrive = x["arrival_time"]
+        depart = x["departure_time"]
+        diff = depart - arrive
+        total_min = diff.total_seconds() / 60
+        total_time += total_min
+        print(total_time)
 
-# i now have the total time of a
+
+#print_totals()
+
 
 
 
