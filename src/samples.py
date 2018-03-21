@@ -6,7 +6,8 @@ from datetime import datetime, timedelta
 
 
 lst = [0, 1, 2, 3, 4, 5]
-x = reduce(lambda x, y: x+25, lst,25)
+total_time = reduce(lambda x, y: x+25, lst,25)
+print(f'aaaa {total_time}')
 
 y = list(range(0,3))
 
@@ -15,8 +16,10 @@ def less_than(x):
     return res
 
 stop_list = ['a', 'a', 'c', 'a', 'd', 'd', 'e']
+
 d = {x:stop_list.count(x) for x in stop_list}
-print(d)
+
+print(f'{d}')
 
 stops = {"stops": {"ev_point_id": 1,
                    "arrival_time": datetime.now(),
@@ -25,8 +28,6 @@ stops = {"stops": {"ev_point_id": 1,
 
 ct = stops["stops"]["arrival_time"]
 now_plus_10 = ct + timedelta(minutes=10)
-print("{}".format(ct))
-print("{}".format(now_plus_10))
 
 a = datetime.now()
 b = datetime.now() + timedelta(minutes=11)
@@ -36,7 +37,7 @@ d = datetime.now() + timedelta(minutes=13)
 def to_epoch(ee):
     return datetime(ee.year, ee.month, ee.day, ee.hour, ee.second).timestamp()
 
-print('aaaa {} '.format(x))
+
 
 stop1 = {"stops": {"ev_point_id": 1,
                    "arrival_time": a.isoformat(timespec='microseconds'),
