@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 class JourneyTest(unittest.TestCase):
     def setUp(self):
         self.current_time = datetime.now()
-        self.journey1 = jny.Journey(start_time=self.current_time, starting_point=[0, 0], end_point=[0, 10], ev_id=1,
+        self.journey1 = jny.Journey(start_time=self.current_time, starting_point=[0, 0], end_point=[0, 10],
                                     current_point=[5, 0], stops={"stops": {"ev_point_id": 1,
                                                                            "arrival_time": self.current_time,
                                                                            "departure_time": 0, "wait_time": 0}})

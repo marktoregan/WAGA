@@ -9,12 +9,11 @@ class Journey(object):
     def __init__(self, **kwargs):
         """
         Constructor
-        :param kwargs: start_time, starting_point, end_point, stops, ev_id
+        :param kwargs: start_time, starting_point, end_point, stops
         """
         self.start_time = kwargs.get("start_time", datetime.now())
         self.starting_point = kwargs.get("starting_point", [0, 0])
         self.end_point = kwargs.get("end_point", [0, 10])
-        self.ev_id = kwargs.get("ev_id", 0)
         self.current_location = kwargs.get("current_point", [0, 5])
         self.stops = dict(kwargs.get("stops", {"stops": {"ev_point_id": 1,
                                                          "arrival_time": datetime.now(),
