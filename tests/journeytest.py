@@ -24,10 +24,3 @@ class JourneyTest(unittest.TestCase):
         time = self.journey1.distance_in_minutes(self.ev_car)
         self.assertEquals(100, time)
 
-    def test_set_arrival_time(self):
-        self.journey1.set_arrival_time(self.ev_car, self.ev_cp)
-        self.current_time += timedelta(minutes=40)
-        self.assertEquals(self.current_time, self.journey1.get_arrival_time())
-
-    def test_set_departure_time(self):
-        pass

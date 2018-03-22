@@ -6,6 +6,7 @@ from src import journeystops as jss
 
 
 class JourneyStopsTests(unittest.TestCase):
+
     def setUp(self):
         self.charge_time = 25
         self.current_time1 = datetime(year=2018, month=2, day=27, hour=13, minute=00)
@@ -29,5 +30,5 @@ class JourneyStopsTests(unittest.TestCase):
     def test_total_time(self):
         t = self.jstops.total_time_of_stops(self.journeys)
         self.assertEquals(159, t)
-        print(f'lkkll')
+        #print(f'lkkll')
 

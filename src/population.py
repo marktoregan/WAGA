@@ -16,8 +16,7 @@ class Population(object):
                                for i in self.population]
 
     def get_fittest(self, index):
-        self.population = sorted(self.population)
-        return self.population[index]
+        pass
 
     def suffle(self):
-        self.population = random.suffle(self.population)
+        pass

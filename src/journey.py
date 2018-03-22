@@ -15,9 +15,10 @@ class Journey(object):
         self.starting_point = kwargs.get("starting_point", [0, 0])
         self.end_point = kwargs.get("end_point", [0, 10])
         self.current_location = kwargs.get("current_point", [0, 5])
-        self.stops = dict(kwargs.get("stops", {"stops": {"ev_point_id": 1,
-                                                         "arrival_time": datetime.now(),
-                                                         "departure_time": 0, "wait_time": 0}}))
+        self.total_journey_time = kwargs.get("total_journey_time", 0)
+        #self.stops = kwargs.get("stops", {"stops": {"ev_point_id": 1,
+        #                                                 "arrival_time": datetime.now(),
+        #                                                 "departure_time": 0, "wait_time": 0}}))
 
     def _euclidean_distance(self, point1, point2):
         """
@@ -67,19 +68,5 @@ class Journey(object):
         time *= 60
         return time
 
-    def set_arrival_time(self, ev1, evp):
-        time_from_cp = self.distance_in_minutes_2(ev1, evp)
-        ct = self.stops["stops"]["arrival_time"]
-        now_plus_10 = ct + timedelta(minutes=time_from_cp)
-        self.stops["stops"]["arrival_time"] = now_plus_10
-
-    def get_arrival_time(self):
-        return self.stops["stops"]["arrival_time"]
-
-    def set_departure_time(self, evp):
-        self.stops["stops"]["departure_time"] += evp.charge_time_required
-
-    def get_departure_time(self):
-        return self.stops["stops"]["departure_time"]
 
 
