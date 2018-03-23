@@ -1,8 +1,8 @@
 import math
+import random
 from datetime import datetime, timedelta
-from src import ev_charge_point as ecp
 from src.config import mapconfig as md
-from src import electricvehicle as ev
+from src import journeystop as js
 
 
 class Journey(object):
@@ -16,9 +16,7 @@ class Journey(object):
         self.end_point = kwargs.get("end_point", [0, 10])
         self.current_location = kwargs.get("current_point", [0, 5])
         self.total_journey_time = kwargs.get("total_journey_time", 0)
-        #self.stops = kwargs.get("stops", {"stops": {"ev_point_id": 1,
-        #                                                 "arrival_time": datetime.now(),
-        #                                                 "departure_time": 0, "wait_time": 0}}))
+        self.stop = []
 
     def _euclidean_distance(self, point1, point2):
         """
@@ -68,5 +66,8 @@ class Journey(object):
         time *= 60
         return time
 
-
+    def set_journey_stop(self,stops):
+        s = random.choice(stops)
+        a_stop = js.JourneyStop(s)
+        self.stop.append(a_stop)
 

@@ -268,9 +268,8 @@ if __name__ == '__main__':
 
     # Initialize population
     pop = Population(tourmanager, 20, True);
-    #for t in pop:
-    #
-    #     print(f'{t}')
+    for t in pop:
+         print(f'{t}')
     print("Initial distance: {}".format(str(pop.getFittest().getDistance())))
 
     # Evolve population for 50 generations

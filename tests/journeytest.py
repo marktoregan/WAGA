@@ -12,6 +12,7 @@ class JourneyTest(unittest.TestCase):
                                     current_point=[5, 0], stops={"stops": {"ev_point_id": 1,
                                                                            "arrival_time": self.current_time,
                                                                            "departure_time": 0, "wait_time": 0}})
+
         self.ev_car = ev.ElectricVehicle(ev_id=0, range=80, max_speed=120)
         self.ev_cp = ecp.EvChargePoint(id=1, location=[9, 0], occupied=False, time_occupied=False,
                                        charge_time_required=20, charge_type='xyz')
