@@ -241,9 +241,9 @@ if __name__ == '__main__':
     tourmanager.addCity(city7)
     city8 = City(140, 140)
     tourmanager.addCity(city8)
-    city9 = City(40, 120)
-    tourmanager.addCity(city9)
-    city10 = City(100, 120)
+    # city9 = City(40, 120)
+    # tourmanager.addCity(city9)
+    # city10 = City(100, 120)
     # tourmanager.addCity(city10)
     # city11 = City(180, 100)
     # tourmanager.addCity(city11)
@@ -267,7 +267,10 @@ if __name__ == '__main__':
     # tourmanager.addCity(city20)
 
     # Initialize population
-    pop = Population(tourmanager, 50, True);
+    pop = Population(tourmanager, 20, True);
+    #for t in pop:
+    #
+    #     print(f'{t}')
     print("Initial distance: {}".format(str(pop.getFittest().getDistance())))
 
     # Evolve population for 50 generations
