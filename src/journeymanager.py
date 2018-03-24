@@ -1,6 +1,5 @@
 class JourneyManager:
     stops = []
-    #journey_route = []
 
     def add_journey(self, stop):
         self.stops.append(stop)
@@ -10,5 +9,3 @@ class JourneyManager:
 
     def number_of_stops(self):
         return len(self.stops)
-
-#Might need to added routes details here and accessing

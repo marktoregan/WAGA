@@ -10,11 +10,11 @@ class Population(object):
         self.population_size = kwargs.get("population_size", 0)
         self.available_stops = kwargs.get("available_stops", [])
         self.journey_manager = kwargs.get("journey_manager", [])
+
         for i in range(0, self.population_size):
             self.journey_allocations.append(None)
 
         self.initialise = kwargs.get("initialise", False)
-
         if self.initialise:
             for i in range(0, self.population_size):
                 new_journey_all = ja.JourneyAllocation(journey_manager=self.journey_manager, available_stops=self.available_stops)
@@ -24,16 +24,12 @@ class Population(object):
     def save_journey(self, index, journey):
         self.journey_allocations[index] = journey
 
-        #self.population = []
-        #if self.population_size > 0:
-        #    self.population = [ind.Individual() for i in range(self.population_size)]
-        #if self.chromosome_length > 0:
-        #    self.population = [ind.Individual(chromosome_length=self.chromosome_length)
-         #                      for i in self.population]
+    def get_journey(self, index):
+        return self.journey_allocations[index]
 
-
-    def get_fittest(self, index):
-        pass
-
-    def suffle(self):
-        pass
+    def get_fittest(self):
+        fittest = self.journey_allocations[0]
+        for i in range(0, self.population_size):
+            if fittest.get_fitness() >= self.get_journey(i).get_fitness():
+                fittest = self.get_journey(i)
+        return fittest

@@ -28,10 +28,13 @@ if __name__ == '__main__':
     journey10 = jy.Journey(start_time=start_time)
     journey_manager.add_journey(journey10)
 
-    available_stops = ['a','b','c','d','e']
+    available_stops = ['a', 'b', 'c', 'd', 'e']
 
-    population = pop.Population(journey_manager=journey_manager, available_stops=available_stops, population_size=20, initialise=True)
+    population = pop.Population(journey_manager=journey_manager,
+                                available_stops=available_stops,
+                                population_size=20,
+                                initialise=True)
 
-    for p in population.journey_allocations:
-        print(f'{p.journey_allocation}')
-
+    print(f'fittest')
+    fittest_allocation = population.get_fittest()
+    print(f"Initial fitness: {fittest_allocation.journey_allocation}")

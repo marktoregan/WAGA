@@ -1,5 +1,7 @@
+from datetime import datetime
 import random
 
+from src import journeystop as js, journeystops as jss
 
 class JourneyAllocation(object):
 
@@ -21,3 +23,19 @@ class JourneyAllocation(object):
         for i in range(0, self.journey_manager.number_of_stops()):
             allocated_stop = self.set_individual(self.available_stops)
             self.save_allocation(i, allocated_stop)
+
+    def get_fitness(self):
+        charge_time = 25
+        ctime = datetime.now()
+        journeys = list()
+        for alloc in self.journey_allocation:
+            stop = js.JourneyStop(ev_point_id=alloc,
+                                        arrival_time=ctime,
+                                        departure_time=0,
+                                        wait_time=0,
+                                        charge_time=charge_time)
+            journeys.append(stop)
+        jstops = jss.JourneyStops()
+        time_total = jstops.total_time_of_stops(journeys)
+        print(f'score {time_total} for {self.journey_allocation}')
+        return time_total

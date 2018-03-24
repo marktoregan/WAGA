@@ -66,7 +66,7 @@ class Journey(object):
         time *= 60
         return time
 
-    def set_journey_stop(self,stops):
+    def set_journey_stop(self, stops):
         s = random.choice(stops)
         a_stop = js.JourneyStop(s)
         self.stop.append(a_stop)
