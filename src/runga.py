@@ -38,3 +38,14 @@ if __name__ == '__main__':
     print(f'fittest')
     fittest_allocation = population.get_fittest()
     print(f"Initial fitness: {fittest_allocation.journey_allocation}")
+
+    ga = GA(tourmanager)
+    pop = ga.evolvePopulation(pop)
+    for i in range(0, 100):
+        pop = ga.evolvePopulation(pop)
+
+    # Print final results
+    print("Finished")
+    print("Final distance {} ".format(str(pop.getFittest().getDistance())))
+    print("Solution:")
+    print(pop.getFittest())
