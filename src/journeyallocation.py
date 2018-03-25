@@ -16,6 +16,14 @@ class JourneyAllocation(object):
         stop = random.choice(stops)
         return stop
 
+    def get_allocation(self, allocation_pos):
+        return self.journey_allocation[allocation_pos]
+
+    def set_allocation(self, allocation_pos, allocation):
+        self.journey_allocation[allocation_pos] = allocation
+        #self.fitness = 0.0
+        #self.distance = 0
+
     def save_allocation(self, index, stop):
         self.journey_allocation[index] = stop
 
@@ -37,5 +45,8 @@ class JourneyAllocation(object):
             journeys.append(stop)
         jstops = jss.JourneyStops()
         time_total = jstops.total_time_of_stops(journeys)
-        print(f'score {time_total} for {self.journey_allocation}')
+        #print(f'score {time_total} for {self.journey_allocation}')
         return time_total
+
+    def journey_allocation_size(self):
+        return len(self.journey_allocation)

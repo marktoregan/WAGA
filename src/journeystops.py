@@ -37,9 +37,11 @@ class JourneyStops:
                 # print(f'wait {idx} and {departure_time_wait}')
 
     def total_time_of_stops(self, journeys):
-        sorted_by_arrival_time = sorted(journeys, key=lambda k: k.arrival_time)
+        sorted_by_arrival_time = sorted(journeys, key=lambda k: k.ev_point_id.lower())
+        #newlist = sorted(ut, key=lambda x: x.count, reverse=True)
         total_time = 0
-        for group, items in groupby(sorted_by_arrival_time, key=lambda x: x.ev_point_id):
+        for group, items in groupby(sorted_by_arrival_time, key=lambda x: x.ev_point_id.lower()):
+            #print(f'group : {group}')
             c_point = list(items)
             self.calculate_stops_waits(25, c_point)
             total_time += self.total_time_of_stop(c_point)

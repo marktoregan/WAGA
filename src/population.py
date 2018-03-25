@@ -21,6 +21,9 @@ class Population(object):
                 new_journey_all.generate_individual()
                 self.save_journey(i, new_journey_all)
 
+    def size_of_population(self):
+        return len(self.journey_allocations)
+
     def save_journey(self, index, journey):
         self.journey_allocations[index] = journey
 

@@ -1,6 +1,4 @@
-from src import journey as jy
-from src import journeymanager as jm
-from src import population as pop
+from src import journeymanager as jm, population as p, journey as jy, geneticalgorithm as gen
 from datetime import datetime
 
 
@@ -30,22 +28,21 @@ if __name__ == '__main__':
 
     available_stops = ['a', 'b', 'c', 'd', 'e']
 
-    population = pop.Population(journey_manager=journey_manager,
+    pop = p.Population(journey_manager=journey_manager,
                                 available_stops=available_stops,
                                 population_size=20,
                                 initialise=True)
 
     print(f'fittest')
-    fittest_allocation = population.get_fittest()
-    print(f"Initial fitness: {fittest_allocation.journey_allocation}")
+    fittest_allocation = pop.get_fittest()
+    print(f"Initial fitness: {fittest_allocation.get_fitness()} stops {fittest_allocation.journey_allocation}")
 
-    ga = GA(tourmanager)
+    ga = gen.GeneticAlgorithm(journey_manager)
     pop = ga.evolvePopulation(pop)
     for i in range(0, 100):
         pop = ga.evolvePopulation(pop)
 
     # Print final results
     print("Finished")
-    print("Final distance {} ".format(str(pop.getFittest().getDistance())))
-    print("Solution:")
-    print(pop.getFittest())
+    print(f"Final distance {pop.get_fittest().get_fitness()} ")
+    print(f"Solution: {pop.get_fittest().get_fitness()} journey {pop.get_fittest().journey_allocation}" )
