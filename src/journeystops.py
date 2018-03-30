@@ -21,7 +21,7 @@ class JourneyStops:
                 arrival_time = val.arrival_time
                 departure_time_wait = arrival_time + timedelta(minutes=wait_time)
                 val.departure_time = departure_time_wait
-                # print(f"wait {idx} or {wait_time}")
+                #print(f"wait {idx} or {wait_time}")
             else:
                 arrival_time = val.arrival_time
                 previous_depart_time = charge_point[idx - 1].departure_time
@@ -37,12 +37,13 @@ class JourneyStops:
                 # print(f'wait {idx} and {departure_time_wait}')
 
     def total_time_of_stops(self, journeys):
-        sorted_by_arrival_time = sorted(journeys, key=lambda k: k.ev_point_id.lower())
-        #newlist = sorted(ut, key=lambda x: x.count, reverse=True)
         total_time = 0
-        for group, items in groupby(sorted_by_arrival_time, key=lambda x: x.ev_point_id.lower()):
-            #print(f'group : {group}')
-            c_point = list(items)
-            self.calculate_stops_waits(25, c_point)
-            total_time += self.total_time_of_stop(c_point)
+        s = set()
+        for journey in journeys:
+            s.add(journey.ev_point_id.lower())
+        for point in s:
+            c_point = list(filter(lambda x: x.ev_point_id.lower() == point, journeys))
+            c_points = sorted(c_point, key=lambda x: x.arrival_time, reverse=False)
+            self.calculate_stops_waits(25, c_points)
+            total_time += self.total_time_of_stop(c_points)
         return total_time
