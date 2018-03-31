@@ -47,7 +47,8 @@ if __name__ == '__main__':
 
     ga = gen.GeneticAlgorithm(journey_manager)
     pop = ga.evolvePopulation(pop)
-    for i in range(0, 100):
+    for i in range(0, 1):
+        print(f'gen {i}')
         pop = ga.evolvePopulation(pop)
 
     # Print final results

@@ -48,9 +48,7 @@ class Sample():
     #225
 
 
-    evpoint = evp.EvChargePoint()
-    evpoint.get_ev_charge_point('a')
-    print(f'yeah fucker {evpoint.id}')
+
     # ney = Query()
     # db.insert({'name': 'John', 'age': 22})
     #

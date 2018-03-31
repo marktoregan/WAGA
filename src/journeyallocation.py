@@ -1,7 +1,6 @@
 from datetime import datetime
 import random
-
-from src import journeystop as js, journeystops as jss
+from src import journeystop as js, journeystops as jss, ev_charge_point as evp
 
 class JourneyAllocation(object):
 
@@ -41,12 +40,17 @@ class JourneyAllocation(object):
         charge_time = 25
         arrival_time = datetime.now()
         journeys = list()
+        #print('now')
         for alloc in self.journey_allocation:
+
+            #evpoint = evp.EvChargePoint()
+            #evpoint.get_ev_charge_point(alloc)
+            print(f'.')
             stop = js.JourneyStop(ev_point_id=alloc,
                                         arrival_time=arrival_time,
                                         departure_time=0,
                                         wait_time=0,
-                                        charge_time=charge_time)
+                                        charge_time=25)
             journeys.append(stop)
         jstops = jss.JourneyStops()
         time_total = jstops.total_time_of_stops(journeys)
