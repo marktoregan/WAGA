@@ -15,17 +15,17 @@ class GeneticAlgorithm:
         newPopulation = p.Population(journey_manager=self.journey_manager, population_size=pop.size_of_population(), initialise=False)
         elitismOffset = 0
         if self.elitism:
-            newPopulation.save_journey(0, pop.get_fittest())
+            newPopulation.save_journey_allocation(0, pop.get_fittest())
             elitismOffset = 1
 
         for i in range(elitismOffset, newPopulation.size_of_population()):
             parent1 = self.tournamentSelection(pop)
             parent2 = self.tournamentSelection(pop)
             child = self.crossover(parent1, parent2)
-            newPopulation.save_journey(i, child)
+            newPopulation.save_journey_allocation(i, child)
 
         for i in range(elitismOffset, newPopulation.size_of_population()):
-            self.mutate(newPopulation.get_journey(i))
+            self.mutate(newPopulation.get_journey_allocation(i))
 
         return newPopulation
 
@@ -63,7 +63,7 @@ class GeneticAlgorithm:
         tournament = p.Population(journey_manager=self.journey_manager, population_size=self.tournament_size, initialise=False)
         for i in range(0, self.tournament_size):
             randomId = int(random.random() * pop.size_of_population())
-            tournament.save_journey(i, pop.get_journey(randomId))
+            tournament.save_journey_allocation(i, pop.get_journey_allocation(randomId))
         fittest = tournament.get_fittest()
         return fittest
 

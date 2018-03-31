@@ -19,20 +19,21 @@ class Population(object):
             for i in range(0, self.population_size):
                 new_journey_all = ja.JourneyAllocation(journey_manager=self.journey_manager, available_stops=self.available_stops)
                 new_journey_all.generate_individual()
-                self.save_journey(i, new_journey_all)
+                self.save_journey_allocation(i, new_journey_all)
 
     def size_of_population(self):
         return len(self.journey_allocations)
 
-    def save_journey(self, index, journey):
+    def save_journey_allocation(self, index, journey):
         self.journey_allocations[index] = journey
 
-    def get_journey(self, index):
+    def get_journey_allocation(self, index):
         return self.journey_allocations[index]
 
     def get_fittest(self):
         fittest = self.journey_allocations[0]
         for i in range(0, self.population_size):
-            if fittest.get_fitness() >= self.get_journey(i).get_fitness():
-                fittest = self.get_journey(i)
+            journ = self.get_journey_allocation(i)
+            if fittest.get_fitness() >= journ.get_fitness():
+                fittest = self.get_journey_allocation(i)
         return fittest

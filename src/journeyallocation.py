@@ -32,13 +32,18 @@ class JourneyAllocation(object):
             allocated_stop = self.set_individual(self.available_stops)
             self.save_allocation(i, allocated_stop)
 
+    def get_journey(self, index):
+        journey = self.journey_manager[index]
+        print(f'{journey.start_time}')
+        return journey
+
     def get_fitness(self):
         charge_time = 25
-        ctime = datetime.now()
+        arrival_time = datetime.now()
         journeys = list()
         for alloc in self.journey_allocation:
             stop = js.JourneyStop(ev_point_id=alloc,
-                                        arrival_time=ctime,
+                                        arrival_time=arrival_time,
                                         departure_time=0,
                                         wait_time=0,
                                         charge_time=charge_time)

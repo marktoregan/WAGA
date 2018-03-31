@@ -1,8 +1,10 @@
 import random
 from functools import reduce
 from datetime import datetime, timedelta
-from src import journeystop as js, journeystops as jss
+from src import journeystop as js, journeystops as jss, ev_charge_point as evp
 from itertools import groupby
+from tinydb import TinyDB, Query
+
 
 class Sample():
     current_time = datetime.now()
@@ -44,3 +46,17 @@ class Sample():
 
     print(jstops.total_time_of_stops(journeys))
     #225
+
+
+    evpoint = evp.EvChargePoint()
+    evpoint.get_ev_charge_point('a')
+    print(f'yeah fucker {evpoint.id}')
+    # ney = Query()
+    # db.insert({'name': 'John', 'age': 22})
+    #
+    # self.id = kwargs.get("id", 0)
+    # self.charge_type = kwargs.get("charge_type", 0)
+    # self.location = kwargs.get("location", [0, 0])
+    # self.occupied = kwargs.get("occupied", False)
+    # self.time_occupied = kwargs.get("time_occupied")
+    # self.charge_time_required = kwargs.get("charge_time_required", 25)
