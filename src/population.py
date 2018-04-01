@@ -17,7 +17,8 @@ class Population(object):
         self.initialise = kwargs.get("initialise", False)
         if self.initialise:
             for i in range(0, self.population_size):
-                new_journey_all = ja.JourneyAllocation(journey_manager=self.journey_manager, available_stops=self.available_stops)
+                new_journey_all = ja.JourneyAllocation(journey_manager=self.journey_manager,
+                                                       available_stops=self.available_stops)
                 new_journey_all.generate_individual()
                 self.save_journey_allocation(i, new_journey_all)
 
@@ -36,4 +37,5 @@ class Population(object):
             journ = self.get_journey_allocation(i)
             if fittest.get_fitness() >= journ.get_fitness():
                 fittest = self.get_journey_allocation(i)
+        print(fittest)
         return fittest

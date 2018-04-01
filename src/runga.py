@@ -38,16 +38,17 @@ if __name__ == '__main__':
 
     pop = p.Population(journey_manager=journey_manager,
                                 available_stops=available_stops,
-                                population_size=20,
+                                population_size=2,
                                 initialise=True)
 
-    print(f'fittest')
+    print(f'get fittest')
     fittest_allocation = pop.get_fittest()
-    print(f"Initial fitness: {fittest_allocation.get_fitness()} stops {fittest_allocation.journey_allocation}")
+    print(f'have fittest')
+    #print(f"Initial fitness: {fittest_allocation.get_fitness()} stops {fittest_allocation.journey_allocation}")
 
     ga = gen.GeneticAlgorithm(journey_manager)
     pop = ga.evolvePopulation(pop)
-    for i in range(0, 1):
+    for i in range(0, 3):
         print(f'gen {i}')
         pop = ga.evolvePopulation(pop)
 
