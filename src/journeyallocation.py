@@ -2,6 +2,7 @@ from datetime import datetime
 import random
 from src import journeystop as js, journeystops as jss, ev_charge_point as evp
 
+
 class JourneyAllocation(object):
 
     def __init__(self, **kwargs):
@@ -44,11 +45,11 @@ class JourneyAllocation(object):
                                         arrival_time=arrival_time,
                                         departure_time=0,
                                         wait_time=0,
-                                        charge_time=25)
+                                        charge_time=charge_time)
             journeys.append(stop)
         jstops = jss.JourneyStops()
         time_total = jstops.total_time_of_stops(journeys)
-        print(time_total)
+        #print(time_total)
         return time_total
 
     def journey_allocation_size(self):

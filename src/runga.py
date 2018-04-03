@@ -38,7 +38,7 @@ if __name__ == '__main__':
 
     pop = p.Population(journey_manager=journey_manager,
                                 available_stops=available_stops,
-                                population_size=2,
+                                population_size=20,
                                 initialise=True)
 
     print(f'get fittest')
@@ -47,10 +47,10 @@ if __name__ == '__main__':
     #print(f"Initial fitness: {fittest_allocation.get_fitness()} stops {fittest_allocation.journey_allocation}")
 
     ga = gen.GeneticAlgorithm(journey_manager)
-    pop = ga.evolvePopulation(pop)
-    for i in range(0, 3):
+    pop = ga.evolve_population(pop)
+    for i in range(0, 100):
         print(f'gen {i}')
-        pop = ga.evolvePopulation(pop)
+        pop = ga.evolve_population(pop)
 
     # Print final results
     print("Finished")

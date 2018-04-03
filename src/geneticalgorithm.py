@@ -10,27 +10,27 @@ class GeneticAlgorithm:
         self.tournament_size = 5
         self.elitism = True
 
-    def evolvePopulation(self, pop):
-        print(f'evolve')
+    def evolve_population(self, pop):
+        #print(f'evolve')
         newPopulation = p.Population(journey_manager=self.journey_manager, population_size=pop.size_of_population(), initialise=False)
         elitismOffset = 0
         if self.elitism:
             newPopulation.save_journey_allocation(0, pop.get_fittest())
             elitismOffset = 1
-
+        #print(f'evolve 1')
         for i in range(elitismOffset, newPopulation.size_of_population()):
             parent1 = self.tournamentSelection(pop)
             parent2 = self.tournamentSelection(pop)
             child = self.crossover(parent1, parent2)
             newPopulation.save_journey_allocation(i, child)
-
+        #print(f'evolve 2')
         for i in range(elitismOffset, newPopulation.size_of_population()):
             self.mutate(newPopulation.get_journey_allocation(i))
 
         return newPopulation
 
     def crossover(self, parent1, parent2):
-        print(f'crossover')
+        #print(f'crossover')
         child = ja.JourneyAllocation(journey_manager=self.journey_manager)
         startPos = int(random.random() * parent1.journey_allocation_size())
         endPos = int(random.random() * parent1.journey_allocation_size())
@@ -50,9 +50,10 @@ class GeneticAlgorithm:
         return child
 
     def mutate(self, journey_allocation):
-        print('mutate')
+        #print('mutate')
         for allocationPos1 in range(0, journey_allocation.journey_allocation_size()):
             if random.random() < self.mutation_rate:
+                #print('does mutate')
                 allocationPos2 = int(journey_allocation.journey_allocation_size() * random.random())
 
                 allocation1 = journey_allocation.get_allocation(allocationPos1)
