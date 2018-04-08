@@ -12,26 +12,34 @@ if __name__ == '__main__':
     #time4 = datetime(year=2018, month=2, day=27, hour=14, minute=30)
     time5 = datetime(year=2018, month=2, day=27, hour=15, minute=00)
 
-    journey1 = jy.Journey(start_time=time1)
+    journey1 = jy.Journey(start_time=time1, starting_point=[0, 0],end_point=[0, 10])
     journey_manager.add_journey(journey1)
-    journey2 = jy.Journey(start_time=time1)
+
+    journey2 = jy.Journey(start_time=time1, starting_point=[0, 1],end_point=[0, 9])
     journey_manager.add_journey(journey2)
-    journey3 = jy.Journey(start_time=time1)
+
+    journey3 = jy.Journey(start_time=time1, starting_point=[0, 2],end_point=[0, 8])
     journey_manager.add_journey(journey3)
-    journey4 = jy.Journey(start_time=time1)
+
+    journey4 = jy.Journey(start_time=time1, starting_point=[0, 3],end_point=[0, 7])
     journey_manager.add_journey(journey4)
-    journey5 = jy.Journey(start_time=time1)
+
+    journey5 = jy.Journey(start_time=time1, starting_point=[0, 4],end_point=[0, 6])
     journey_manager.add_journey(journey5)
 
-    journey6 = jy.Journey(start_time=time5)
+    journey6 = jy.Journey(start_time=time5, starting_point=[0, 1],end_point=[0, 5])
     journey_manager.add_journey(journey6)
-    journey7 = jy.Journey(start_time=time5)
+
+    journey7 = jy.Journey(start_time=time5, starting_point=[0, 2],end_point=[0, 10])
     journey_manager.add_journey(journey7)
-    journey8 = jy.Journey(start_time=time5)
+
+    journey8 = jy.Journey(start_time=time5, starting_point=[0, 3],end_point=[0, 9])
     journey_manager.add_journey(journey8)
-    journey9 = jy.Journey(start_time=time5)
+
+    journey9 = jy.Journey(start_time=time5, starting_point=[0, 4],end_point=[0, 8])
     journey_manager.add_journey(journey9)
-    journey10 = jy.Journey(start_time=time5)
+
+    journey10 = jy.Journey(start_time=time5, starting_point=[0, 5],end_point=[0, 7])
     journey_manager.add_journey(journey10)
 
     available_stops = ['a', 'b', 'c', 'd', 'e']
