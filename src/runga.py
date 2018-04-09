@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
     pop = p.Population(journey_manager=journey_manager,
                                 available_stops=available_stops,
-                                population_size=20,
+                                population_size=10,
                                 initialise=True)
 
     print(f'get fittest')
@@ -58,9 +58,8 @@ if __name__ == '__main__':
     ga = gen.GeneticAlgorithm(journey_manager)
     pop = ga.evolve_population(pop)
     for i in range(0, 100):
-        print(f'gen {i}')
         pop = ga.evolve_population(pop)
-
+        print(f'Generation: {i} fittest: {pop.get_fittest().get_fitness()}')
 
     print("Finished")
     print(f"Final distance {pop.get_fittest().get_fitness()} ")

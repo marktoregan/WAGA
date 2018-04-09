@@ -40,7 +40,12 @@ class JourneyAllocation(object):
         charge_time = 25
         arrival_time = datetime.now()
         journeys = list()
-        for alloc in self.journey_allocation:
+        for index, alloc in enumerate(self.journey_allocation):
+            #print(f'{type()}')
+            j = self.journey_manager.get_journey(index)
+            #print(f'{j}')
+            j.stop = [alloc]
+            #print(f'distance  {j.distance()}')
             stop = js.JourneyStop(ev_point_id=alloc,
                                         arrival_time=arrival_time,
                                         departure_time=0,

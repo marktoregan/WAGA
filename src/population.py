@@ -36,5 +36,4 @@ class Population(object):
             journ = self.get_journey_allocation(i)
             if fittest.get_fitness() >= journ.get_fitness():
                 fittest = self.get_journey_allocation(i)
-        #print(fittest)
         return fittest
