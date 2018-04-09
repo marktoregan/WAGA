@@ -15,8 +15,8 @@ if __name__ == '__main__':
     journey1 = jy.Journey(start_time=time1, starting_point=[0, 0],end_point=[10, 10], stop=["a"] )
     journey_manager.add_journey(journey1)
 
-    journey2 = jy.Journey(start_time=time1, starting_point=[0, 1],end_point=[0, 9], stop=["a"])
-    #journey_manager.add_journey(journey2)
+    journey2 = jy.Journey(start_time=time1, starting_point=[0, 0],end_point=[10, 10], stop=["a"])
+    journey_manager.add_journey(journey2)
 
     journey3 = jy.Journey(start_time=time1, starting_point=[0, 2],end_point=[0, 8], stop=["b"])
     #journey_manager.add_journey(journey3)
@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
     pop = p.Population(journey_manager=journey_manager,
                                 available_stops=available_stops,
-                                population_size=10,
+                                population_size=20,
                                 initialise=True)
 
     print(f'get fittest')
@@ -57,7 +57,7 @@ if __name__ == '__main__':
 
     ga = gen.GeneticAlgorithm(journey_manager)
     pop = ga.evolve_population(pop)
-    for i in range(0, 1):
+    for i in range(0, 10):
         pop = ga.evolve_population(pop)
         print(f'Generation: {i} fittest: {pop.get_fittest().get_fitness()}')
 
