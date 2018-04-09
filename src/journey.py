@@ -12,11 +12,11 @@ class Journey(object):
         :param kwargs: start_time, starting_point, end_point, stops
         """
         self.start_time = kwargs.get("start_time", datetime.now())
-        self.starting_point = kwargs.get("starting_point", [0, 0])
-        self.end_point = kwargs.get("end_point", [0, 10])
-        self.current_location = kwargs.get("current_point", [0, 5])
+        self.starting_point = kwargs.get("starting_point")
+        self.end_point = kwargs.get("end_point")
+        self.current_location = kwargs.get("current_point")
         self.total_journey_time = kwargs.get("total_journey_time", 0)
-        self.stop = kwargs.get("stop", ['a'])
+        self.stop = kwargs.get("stop")
 
     def _euclidean_distance(self, point1, point2):
         """
@@ -27,13 +27,13 @@ class Journey(object):
         euclidean = math.sqrt(((point1[0]-point2[0])**2)+((point1[1]-point2[1])**2))
         return euclidean
 
-    def distance_in_minutes(self, ev1):
+    def distance_in_minutes(self, speed_limit):
         """
         :param ev1:
         :return: time = distance / speed
         """
-        distance = self.distance()
-        time = distance / ev1.max_speed
+        distance_km = self.distance()
+        time = distance_km / speed_limit
         time *= 60
         return time
 
@@ -43,12 +43,12 @@ class Journey(object):
         """
         ev_stop = evp.EvChargePoint()
         ev_stop = ev_stop.get_ev_charge_point(self.stop[0])
-        distance_to_evp_km = self._distance_km(self.starting_point, ev_stop.location)
-        distance_from_evp_km = self._distance_km(ev_stop.location, self.end_point)
+        distance_to_evp_km = self._distance_in_km(self.starting_point, ev_stop.location)
+        distance_from_evp_km = self._distance_in_km(ev_stop.location, self.end_point)
         total_distance_km = distance_to_evp_km + distance_from_evp_km
         return total_distance_km
 
-    def _distance_km(self, p1, p2):
+    def _distance_in_km(self, p1, p2):
         mpd = md.MapConfig()
         dist = self._euclidean_distance(p1,p2)
         distance_in_km = dist * mpd.legend_distance

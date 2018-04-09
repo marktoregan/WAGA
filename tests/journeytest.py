@@ -23,5 +23,5 @@ class JourneyTest(unittest.TestCase):
         self.assertEquals(200, distance)
 
     def test_distance_in_minutes(self):
-        time = self.journey1.distance_in_minutes(self.ev_car)
+        time = self.journey1.distance_in_minutes(120)
         self.assertEquals(100, time)
