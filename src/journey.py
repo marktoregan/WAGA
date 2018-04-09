@@ -16,7 +16,7 @@ class Journey(object):
         self.end_point = kwargs.get("end_point", [0, 10])
         self.current_location = kwargs.get("current_point", [0, 5])
         self.total_journey_time = kwargs.get("total_journey_time", 0)
-        self.stop = kwargs.get("stop", [0, 0])
+        self.stop = kwargs.get("stop", ['a'])
 
     def _euclidean_distance(self, point1, point2):
         """
@@ -42,14 +42,17 @@ class Journey(object):
         :return:
         """
         ev_stop = evp.EvChargePoint()
-        ev_stop1 = ev_stop.get_ev_charge_point('a')
-        print(f"{ev_stop.location}")
-        print(ev_stop1)
-
-        start_to_evp = self._euclidean_distance(self.starting_point, ev_stop.location)
-        mpd = md.MapConfig()
-        total_distance_km = start_to_evp * mpd.legend_distance
+        ev_stop = ev_stop.get_ev_charge_point(self.stop[0])
+        distance_to_evp_km = self._distance_km(self.starting_point, ev_stop.location)
+        distance_from_evp_km = self._distance_km(ev_stop.location, self.end_point)
+        total_distance_km = distance_to_evp_km + distance_from_evp_km
         return total_distance_km
+
+    def _distance_km(self, p1, p2):
+        mpd = md.MapConfig()
+        dist = self._euclidean_distance(p1,p2)
+        distance_in_km = dist * mpd.legend_distance
+        return distance_in_km
 
     def set_journey_stop(self, stops):
         s = random.choice(stops)
