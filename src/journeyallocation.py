@@ -41,11 +41,8 @@ class JourneyAllocation(object):
         arrival_time = datetime.now()
         journeys = list()
         for index, alloc in enumerate(self.journey_allocation):
-            #print(f'{type()}')
-            j = self.journey_manager.get_journey(index)
-            #print(f'{j}')
-            j.stop = [alloc]
-            #print(f'distance  {j.distance()}')
+            jour = self.journey_manager.get_journey(index)
+            jour.stop = [alloc]
             stop = js.JourneyStop(ev_point_id=alloc,
                                         arrival_time=arrival_time,
                                         departure_time=0,
@@ -54,7 +51,13 @@ class JourneyAllocation(object):
             journeys.append(stop)
         jstops = jss.JourneyStops()
         time_total = jstops.total_time_of_stops(journeys)
-        #print(time_total)
+        tot = 0
+        #print(f'{len(self.journey_allocation)}')
+        for index, alloc in enumerate(self.journey_allocation):
+            jour1 = self.journey_manager.get_journey(index)
+            tot += jour1.distance()
+        time_total +=tot
+        #print(f'{time_total}')
         return time_total
 
     def journey_allocation_size(self):

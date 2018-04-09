@@ -45,16 +45,3 @@ class Sample():
     jstops = jss.JourneyStops()
 
     print(jstops.total_time_of_stops(journeys))
-    #225
-
-
-
-    # ney = Query()
-    # db.insert({'name': 'John', 'age': 22})
-    #
-    # self.id = kwargs.get("id", 0)
-    # self.charge_type = kwargs.get("charge_type", 0)
-    # self.location = kwargs.get("location", [0, 0])
-    # self.occupied = kwargs.get("occupied", False)
-    # self.time_occupied = kwargs.get("time_occupied")
-    # self.charge_time_required = kwargs.get("charge_time_required", 25)
