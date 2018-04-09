@@ -15,11 +15,12 @@ class EvChargePoint(object):
         #self.time_occupied = kwargs.get("time_occupied")
 
     def get_ev_charge_point(self, id):
-        db = TinyDB('db/db.json')
+        db = TinyDB('../src/db/db.json')
         charge_point = Query()
         results = db.search(charge_point.evp == id)
-        self.id = results[0]["evp"]
-        self.charge_type = results[0]["charge_type"]
-        self.location = results[0]["location"]
-        self.charge_time_required = results[0]["charge_time_required"]
 
+        evp = EvChargePoint(id=results[0]["evp"],
+                            charge_type=results[0]["charge_type"],
+                            location=results[0]["location"],
+                            charge_time_required=results[0]["charge_time_required"])
+        return evp

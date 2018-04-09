@@ -2,7 +2,7 @@ import math
 import random
 from datetime import datetime, timedelta
 from src.config import mapconfig as md
-from src import journeystop as js
+from src import journeystop as js, ev_charge_point as evp
 
 
 class Journey(object):
@@ -16,7 +16,7 @@ class Journey(object):
         self.end_point = kwargs.get("end_point", [0, 10])
         self.current_location = kwargs.get("current_point", [0, 5])
         self.total_journey_time = kwargs.get("total_journey_time", 0)
-        self.stop = []
+        self.stop = kwargs.get("stop", [0, 0])
 
     def _euclidean_distance(self, point1, point2):
         """
@@ -27,47 +27,31 @@ class Journey(object):
         euclidean = math.sqrt(((point1[0]-point2[0])**2)+((point1[1]-point2[1])**2))
         return euclidean
 
-    def journey_distance(self):
-        """
-        :return:
-        """
-        euclidean = self._euclidean_distance(self.starting_point, self.end_point)
-        mpd = md.MapConfig()
-        total_distance_km = euclidean * mpd.legend_distance
-        return total_distance_km
-
     def distance_in_minutes(self, ev1):
         """
         :param ev1:
         :return: time = distance / speed
         """
-        distance = self.journey_distance()
+        distance = self.distance()
         time = distance / ev1.max_speed
         time *= 60
         return time
 
-    def journey_distance_2(self, evp):
+    def distance(self):
         """
         :return:
         """
-        euclidean = self._euclidean_distance(self.current_location, evp.location)
-        mpd = md.MapConfig()
-        total_distance_km = euclidean * mpd.legend_distance
-        return total_distance_km
+        ev_stop = evp.EvChargePoint()
+        ev_stop1 = ev_stop.get_ev_charge_point('a')
+        print(f"{ev_stop.location}")
+        print(ev_stop1)
 
-    def distance_in_minutes_2(self, ev1, evp):
-        """
-        :param ev1:
-        :param evp:
-        :return: time = distance / speed
-        """
-        total_distance_km = self.journey_distance_2(evp)
-        time = total_distance_km / ev1.max_speed
-        time *= 60
-        return time
+        start_to_evp = self._euclidean_distance(self.starting_point, ev_stop.location)
+        mpd = md.MapConfig()
+        total_distance_km = start_to_evp * mpd.legend_distance
+        return total_distance_km
 
     def set_journey_stop(self, stops):
         s = random.choice(stops)
         a_stop = js.JourneyStop(s)
         self.stop.append(a_stop)
-

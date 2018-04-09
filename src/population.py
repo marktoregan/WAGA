@@ -1,4 +1,3 @@
-from src import individual_old as ind
 from src import journeyallocation as ja
 import random
 
