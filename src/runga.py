@@ -60,8 +60,8 @@ if __name__ == '__main__':
 
     ga = gen.GeneticAlgorithm(journey_manager)
     pop = ga.evolvePopulation(pop)
-    for i in range(0, 1):
-        print(f'generation: {i}')
+    for i in range(0, 100):
+        #print(f'generation: {i}')
         pop = ga.evolvePopulation(pop)
 
     # Print final results
@@ -71,4 +71,4 @@ if __name__ == '__main__':
 
     bench = bk.Benchmark(journey_manager=journey_manager.stops, stops=available_stops)
 
-    bench.print_it()
+    print(f'Random: {bench.get_random_fitness()}')
