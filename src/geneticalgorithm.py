@@ -63,7 +63,9 @@ class GeneticAlgorithm:
                 journey_allocation.set_allocation(allocationPos1, allocation2)
 
     def tournamentSelection(self, pop):
-        tournament = p.Population(journey_manager=self.journey_manager, population_size=self.tournament_size, initialise=False)
+        tournament = p.Population(journey_manager=self.journey_manager,
+                                  population_size=self.tournament_size,
+                                  initialise=False)
         for i in range(0, self.tournament_size):
             randomId = int(random.random() * pop.size_of_population())
             tournament.save_journey_allocation(i, pop.get_journey_allocation(randomId))
