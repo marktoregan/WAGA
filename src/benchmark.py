@@ -12,11 +12,6 @@ class Benchmark(object):
         for journey in self.journey_manager:
             self.random_allocation.append(random.choice(self.stops_available))
 
-
-    #def print_it(self):
-     #   for j in self.random_allocation:
-      #      print(f'val : {j}')
-
     def get_random_fitness(self):
         charge_time = 25
         ctime = datetime.now()
@@ -30,6 +25,5 @@ class Benchmark(object):
             journeys.append(stop)
         jstops = jss.JourneyStops()
         time_total = jstops.total_time_of_stops(journeys)
-        #print(f'score {time_total} for {self.journey_allocation}')
         return time_total
 

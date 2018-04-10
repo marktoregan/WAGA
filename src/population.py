@@ -1,6 +1,4 @@
-from src import individual as ind
 from src import journeyallocation as ja
-import random
 
 
 class Population(object):
