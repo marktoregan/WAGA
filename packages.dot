@@ -1,0 +1,37 @@
+digraph "packages" {
+charset="utf-8"
+rankdir=BT
+"0" [label="src", shape="box"];
+"1" [label="src.benchmark", shape="box"];
+"2" [label="src.comparecharts", shape="box"];
+"3" [label="src.electricvehicle", shape="box"];
+"4" [label="src.ev_charge_point", shape="box"];
+"5" [label="src.fitness", shape="box"];
+"6" [label="src.geneticalgorithm", shape="box"];
+"7" [label="src.journey", shape="box"];
+"8" [label="src.journeyallocation", shape="box"];
+"9" [label="src.journeymanager", shape="box"];
+"10" [label="src.journeystop", shape="box"];
+"11" [label="src.journeystops", shape="box"];
+"12" [label="src.population", shape="box"];
+"13" [label="src.runga", shape="box"];
+"1" -> "0" [arrowhead="open", arrowtail="none"];
+"1" -> "10" [arrowhead="open", arrowtail="none"];
+"1" -> "11" [arrowhead="open", arrowtail="none"];
+"6" -> "0" [arrowhead="open", arrowtail="none"];
+"6" -> "8" [arrowhead="open", arrowtail="none"];
+"6" -> "12" [arrowhead="open", arrowtail="none"];
+"7" -> "0" [arrowhead="open", arrowtail="none"];
+"7" -> "10" [arrowhead="open", arrowtail="none"];
+"8" -> "0" [arrowhead="open", arrowtail="none"];
+"8" -> "10" [arrowhead="open", arrowtail="none"];
+"8" -> "11" [arrowhead="open", arrowtail="none"];
+"12" -> "0" [arrowhead="open", arrowtail="none"];
+"12" -> "8" [arrowhead="open", arrowtail="none"];
+"13" -> "0" [arrowhead="open", arrowtail="none"];
+"13" -> "1" [arrowhead="open", arrowtail="none"];
+"13" -> "6" [arrowhead="open", arrowtail="none"];
+"13" -> "7" [arrowhead="open", arrowtail="none"];
+"13" -> "9" [arrowhead="open", arrowtail="none"];
+"13" -> "12" [arrowhead="open", arrowtail="none"];
+}

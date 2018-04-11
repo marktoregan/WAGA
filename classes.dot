@@ -1,0 +1,15 @@
+digraph "classes" {
+charset="utf-8"
+rankdir=BT
+"0" [label="{Benchmark|journey_manager\lrandom_allocation : list\lstops_available\l|get_random_fitness()\l}", shape="record"];
+"1" [label="{ElectricVehicle|id\lmax_speed\lrange\l|}", shape="record"];
+"2" [label="{EvChargePoint|charge_time_required\lcharge_type\lid\llocation\loccupied\ltime_occupied\l|}", shape="record"];
+"3" [label="{Fitness|TotalTime\l|}", shape="record"];
+"4" [label="{GeneticAlgorithm|elitism : bool\ljourney_manager\lmutation_rate : float\ltournament_size : int\l|crossover()\levolvePopulation()\lmutate()\ltournamentSelection()\l}", shape="record"];
+"5" [label="{Journey|current_location\lend_point\lstart_time\lstarting_point\lstop : list\ltotal_journey_time\l|distance_in_minutes()\ldistance_in_minutes_2()\ljourney_distance()\ljourney_distance_2()\lset_journey_stop()\l}", shape="record"];
+"6" [label="{JourneyAllocation|available_stops\ljourney_allocation : list\ljourney_manager\l|generate_individual()\lget_allocation()\lget_fitness()\ljourney_allocation_size()\lsave_allocation()\lset_allocation()\lset_individual()\l}", shape="record"];
+"7" [label="{JourneyManager|stops : list\l|add_journey()\lget_journey()\lnumber_of_stops()\l}", shape="record"];
+"8" [label="{JourneyStop|arrival_time\lcharge_time\ldeparture_time\lev_point_id\lwait_time\l|}", shape="record"];
+"9" [label="{JourneyStops|\l|calculate_stops_waits()\ltotal_time_of_stop()\ltotal_time_of_stops()\l}", shape="record"];
+"10" [label="{Population|available_stops\linitialise\ljourney_allocations : list\ljourney_manager\lpopulation_size\l|get_fittest()\lget_journey()\lsave_journey()\lsize_of_population()\l}", shape="record"];
+}
