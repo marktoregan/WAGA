@@ -12,5 +12,5 @@ if __name__ == '__main__':
 
     #Number of runs 30
 
-    run = rga.RunGA()
+    run = rga.RunGA(available_stops=['a', 'b', 'c', 'd', 'e'], generations=2)
     run.process()
