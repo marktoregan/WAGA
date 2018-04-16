@@ -27,12 +27,14 @@ if __name__ == '__main__':
     print("Finished")
     print(f"Final distance {pop.get_fittest().get_fitness()} ")
     print(f"Solution: {pop.get_fittest().get_fitness()} and the EVP allocated {pop.get_fittest().journey_allocation}")
-    allocations = pop.get_fittest().journey_allocation
-    my_dict = {i:allocations.count(i) for i in allocations}
+    
+    my_dict = {i:pop.get_fittest().journey_allocation.count(i) for i in pop.get_fittest().journey_allocation}
     print(f'count {my_dict}')
     bench = bk.Benchmark(journey_manager=journey_manager.stops, stops=available_stops)
 
     print(f'Random soultion: {bench.get_random_fitness()} and {bench.random_allocation}')
-    ran_allocations = bench.random_allocation
-    my_dict_random = {i: ran_allocations.count(i) for i in ran_allocations}
+
+
+    my_dict_random = {i: bench.random_allocation.count(i) for i in bench.random_allocation}
+
     print(f'count {my_dict_random}')
