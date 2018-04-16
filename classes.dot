@@ -11,5 +11,11 @@ rankdir=BT
 "7" [label="{JourneyManager|stops : list\l|add_journey()\lget_journey()\lnumber_of_stops()\l}", shape="record"];
 "8" [label="{JourneyStop|arrival_time\lcharge_time\ldeparture_time\lev_point_id\lwait_time\l|}", shape="record"];
 "9" [label="{JourneyStops|\l|calculate_stops_waits()\ltotal_time_of_stop()\ltotal_time_of_stops()\l}", shape="record"];
-"10" [label="{Population|available_stops\linitialise\ljourney_allocations : list\ljourney_manager\lpopulation_size\l|get_fittest()\lget_journey()\lsave_journey()\lsize_of_population()\l}", shape="record"];
+"10" [label="{PopulateJourneyManager|journey_manager\lstart_time\l|get_journey_manager()\l}", shape="record"];
+"11" [label="{Population|available_stops\linitialise\ljourney_allocations : list\ljourney_manager\lpopulation_size\l|get_fittest()\lget_journey()\lsave_journey()\lsize_of_population()\l}", shape="record"];
+"12" [label="{datetime|fold\lhour\lmicrosecond\lminute\lsecond\ltzinfo\l|astimezone()\lcombine()\lctime()\ldate()\ldst()\lfromtimestamp()\lisoformat()\lnow()\lreplace()\lstrptime()\ltime()\ltimestamp()\ltimetuple()\ltimetz()\ltzname()\lutcfromtimestamp()\lutcnow()\lutcoffset()\lutctimetuple()\l}", shape="record"];
+"13" [label="{datetime|fold\lhour\lmicrosecond\lminute\lsecond\ltzinfo\l|astimezone()\lcombine()\lctime()\ldate()\ldst()\lfromtimestamp()\lisoformat()\lnow()\lreplace()\lstrptime()\ltime()\ltimestamp()\ltimetuple()\ltimetz()\ltzname()\lutcfromtimestamp()\lutcnow()\lutcoffset()\lutctimetuple()\l}", shape="record"];
+"7" -> "10" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="journey_manager", style="solid"];
+"12" -> "10" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="start_time", style="solid"];
+"13" -> "10" [arrowhead="diamond", arrowtail="none", fontcolor="green", label="start_time", style="solid"];
 }
