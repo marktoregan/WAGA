@@ -12,7 +12,8 @@ class GeneticAlgorithm:
 
     def evolvePopulation(self, pop):
         #print(f'size matters {pop.size_of_population()}')
-        newPopulation = p.Population(journey_manager=self.journey_manager, population_size=pop.size_of_population(), initialise=False)
+        newPopulation = p.Population(journey_manager=self.journey_manager,
+                                     population_size=pop.size_of_population(), initialise=False)
         elitismOffset = 0
         if self.elitism:
             newPopulation.save_journey(0, pop.get_fittest())

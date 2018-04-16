@@ -9,6 +9,3 @@ class JourneyManager:
 
     def number_of_stops(self):
         return len(self.stops)
-
-
-#Journey manager is a list of journeys

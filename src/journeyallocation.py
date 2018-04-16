@@ -1,13 +1,13 @@
 from datetime import datetime
 import random
-
+from src import journeymanager as jm
 from src import journeystop as js, journeystops as jss
 
 class JourneyAllocation(object):
 
     def __init__(self, **kwargs):
         self.journey_allocation = []
-        self.journey_manager = kwargs.get("journey_manager")
+        self.journey_manager = jm.JourneyManager()
         self.available_stops = kwargs.get("available_stops")
         for i in range(0, self.journey_manager.number_of_stops()):
             self.journey_allocation.append(None)
