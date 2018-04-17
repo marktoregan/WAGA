@@ -19,10 +19,6 @@ class RunGA(object):
                                     available_stops=self.available_stops,
                                     population_size=self.population_size,
                                     initialise=self.initialise)
-
-        #fittest_allocation = pop.get_fittest()
-        #print(f'Initial fittest {fittest_allocation}')
-
         ga = gen.GeneticAlgorithm(self.journey_manager)
         pop = ga.evolve_population(pop)
         generation_results = [None] * self.generations
