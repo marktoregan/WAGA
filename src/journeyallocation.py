@@ -1,7 +1,7 @@
 from datetime import datetime
 import random
 from src import journeystop as js, journeystops as jss, ev_charge_point as evp
-
+import tinydb
 
 class JourneyAllocation(object):
 
@@ -41,13 +41,15 @@ class JourneyAllocation(object):
         arrival_time = datetime.now()
         journeys = list()
         for index, alloc in enumerate(self.journey_allocation):
+            evp1 = evp.EvChargePoint(id=alloc)
             jour = self.journey_manager.get_journey(index)
+
             jour.stop = [alloc]
             stop = js.JourneyStop(ev_point_id=alloc,
                                         arrival_time=arrival_time,
                                         departure_time=0,
                                         wait_time=0,
-                                        charge_time=charge_time)
+                                        charge_time=evp1.charge_time_required)
             journeys.append(stop)
         jstops = jss.JourneyStops()
         time_total = jstops.total_time_of_stops(journeys)

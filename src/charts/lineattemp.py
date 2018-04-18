@@ -1,7 +1,5 @@
 from numpy import random
 from scipy.spatial import distance
-from src import ev_charge_point as evp
-
 
 p1 = [0, 0]
 p2 = [10, 10]
@@ -26,19 +24,9 @@ def closest_node(node, nodes):
     return nodes[closest_index]
 
 #a = random.randint(1000, size=(50000, 2))
-
-cpoints = evp.EvChargePoint()
-
-x = cpoints.all_ev_charge_points()
-
-print(x)
-
+a = [[10,10], [5,5], [0,0], [1,0]]
 some_pt = (1, 2)
 
-p = closest_node(some_pt, x)
+p = closest_node(some_pt, a)
 
 print(p)
-
-
-
-#all_ev_charge_points
