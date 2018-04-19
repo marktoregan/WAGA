@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 
-print()
 x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 y = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -24,8 +23,8 @@ plt.plot(7,7, marker='o', markersize=10, label='E - CP')
 
 
 
-#plt.xlabel('X')
-#plt.ylabel('Y')
+plt.xlabel('X')
+plt.ylabel('Y')
 plt.title('Phenotype')
 plt.legend()
 plt.show()
