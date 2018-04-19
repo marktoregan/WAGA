@@ -41,7 +41,8 @@ for i, station in enumerate(stations):
 
     x = {"evp": evp, "charge_type": point_type.strip(),
          "location": location, "charge_time_required": 25,
-         "longitude":longitude,"latitude":latitude, "name":name}
+         "longitude":longitude,"latitude":latitude, "name":name,
+         "charge_time_required": charge_speed[point_type.strip()]}
     lst_stations.append(x)
 
     #{"evp": "a", "charge_type": "fast", "location": [0, 1], "charge_time_required": 25}
@@ -49,17 +50,17 @@ for i, station in enumerate(stations):
 h = Distance.Distance([-6.270447, 53.339791], [-2.991028, 53.402061])
 print(h.km)
 
-# from tinydb import TinyDB, Query
-#
-# db = TinyDB('db.json')
-#
-#
-# for con in lst_stations:
-#     db.insert(con)
-#     print('inserted')
+from tinydb import TinyDB, Query
 
-s = set()
+db = TinyDB('db.json')
+
+
 for con in lst_stations:
-    s.add(con['charge_type'])
-
-print(s)
+    db.insert(con)
+    print('inserted')
+#
+# s = set()
+# for con in lst_stations:
+#     s.add(con['charge_type'])
+#
+# print(s)
