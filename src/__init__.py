@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     print(datetime.now())
 
-    run = rga.RunGA(available_stops=['a', 'b', 'c', 'd', 'e'], generations=2)
+    run = rga.RunGA(available_stops=['mnyydut2usrq-871'], generations=2)
     generation_results, pop = run.process()
 
     print(generation_results)

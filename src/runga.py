@@ -1,6 +1,4 @@
-from src import journeymanager as jm, \
-                population as p, \
-                journey as jy, \
+from src import population as p, \
                 geneticalgorithm as gen, \
                 populatejourneymanager as pjm
 

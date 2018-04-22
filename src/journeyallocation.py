@@ -1,7 +1,7 @@
+from src import journeystop as js, journeystops as jss, ev_charge_point as evp
 from datetime import datetime
 import random
-from src import journeystop as js, journeystops as jss, ev_charge_point as evp
-import tinydb
+
 
 class JourneyAllocation(object):
 
@@ -37,30 +37,26 @@ class JourneyAllocation(object):
         return journey
 
     def get_fitness(self):
-        charge_time = 25
         arrival_time = datetime.now()
         journeys = list()
-        for index, alloc in enumerate(self.journey_allocation):
-            evp1 = evp.EvChargePoint(id=alloc)
-            jour = self.journey_manager.get_journey(index)
-
-            jour.stop = [alloc]
-            stop = js.JourneyStop(ev_point_id=alloc,
+        for index, allocation in enumerate(self.journey_allocation):
+            ev_point = evp.EvChargePoint(id=allocation)
+            journey = self.journey_manager.get_journey(index)
+            journey.stop = [allocation]
+            stop = js.JourneyStop(ev_point_id=allocation,
                                         arrival_time=arrival_time,
                                         departure_time=0,
                                         wait_time=0,
-                                        charge_time=evp1.charge_time_required)
+                                        charge_time=ev_point.charge_time_required)
             journeys.append(stop)
         jstops = jss.JourneyStops()
-        time_total = jstops.total_time_of_stops(journeys)
-        tot = 0
-        #print(f'{len(self.journey_allocation)}')
+        charge_time_total = jstops.total_time_of_stops(journeys)
+        journey_time = 0
         for index, alloc in enumerate(self.journey_allocation):
-            jour1 = self.journey_manager.get_journey(index)
-            tot += jour1.distance()
-        time_total +=tot
-        #print(f'{time_total}')
-        return time_total
+            a_journey = self.journey_manager.get_journey(index)
+            journey_time += a_journey.distance()
+        total_time = charge_time_total + journey_time
+        return total_time
 
     def journey_allocation_size(self):
         return len(self.journey_allocation)
