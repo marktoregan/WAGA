@@ -7,7 +7,7 @@ class JourneyStops:
     def total_time_of_stop(self, arrival_time_array):
         total_time = 0
         for x in arrival_time_array:
-            print(f'{x.arrival_time} | {x.departure_time} | {x.ev_point_id} | {x.wait_time}')
+            #print(f'{x.arrival_time} | {x.departure_time} | {x.ev_point_id} | {x.wait_time}')
             arrive = x.arrival_time
             depart = x.departure_time
             diff = depart - arrive
