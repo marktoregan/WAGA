@@ -24,40 +24,64 @@ def converttocartisain(long, lat):
     x2, y2 = transform(inProj, outProj, long, lat)
     return [x2, y2]
 
-for i, station in enumerate(stations):
-    point_type = station['fields']['point_type']
 
-    geohash = station['fields']['geohash']
+def get_max(stations):
+    for i, station in enumerate(stations):
+        station['new'] = 0
+        # latitude = station['fields']['latitude']
+        longitude = station['fields']['longitude']
+        latitude = station['fields']['latitude']
 
-    #latitude = station['fields']['latitude']
-    longitude = station['fields']['longitude']
-    latitude = station['fields']['latitude']
+        location = converttocartisain(longitude, latitude)
 
-    location = converttocartisain(longitude, latitude)
-    evp = f"{station['fields']['geohash']}-{i}"
-    name = station['tags']['name']
-    #print(f'{evp} | {location} | {point_type} | {longitude},{latitude} | {name}')
+#stations = get_max(stations)
+def new_stations(stations):
+    for i, station in enumerate(stations):
+        point_type = station['fields']['point_type']
+        geohash = station['fields']['geohash']
+        longitude = station['fields']['longitude']
+        latitude = station['fields']['latitude']
+        #print(longitude, latitude)
+        location = converttocartisain(longitude, latitude)
+        #print(location)
+        location[0] = normalize_longitude(location[0])
+        location[1] = normalize_latitude(location[1])
+        evp = f"{station['fields']['geohash']}-{i}"
+        name = station['tags']['name']
+        #print(f'{evp} | {location} | {point_type} | {longitude},{latitude} | {name}')
 
-    x = {"evp": evp, "charge_type": point_type.strip(),
-         "location": location, "charge_time_required": 25,
-         "longitude":longitude,"latitude":latitude, "name":name,
-         "charge_time_required": charge_speed[point_type.strip()]}
-    lst_stations.append(x)
+        x = {"evp": evp, "charge_type": point_type.strip(),
+             "location": location, "charge_time_required": 25,
+             "longitude":longitude,"latitude":latitude, "name":name,
+             "charge_time_required": charge_speed[point_type.strip()]}
+        lst_stations.append(x)
+    return lst_stations
 
-    #{"evp": "a", "charge_type": "fast", "location": [0, 1], "charge_time_required": 25}
 
 
+def normalize_longitude(xi):
+    min_x = 0.0004624949021336246
+    max_x = 0.0004963315732606508
+    a = xi - min_x
+    b = max_x - min_x
+    ans_longitude = a / b
+    return round(ans_longitude * 100, ndigits=2)
+
+
+
+def normalize_latitude(yi):
+    min_y = -9.233595057399676e-05
+    max_y = -4.9834938709674104e-05
+    a = yi - min_y
+    b = max_y - min_y
+    ans_latitude = a / b
+    return round(ans_latitude * 100, ndigits=2)
+
+xxx = new_stations(stations)
+print(xxx)
 from tinydb import TinyDB, Query
-
 db = TinyDB('db.json')
 
-
 for con in lst_stations:
-    db.insert(con)
+    #db.insert(con)
     print('inserted')
-#
-# s = set()
-# for con in lst_stations:
-#     s.add(con['charge_type'])
-#
-# print(s)

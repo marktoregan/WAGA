@@ -49,7 +49,27 @@ class PopulateJourneyManager(object):
 
         return self.journey_manager
 
-    def get_all_new(self):
-        pass
-        #ennis = 52.847054, and the
-        #longitude is -8.988436.
+    # def get_all_new(self):
+    #
+    #     ennis = co.Coordinate(latitude=52.847054, longitude=-8.988436)
+    #     limerick = co.Coordinate(latitude=52.668018, longitude=-8.630498)
+    #     waterford = co.Coordinate(latitude=52.25833, longitude=-7.11194)
+    #     sligo = co.Coordinate(latitude=54.26969, longitude=-8.46943)
+    #     portlaoise = co.Coordinate(latitude=53.032791, longitude=-7.298212)
+    #     dublin_city = co.Coordinate(latitude=53.338313, longitude=-6.238713)
+    #
+    #     time1 = datetime(year=2018, month=2, day=27, hour=13, minute=00)
+    #     #time2 = datetime(year=2018, month=2, day=27, hour=13, minute=30)
+    #     #time3 = datetime(year=2018, month=2, day=27, hour=14, minute=00)
+    #     #time4 = datetime(year=2018, month=2, day=27, hour=14, minute=30)
+    #     #time5 = datetime(year=2018, month=2, day=27, hour=15, minute=00)
+    #
+    #     journey1 = jy.Journey(start_time=time1, start_cord=dublin_city, end_cord=ennis)
+    #     self.journey_manager.add_journey(journey1)
+    #
+    #     journey2 = jy.Journey(start_time=time1, start_cord=dublin_city, end_cord=limerick)
+    #     self.journey_manager.add_journey(journey2)
+    #
+    #     return self.journey_manager
+
+

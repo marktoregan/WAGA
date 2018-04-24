@@ -1,5 +1,5 @@
 import math
-from src import coordinate as co
+
 
 class MidPoint:
 
@@ -9,7 +9,7 @@ class MidPoint:
         self.lon2 = math.radians(coord2.longitute)
         self.lat2 = math.radians(coord2.latitude)
 
-    def calc_midpoint(self):
+    def get_midpoint_cordinates(self):
         bx = math.cos(self.lat2) * math.cos(self.lon2 - self.lon1)
         by = math.cos(self.lat2) * math.sin(self.lon2 - self.lon1)
         lat3 = math.atan2(math.sin(self.lat1) + math.sin(self.lat2), \
@@ -17,5 +17,4 @@ class MidPoint:
                + bx) + by**2))
         lon3 = self.lon1 + math.atan2(by, math.cos(self.lat1) + bx)
 
-        midwayCoord = co.Coordinate(latitude=round(math.degrees(lat3), 2), longitude=round(math.degrees(lon3), 2))
         return midwayCoord
