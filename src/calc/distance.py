@@ -1,5 +1,6 @@
 import math
-
+from src import coordinate as co
+from src.calc import midpoint as mp
 
 class Distance:
     '''
@@ -7,12 +8,13 @@ class Distance:
     two lon/lat coordnate pairs.
     output distance available in kilometers, meters, miles, and feet.
     example usage: Haversine([lon1,lat1],[lon2,lat2]).feet
-
     '''
 
     def __init__(self, coord1, coord2):
-        lon1, lat1 = coord1
-        lon2, lat2 = coord2
+        lon1 = coord1.longitute
+        lat1 = coord1.latitude
+        lon2 = coord2.longitute
+        lat2 = coord2.latitude
 
         R = 6371000  # radius of Earth in meters
         phi_1 = math.radians(lat1)
@@ -32,6 +34,24 @@ class Distance:
         self.feet = self.miles * 5280  # output distance in feet
 
 
-if __name__ == "__Distance__":
-    h = Distance.Distance([-6.270447, 53.339791], [-2.991028, 53.402061])
+if __name__ == "__main__":
+
+    h = Distance(co.Coordinate(longitude=-6.270447, latitude=53.339791),
+                 co.Coordinate(longitude=-2.991028, latitude=53.402061))
     print(h.km)
+
+    DublinCity = co.Coordinate(latitude=53.338313, longitude=-6.238713)
+    Portlaoise = co.Coordinate(latitude=53.032791, longitude=-7.298212)
+
+    n = Distance(DublinCity,Portlaoise)
+    print(n.km)
+
+    mid = mp.MidPoint(DublinCity,Portlaoise)
+    midway = mid.calc_midpoint()
+
+    n1 = Distance(DublinCity, midway)
+    print(n1.km)
+
+
+    n2 = Distance(Portlaoise, midway)
+    print(n2.km)

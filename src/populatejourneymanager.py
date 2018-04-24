@@ -9,6 +9,7 @@ class PopulateJourneyManager(object):
 
     def get_journey_manager(self, amount_of_journeys):
 
+
         time1 = datetime(year=2018, month=2, day=27, hour=13, minute=00)
         time2 = datetime(year=2018, month=2, day=27, hour=13, minute=30)
         time3 = datetime(year=2018, month=2, day=27, hour=14, minute=00)
@@ -47,3 +48,8 @@ class PopulateJourneyManager(object):
 
 
         return self.journey_manager
+
+    def get_all_new(self):
+        pass
+        #ennis = 52.847054, and the
+        #longitude is -8.988436.
