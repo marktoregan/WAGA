@@ -55,12 +55,15 @@ class EvChargePoint(object):
 
     def get_ev_charge_point_by_type(self, type):
         db = TinyDB(EvChargePoint.dbconn)
-        results = db.search(where('charge_type') == type)
         evps = []
-        for r in results:
-            evp = EvChargePoint(id=r["evp"],
-                                charge_type=r["charge_type"],
-                                location=r["location"],
-                                charge_time_required=r["charge_time_required"])
-            evps.append(evp)
-        return evps
+        preloaded = {}
+        for t in type:
+            results = db.search(where('charge_type') == t)
+            for r in results:
+                evp = EvChargePoint(id=r["evp"],
+                                    charge_type=r["charge_type"],
+                                    location=r["location"],
+                                    charge_time_required=r["charge_time_required"])
+                evps.append(evp)
+                preloaded[r["evp"]] = evp
+        return evps, preloaded

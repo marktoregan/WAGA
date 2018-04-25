@@ -9,7 +9,7 @@ class Population(object):
         self.population_size = kwargs.get("population_size", 0)
         self.available_stops = kwargs.get("available_stops", [])
         self.journey_manager = kwargs.get("journey_manager", [])
-        #self.preloaded_stops = kwargs.get("preloaded_stops")
+        self.preloaded_stops = kwargs.get("preloaded_stops")
 
         for i in range(0, self.population_size):
             self.journey_allocations.append(None)
@@ -36,6 +36,6 @@ class Population(object):
         fittest = self.journey_allocations[0]
         for i in range(0, self.population_size):
             journ = self.get_journey_allocation(i)
-            if fittest.get_fitness() >= journ.get_fitness():
+            if fittest.get_fitness(self.preloaded_stops) >= journ.get_fitness(self.preloaded_stops):
                 fittest = self.get_journey_allocation(i)
         return fittest

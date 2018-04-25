@@ -37,11 +37,12 @@ class JourneyAllocation(object):
         journey = self.journey_manager[index]
         return journey
 
-    def get_fitness(self):
+    def get_fitness(self, preloaded):
+        #print(preloaded)
         arrival_time = datetime.now()
         journeys = list()
         for index, allocation in enumerate(self.journey_allocation):
-            ev_point = evp.EvChargePoint(id=allocation)
+            ev_point = preloaded.get(allocation) #evp.EvChargePoint(id=allocation)
             journey = self.journey_manager.get_journey(index)
             journey.stop = [allocation]
             stop = js.JourneyStop(ev_point_id=allocation,
@@ -53,11 +54,16 @@ class JourneyAllocation(object):
         jstops = jss.JourneyStops()
         charge_time_total = jstops.total_time_of_stops(journeys)
         journey_time = 0
+
         for index, alloc in enumerate(self.journey_allocation):
             a_journey = self.journey_manager.get_journey(index)
-            journey_time += a_journey.distance()
+            #fix this line
+            tup = (a_journey.starting_point,alloc,a_journey.end_point)
+            print(f'{tup}')
+            journey_time += 0#a_journey.distance()
             #print(f'journey {alloc} {a_journey.distance()}')
         total_time = charge_time_total + journey_time
+
         return total_time
 
     def journey_allocation_size(self):

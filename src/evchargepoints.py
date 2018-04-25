@@ -34,9 +34,9 @@ class EvChargePoints:
     @staticmethod
     def get_by_type(type):
         cpoints = evp.EvChargePoint()
-        all_stops = cpoints.get_ev_charge_point_by_type(type)
+        all_stops, preloaded = cpoints.get_ev_charge_point_by_type(type)
         stop_ids = [stop.id for stop in all_stops]
-        return stop_ids
+        return stop_ids, preloaded
 
     @staticmethod
     def prints():

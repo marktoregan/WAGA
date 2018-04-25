@@ -11,8 +11,10 @@ class GeneticAlgorithm:
         self.elitism = True
 
     def evolve_population(self, pop):
+        #print('evolve')
         newPopulation = p.Population(journey_manager=self.journey_manager, population_size=pop.size_of_population(),
-                                     initialise=False)
+                                     initialise=False,
+                                     preloaded_stops=pop.preloaded_stops)
         elitismOffset = 0
         if self.elitism:
             newPopulation.save_journey_allocation(0, pop.get_fittest())
@@ -60,9 +62,11 @@ class GeneticAlgorithm:
                 journey_allocation.set_allocation(allocationPos1, allocation2)
 
     def tournamentSelection(self, pop):
+        #print('t')
         tournament = p.Population(journey_manager=self.journey_manager,
                                   population_size=self.tournament_size,
-                                  initialise=False)
+                                  initialise=False,
+                                  preloaded_stops=pop.preloaded_stops)
         for i in range(0, self.tournament_size):
             randomId = int(random.random() * pop.size_of_population())
             tournament.save_journey_allocation(i, pop.get_journey_allocation(randomId))
