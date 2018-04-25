@@ -1,4 +1,4 @@
-from src import journeystop as js, journeystops as jss, ev_charge_point as evp
+from src import journeystop as js, journeystops as jss, evchargepoint as evp
 from datetime import datetime
 import random
 
@@ -11,6 +11,7 @@ class JourneyAllocation(object):
         self.available_stops = kwargs.get("available_stops")
         for i in range(0, self.journey_manager.number_of_stops()):
             self.journey_allocation.append(None)
+
 
     def set_individual(self, stops):
         stop = random.choice(stops)
@@ -55,6 +56,7 @@ class JourneyAllocation(object):
         for index, alloc in enumerate(self.journey_allocation):
             a_journey = self.journey_manager.get_journey(index)
             journey_time += a_journey.distance()
+            #print(f'journey {alloc} {a_journey.distance()}')
         total_time = charge_time_total + journey_time
         return total_time
 

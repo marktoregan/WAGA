@@ -2,7 +2,7 @@ import math
 import random
 from datetime import datetime, timedelta
 from src.config import mapconfig as md
-from src import journeystop as js, ev_charge_point as evp
+from src import journeystop as js, evchargepoint as evp
 
 
 class Journey(object):
@@ -17,8 +17,6 @@ class Journey(object):
         self.current_location = kwargs.get("current_point")
         self.total_journey_time = kwargs.get("total_journey_time", 0)
         self.stop = kwargs.get("stop")
-        #self.end_lat = kwargs.get("starting_point")
-        #self.end_lon = kwargs.get("starting_point")
 
 
     def _euclidean_distance(self, point1, point2):

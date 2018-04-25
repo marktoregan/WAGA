@@ -1,7 +1,7 @@
 import unittest
 from src import journey as jny
 from src import electricvehicle as ev
-from src import ev_charge_point as ecp
+from src import evchargepoint as ecp
 from datetime import datetime, timedelta
 
 

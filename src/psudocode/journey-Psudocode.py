@@ -2,7 +2,7 @@ import math
 import random
 from datetime import datetime, timedelta
 from src.config import mapconfig as md
-from src import journeystop as js, ev_charge_point as evp
+from src import journeystop as js, evchargepoint as evp
 
 
 CLASS Journey(object):

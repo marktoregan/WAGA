@@ -1,4 +1,4 @@
-from src import journeystop as js, journeystops as jss, ev_charge_point as evp
+from src import journeystop as js, journeystops as jss, evchargepoint as evp
 from datetime import datetime
 import random
 

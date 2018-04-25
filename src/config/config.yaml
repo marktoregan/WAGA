@@ -1,2 +1,4 @@
 journeymap:
-    legend_distance: 20
+    legend_distance: 3.1666
+db:
+    connection: '/home/mark/projects/WAGA/src/db/db.json'

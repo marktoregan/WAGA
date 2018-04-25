@@ -1,10 +1,12 @@
-from tinydb import TinyDB, Query
+from tinydb import TinyDB, Query, where
+from src.config import mapconfig as mc
 """
 Charge point class
 """
 
 
 class EvChargePoint(object):
+    dbconn = mc.MapConfig.db_location()
 
     def __init__(self, **kwargs):
         self.id = kwargs.get("id", 0)
@@ -16,7 +18,7 @@ class EvChargePoint(object):
         self.name = kwargs.get("name")
 
     def get_ev_charge_point(self, id):
-        db = TinyDB('../src/db/db.json')
+        db = TinyDB(EvChargePoint.dbconn)
         charge_point = Query()
         results = db.search(charge_point.evp == id)
         evp = EvChargePoint(id=results[0]["evp"],
@@ -27,7 +29,7 @@ class EvChargePoint(object):
 
 
     def all_ev_charge_points(self):
-        db = TinyDB('../src/db/db.json')
+        db = TinyDB(EvChargePoint.dbconn)
         charge_point = Query()
         results = db.all()
         charge_points = []
@@ -36,7 +38,8 @@ class EvChargePoint(object):
         return charge_points
 
     def load_all_evps(self):
-        db = TinyDB('../src/db/db.json')
+        #db = TinyDB('../src/db/db.json')
+        db = TinyDB(EvChargePoint.dbconn)
         charge_point = Query()
         results = db.all()
         all_charge_points = []
@@ -50,15 +53,14 @@ class EvChargePoint(object):
             all_charge_points.append(result_evp)
         return all_charge_points
 
-
-
-
-
- #        "evp": "mnwmuug4bf46-1",
- #       "charge_type": "Type-2 AC Socket 3.7kW",
- #       "location": [0.0004851078424378046, -6.64769659607716e-05],
- #       "charge_time_required": 480,
- #       "longitude": 54.001958,
- #       "latitude": -7.400182,
- #       "name": "Radisson Blu Hotel, Farnham Estate, Cavan-Longford Road (R198), Cavan Town, County Cavan"
- #
+    def get_ev_charge_point_by_type(self, type):
+        db = TinyDB(EvChargePoint.dbconn)
+        results = db.search(where('charge_type') == type)
+        evps = []
+        for r in results:
+            evp = EvChargePoint(id=r["evp"],
+                                charge_type=r["charge_type"],
+                                location=r["location"],
+                                charge_time_required=r["charge_time_required"])
+            evps.append(evp)
+        return evps

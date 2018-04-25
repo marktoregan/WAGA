@@ -1,6 +1,6 @@
 from scipy.spatial import distance
-from src import ev_charge_point as evp
-from pyproj import Proj, transform
+from src import evchargepoint as evp
+
 from src.calc import distance as dis
 
 #from mpl_toolkits.basemap import Basemap
@@ -50,7 +50,12 @@ cpoints = evp.EvChargePoint()
 
 x = cpoints.all_ev_charge_points()
 
-print(x)
+all = cpoints.load_all_evps()
+
+for a in all:
+    print(a.location)
+
+#print(x)
 
 some_pt = (5, 5)
 
@@ -58,13 +63,9 @@ p = closest_node(some_pt, x)
 
 print(p)
 
-inProj = Proj(init='epsg:3857')
-outProj = Proj(init='epsg:4326')
 
-x1, y1 = -11705274.6374, 4826473.6922
-x2, y2 = transform(inProj, outProj, x1, y1)
 
-print(x2, y2)
+#print(x2, y2)
 
 
 #all_ev_charge_points

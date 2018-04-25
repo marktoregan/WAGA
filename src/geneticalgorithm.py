@@ -11,22 +11,19 @@ class GeneticAlgorithm:
         self.elitism = True
 
     def evolve_population(self, pop):
-        #print(f'evolve')
-        newPopulation = p.Population(journey_manager=self.journey_manager, population_size=pop.size_of_population(), initialise=False)
+        newPopulation = p.Population(journey_manager=self.journey_manager, population_size=pop.size_of_population(),
+                                     initialise=False)
         elitismOffset = 0
         if self.elitism:
             newPopulation.save_journey_allocation(0, pop.get_fittest())
             elitismOffset = 1
-        #print(f'evolve 1')
         for i in range(elitismOffset, newPopulation.size_of_population()):
             parent1 = self.tournamentSelection(pop)
             parent2 = self.tournamentSelection(pop)
             child = self.crossover(parent1, parent2)
             newPopulation.save_journey_allocation(i, child)
-        #print(f'evolve 2')
         for i in range(elitismOffset, newPopulation.size_of_population()):
             self.mutate(newPopulation.get_journey_allocation(i))
-
         return newPopulation
 
     def crossover(self, parent1, parent2):
