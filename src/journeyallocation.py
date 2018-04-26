@@ -59,7 +59,7 @@ class JourneyAllocation(object):
             a_journey = self.journey_manager.get_journey(index)
             #fix this line
             tup = (a_journey.starting_point,alloc,a_journey.end_point)
-            print(f'{tup}')
+            #print(f'{tup}')
             journey_time += 0#a_journey.distance()
             #print(f'journey {alloc} {a_journey.distance()}')
         total_time = charge_time_total + journey_time
