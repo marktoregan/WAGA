@@ -18,30 +18,19 @@ class RunGA(object):
 
     def process(self):
 
-        self.available_stops, preloaded = evcps.EvChargePoints.get_by_type(["Fast AC Type-2 44kW"])
+
+        self.available_stops, preloaded_point_details = evcps.EvChargePoints.get_by_type(["Fast AC Type-2 44kW"])
 
         print(f'Getting Initial Population.')
 
-        ##Start pre load surgey
-        journeys_pre = [[(j.starting_point[0], j.starting_point[1]), (j.end_point[0], j.end_point[1])] for j in
-                        self.journey_manager.stops]
+        ##strt
+        distances_loaded = self.method_name(preloaded_point_details)
 
-        stops_pre = [(v.location[0], v.location[1]) for k, v in preloaded.items()]
+        pre_loaded = {'evp_details':preloaded_point_details, 'distances':distances_loaded}
 
 
-        #stops = [(9, 9), (8, 8), (7, 6)]
-        #journeys = [[(0, 0), (1, 1)], [(2, 3), (3, 3)]]
 
-        pp = dis.Distance(stops=stops_pre, journeys=journeys_pre)
-        journey_dict = pp.populate()
-        print(journey_dict)
 
-        JourneyConfig = namedtuple("JourneyConfig", ["ev_stop", "point"])
-        lookup_tup = JourneyConfig(ev_stop=(25.59, 25.9), point=(36.17, 27.27))
-        lookup_tup1 = JourneyConfig(ev_stop=(25.59, 25.9), point=(49.21, 85.39))
-        print(lookup_tup)
-        print(journey_dict)
-        #print(f' {journey_dict[lookup_tup]} + {journey_dict[lookup_tup1]} = {journey_dict[lookup_tup] + journey_dict[lookup_tup1]}')
         ##End pre load surgey
 
 
@@ -50,7 +39,7 @@ class RunGA(object):
                                     available_stops=self.available_stops,
                                     population_size=self.population_size,
                                     initialise=self.initialise,
-                                    preloaded_stops=preloaded)
+                                    preloaded_stops=pre_loaded)
         print(f'Getting Journey manager.')
         ga = gen.GeneticAlgorithm(self.journey_manager)
         print(f'Starting evolve.')
@@ -73,6 +62,15 @@ class RunGA(object):
         #
         print(f'fitness: {pop.get_fittest().get_fitness(pop.preloaded_stops)}')
 
-    def pre_load(self, stops):
-        for s in stops:
-            print(f'{s}')
+
+    def method_name(self, preloaded_point_details):
+        ##Start pre load surgey
+        journeys_pre = [[(j.starting_point[0], j.starting_point[1]), (j.end_point[0], j.end_point[1])] for j in
+                        self.journey_manager.stops]
+        stops_pre = [(v.location[0], v.location[1]) for k, v in preloaded_point_details.items()]
+        # stops = [(9, 9), (8, 8), (7, 6)]
+        # journeys = [[(0, 0), (1, 1)], [(2, 3), (3, 3)]]
+        pp = dis.Distance(stops=stops_pre, journeys=journeys_pre)
+        journey_dict = pp.populate()
+
+        return journey_dict

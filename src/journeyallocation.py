@@ -1,6 +1,7 @@
 from src import journeystop as js, journeystops as jss, evchargepoint as evp
 from datetime import datetime
 import random
+from collections import namedtuple
 
 
 class JourneyAllocation(object):
@@ -42,7 +43,7 @@ class JourneyAllocation(object):
         arrival_time = datetime.now()
         journeys = list()
         for index, allocation in enumerate(self.journey_allocation):
-            ev_point = preloaded.get(allocation) #evp.EvChargePoint(id=allocation)
+            ev_point = preloaded['evp_details'].get(allocation) #evp.EvChargePoint(id=allocation)
             journey = self.journey_manager.get_journey(index)
             journey.stop = [allocation]
             stop = js.JourneyStop(ev_point_id=allocation,
@@ -58,9 +59,25 @@ class JourneyAllocation(object):
         for index, alloc in enumerate(self.journey_allocation):
             a_journey = self.journey_manager.get_journey(index)
             #fix this line
-            tup = (a_journey.starting_point,alloc,a_journey.end_point)
-            #print(f'{tup}')
-            journey_time += 0#a_journey.distance()
+            ev_point = preloaded['evp_details'].get(alloc)
+
+            #print(f"{tup}")
+            #([73.94, 38.24], ['mnw5wx1023br-603'], [49.21, 85.39])
+            #([73.94, 38.24], [59.46, 52.74], [49.21, 85.39])
+            JourneyConfig = namedtuple("JourneyConfig", ["ev_stop", "point"])
+
+            point_start = JourneyConfig(ev_stop=(ev_point.location[0],ev_point.location[1]),
+                                        point=(a_journey.starting_point[0],a_journey.starting_point[1]))
+
+            #print(point_start)
+            #point__end = JourneyConfig(ev_stop=(25.59, 25.9), point=(49.21, 85.39))
+            point__end = JourneyConfig(ev_stop=(ev_point.location[0],ev_point.location[1]),
+                                       point=(a_journey.end_point[0],a_journey.end_point[1]))
+            #print(preloaded['distances'])
+            start_dis = preloaded['distances'][point_start]
+            ed_dis = preloaded['distances'][point__end]
+            tots = start_dis + ed_dis
+            journey_time += tots #st_dis #+  ed_dis #0#a_journey.distance()
             #print(f'journey {alloc} {a_journey.distance()}')
         total_time = charge_time_total + journey_time
 
