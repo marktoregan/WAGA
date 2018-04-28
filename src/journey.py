@@ -11,6 +11,7 @@ class Journey(object):
         Constructor
         :param kwargs: start_time, starting_point, end_point, stops
         """
+        self.id = kwargs.get("id", 1)
         self.start_time = kwargs.get("start_time", datetime.now())
         self.starting_point = kwargs.get("starting_point")
         self.end_point = kwargs.get("end_point")

@@ -25,7 +25,7 @@ class PopulateJourneyManager(object):
         sligo = nl.Normalize(latitude=54.26969, longitude=-8.46943)
         #
         journey1 = jy.Journey(start_time=time1, starting_point=[ennis.x, ennis.y], end_point=[dublin_city.x, dublin_city.y])
-        self.journey_manager.add_journey(journey1)
+        #self.journey_manager.add_journey(journey1)
 
         journey2 = jy.Journey(start_time=time1, starting_point=[sligo.x, sligo.y], end_point=[dublin_city.x, dublin_city.y])
         self.journey_manager.add_journey(journey2)

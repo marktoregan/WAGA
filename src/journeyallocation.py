@@ -39,7 +39,6 @@ class JourneyAllocation(object):
         return journey
 
     def get_fitness(self, preloaded):
-        #print(preloaded)
         arrival_time = datetime.now()
         journeys = list()
         for index, allocation in enumerate(self.journey_allocation):
@@ -58,27 +57,20 @@ class JourneyAllocation(object):
 
         for index, alloc in enumerate(self.journey_allocation):
             a_journey = self.journey_manager.get_journey(index)
-            #fix this line
             ev_point = preloaded['evp_details'].get(alloc)
-
-            #print(f"{tup}")
-            #([73.94, 38.24], ['mnw5wx1023br-603'], [49.21, 85.39])
-            #([73.94, 38.24], [59.46, 52.74], [49.21, 85.39])
             JourneyConfig = namedtuple("JourneyConfig", ["ev_stop", "point"])
 
             point_start = JourneyConfig(ev_stop=(ev_point.location[0],ev_point.location[1]),
-                                        point=(a_journey.starting_point[0],a_journey.starting_point[1]))
+                                        point=(a_journey.starting_point[0], a_journey.starting_point[1]))
 
-            #print(point_start)
-            #point__end = JourneyConfig(ev_stop=(25.59, 25.9), point=(49.21, 85.39))
-            point__end = JourneyConfig(ev_stop=(ev_point.location[0],ev_point.location[1]),
-                                       point=(a_journey.end_point[0],a_journey.end_point[1]))
-            #print(preloaded['distances'])
+            point_end = JourneyConfig(ev_stop=(ev_point.location[0], ev_point.location[1]),
+                                       point=(a_journey.end_point[0], a_journey.end_point[1]))
             start_dis = preloaded['distances'][point_start]
-            ed_dis = preloaded['distances'][point__end]
+            ed_dis = preloaded['distances'][point_end]
             tots = start_dis + ed_dis
-            journey_time += tots #st_dis #+  ed_dis #0#a_journey.distance()
-            #print(f'journey {alloc} {a_journey.distance()}')
+            time = tots / 100
+            time *= 60
+            journey_time += time
         total_time = charge_time_total + journey_time
 
         return total_time

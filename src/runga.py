@@ -20,12 +20,12 @@ class RunGA(object):
 
 
         self.available_stops, preloaded_point_details = evcps.EvChargePoints.get_by_type(["Fast AC Type-2 44kW"])
-
+        print(self.available_stops)
         print(f'Getting Initial Population.')
 
         ##strt
         distances_loaded = self.method_name(preloaded_point_details)
-
+        print(distances_loaded)
         pre_loaded = {'evp_details':preloaded_point_details, 'distances':distances_loaded}
 
 

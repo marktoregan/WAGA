@@ -39,5 +39,6 @@ class Distance(object):
         def insert_distance(self, journey_dict):
             for k, v in journey_dict.items():
                 calcs = self.distance_between_points(k.ev_stop, k.point)
+                print(f"-----> {calcs} stop {k.ev_stop} point {k.point} " )
                 journey_dict.update({k: calcs})
             return journey_dict

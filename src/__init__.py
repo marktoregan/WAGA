@@ -5,10 +5,9 @@ from datetime import datetime
 if __name__ == '__main__':
 
     #vars
-
     print(datetime.now())
     #stop_ids = evcps.EvChargePoints.get_by_type("Fast AC Type-2 44kW")
     #run = rga.RunGA(generations=10, population_size=1000)
-    run = rga.RunGA(generations=10, population_size=1000)
+    run = rga.RunGA(generations=10, population_size=100)
     run.process()
     print(datetime.now())

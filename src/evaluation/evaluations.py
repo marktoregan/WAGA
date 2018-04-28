@@ -1,29 +1,12 @@
 from collections import namedtuple
 from src.calc import distance as dis
-# eval 1
-#ga v neariest
+from src.calc import  normalize as nl
 
-#eval 2
+ennis = nl.Normalize(latitude=52.847054, longitude=-8.988436)
+print(f' ennis {ennis.x} {ennis.y}')
 
-#more evs
-# eval 3
-#ga v neariest
+sligo = nl.Normalize(latitude=54.26969, longitude=-8.46943)
+print(f' sligo {sligo.x} {sligo.y}')
 
-#more points
-#ga v neariest
-
-# eval 4
-#penalties
-
-#optimization
-
-Coordinate = namedtuple('Coordinate', ['longitute', 'latitude'])
-
-
-DublinCity = Coordinate(latitude=53.338313, longitute=-6.238713)
-Portlaoise = Coordinate(latitude=53.032791, longitute=-7.298212)
-
-
-mid = mp.MidPoint(DublinCity,Portlaoise)
-midway = mid.calc_midpoint()
-
+dublin_city = nl.Normalize(latitude=53.338313, longitude=-6.238713)
+print(f'dublin {dublin_city.x} {dublin_city.y}')
