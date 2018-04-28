@@ -17,9 +17,7 @@ class RunGA(object):
         self.generations = kwargs.get("generations", 10)
 
     def process(self):
-        self.available_stops, preloaded_point_details = evcps.EvChargePoints.get_by_type(['Fast AC Type-2 44kW',
-                                                                                          'Fast AC Type-2 50kW'
-                                                                                            'CHAdeMO DC 44kW',
+        self.available_stops, preloaded_point_details = evcps.EvChargePoints.get_by_type(['CHAdeMO DC 44kW',
                                                                                             'Fast AC Type-2 43kW',
                                                                                             'Fast AC Type-2 44kW',
                                                                                             'Fast AC Type-2 50kW',
