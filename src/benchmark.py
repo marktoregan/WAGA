@@ -27,8 +27,6 @@ class Benchmark(object):
                                                           'Fast AC Type-2 50kW'
                                                             'CHAdeMO DC 44kW',
                                                             'Fast AC Type-2 43kW',
-                                                            'Fast AC Type-2 44kW',
-                                                            'Fast AC Type-2 50kW',
                                                             'CHAdeMO DC 45kW',
                                                             'CHAdeMO DC 50kW',
                                                             'CHAdeMO DC 22kW',
