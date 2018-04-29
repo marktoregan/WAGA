@@ -41,6 +41,7 @@ class JourneyAllocation(object):
     def get_fitness(self, preloaded):
         arrival_time = datetime.now()
         journeys = list()
+        #print(self.journey_allocation)
         for index, allocation in enumerate(self.journey_allocation):
             ev_point = preloaded['evp_details'].get(allocation) #evp.EvChargePoint(id=allocation)
             journey = self.journey_manager.get_journey(index)

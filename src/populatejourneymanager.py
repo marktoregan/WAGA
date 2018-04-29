@@ -11,6 +11,7 @@ class PopulateJourneyManager(object):
         self.start_time = datetime.now()
 
     def get_journey_manager(self, amount_of_journeys):
+        print(f"in {amount_of_journeys}")
         for i in range(0,amount_of_journeys):
             time = rd.random_time("28/4/2018 1:30 PM", "28/4/2018 2:50 PM", random.random())
             dublin_city = nl.Normalize(latitude=53.338313, longitude=-6.238713)

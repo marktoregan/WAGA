@@ -10,7 +10,7 @@ class Population(object):
         self.available_stops = kwargs.get("available_stops", [])
         self.journey_manager = kwargs.get("journey_manager", [])
         self.preloaded_stops = kwargs.get("preloaded_stops")
-
+        print(f'size matters {len(self.journey_manager.stops)}')
         for i in range(0, self.population_size):
             self.journey_allocations.append(None)
 
