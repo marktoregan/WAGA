@@ -10,7 +10,7 @@ from collections import namedtuple
 class RunGA(object):
     def __init__(self, **kwargs):
         jm = pjm.PopulateJourneyManager()
-        self.journey_manager = jm.get_journey_manager(200)
+        self.journey_manager = jm.get_journey_manager(10)
         self.available_stops = []
         self.preloaded = []
         self.population_size = kwargs.get("population_size", 200)
@@ -18,6 +18,9 @@ class RunGA(object):
         self.generations = kwargs.get("generations", 10)
 
     def process(self):
+        for i in self.journey_manager.stops:
+            print(f'here now {i.starting_point} {i.end_point}')
+
         charge_types = ['Fast AC Type-2 43kW','Fast AC Type-2 44kW','Fast AC Type-2 50kW','CHAdeMO DC 44kW',
                         'CHAdeMO DC 45kW','CHAdeMO DC 50kW','CHAdeMO DC 22kW','Combo DC 44kW','Combo DC 45kW',
                        'Combo DC 50kW']

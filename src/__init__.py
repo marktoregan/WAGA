@@ -8,7 +8,7 @@ if __name__ == '__main__':
     print(datetime.now())
     #stop_ids = evcps.EvChargePoints.get_by_type("Fast AC Type-2 44kW")
     #run = rga.RunGA(generations=10, population_size=1000)
-    run = rga.RunGA(generations=10, population_size=600)
+    run = rga.RunGA(generations=10, population_size=10)
     run.process()
     #run.benchmark()
     print(datetime.now())
