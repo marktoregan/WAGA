@@ -22,3 +22,7 @@ class Normalize(object):
         b = max_y - min_y
         ans_latitude = a / b
         return round(ans_latitude * 100, ndigits=2)
+
+if __name__ == "__main__":
+    AbbertDemesne = Normalize(latitude=53.42776, longitude=-8.68485)
+    print(AbbertDemesne.x,AbbertDemesne.y)

@@ -21,6 +21,15 @@ class PopulateJourneyManager(object):
             self.journey_manager.add_journey(journey1)
         return self.journey_manager
 
+        Crumlin, Dublin, Ireland(53.328430, -6.304864)
+        Cork, Ireland(51.903614, -8.468399)
+        Limerick, Ireland(52.668018, -8.630498)
+        Dublin, Ireland(53.353584, -6.251495)
+        Dublin, Ireland(53.350140, -6.266155)
+        Ballinasloe, Co.Galway, Ireland(53.328053, -8.224597)
+        Gort, Co.Galway, Ireland(53.066643, -8.818749)
+
+
     # print(s)
     #
     # time1 = datetime(year=2018, month=2, day=27, hour=13, minute=00)

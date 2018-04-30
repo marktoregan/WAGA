@@ -1,0 +1,2000 @@
+name	latitude	longitude
+Abartagh	52.01916	-7.82345
+Abberanville	53.25817	-8.58564
+Abbernadoorny	54.68795	-8.15776
+Abbert	53.41798	-8.69303
+Abbert Demesne	53.42776	-8.68485
+Abbeville	53.08619	-8.06461
+Abbey	51.67659	-9.47670
+Abbey	53.44355	-8.74777
+Abbey	53.11038	-8.38972
+Abbey	53.43701	-8.74945
+Abbey	53.10337	-8.39013
+Abbey	52.31887	-8.45913
+Abbeycartron	53.73488	-7.79867
+Abbeycartron	53.84687	-8.18743
+Abbeyderg	53.63528	-7.79798
+Abbeydorney	52.34661	-9.68791
+Abbeydown	52.69197	-6.62453
+Abbey East	53.13463	-9.04522
+Abbeyfarm	52.40412	-8.57747
+Abbeyfeale	52.38618	-9.29707
+Abbeyfeale East	52.37266	-9.29278
+Abbeyfeale West	52.37814	-9.30517
+Abbeyfield	53.33235	-8.40244
+Abbeygormacan	53.21428	-8.35342
+Abbeygrove	52.62573	-7.14942
+Abbeyhalfquarter	54.11395	-9.14431
+Abbey Island	54.50860	-8.20015
+Abbey Island	51.75577	-10.15046
+Abbeyland	53.99098	-7.36126
+Abbeyland	52.90114	-6.84169
+Abbeyland	53.28970	-6.68202
+Abbeyland	53.64768	-6.42150
+Abbeyland	53.65958	-6.69814
+Abbeyland	53.62858	-7.39792
+Abbey Land	53.69189	-7.62327
+Abbeyland And Charlestown	53.60439	-7.49649
+Abbeyland Great	53.21488	-8.10689
+Abbeyland Little	53.23472	-8.05735
+Abbeyland North	53.62202	-8.74377
+Abbeylands	54.51402	-8.20686
+Abbeylands	52.14838	-9.74048
+Abbeylands	52.26727	-7.09736
+Abbeylands	52.52099	-8.93098
+Abbeylands	54.20056	-9.17776
+Abbeylands	52.79363	-6.15838
+Abbey-Lands	51.71497	-8.53070
+Abbeyland South	53.61716	-8.74042
+Abbeyland South	53.65531	-6.69937
+Abbeylara	53.77143	-7.45624
+Abbeylara	53.76528	-7.44887
+Abbeyleix	52.91528	-7.34790
+Abbeyleix Demesne	52.89514	-7.37782
+Abbeymahon	51.63306	-8.74760
+Abbeypark	53.28341	-8.22023
+Abbeyquarter	53.75680	-8.76685
+Abbeyquarter North	54.26981	-8.47078
+Abbeyquarter South	54.26674	-8.46833
+Abbeyshrule	53.57140	-7.65802
+Abbeyshrule	53.58251	-7.65756
+Abbeyside	52.09318	-7.61686
+Abbeystrowry	51.55522	-9.30019
+Abbeytown	53.50251	-9.06582
+Abbeytown	54.10833	-9.32127
+Abbeytown	54.21322	-8.53859
+Abbeyville	53.42894	-6.18436
+Abbeyville	53.09531	-8.38783
+Abbeyville	54.05723	-8.49539
+Abbey West	53.12497	-9.06233
+Abbotstown	53.38835	-6.36670
+Abelstown	53.71422	-6.59566
+Abington	52.63245	-8.41864
+Ablintown	52.27636	-6.52846
+Acantha	53.31229	-7.49188
+Acarreagh	54.00803	-6.44357
+Acaun	52.84620	-6.66464
+Achillbeg Island	53.86747	-9.95999
+Achill Sound	53.93026	-9.92664
+Achonry	54.08012	-8.66069
+Achonry	54.08043	-8.66391
+Ackeys Island	54.99073	-8.44591
+Aclamon	52.32020	-6.90126
+Aclare	52.68402	-6.74876
+Aclare	54.03646	-8.89665
+Aclint	53.91963	-6.63461
+Acraboy	52.50735	-8.21639
+Acragar	52.76533	-7.39526
+Acragar	53.10118	-7.31122
+Acraroe	52.60274	-7.34145
+Acre Beg	53.17363	-8.53557
+Acre East	53.43580	-8.28271
+Acre More	53.16856	-8.53776
+Acrenakirka	52.44296	-7.81223
+Acres	53.94628	-7.36182
+Acres	53.02082	-8.70786
+Acres	53.11135	-9.12364
+Acres	52.74679	-9.45708
+Acres	51.72974	-9.07382
+Acres	53.56728	-8.80777
+Acres	53.54023	-8.54829
+Acres	53.07334	-8.48643
+Acres	52.13349	-10.09289
+Acres	52.56566	-9.61370
+Acres	52.14326	-9.59697
+Acres	53.84292	-7.87584
+Acres	52.30185	-9.22261
+Acres	53.76769	-7.65412
+Acres	53.79164	-9.07108
+Acres	54.29098	-7.13795
+Acres	54.11597	-6.90781
+Acres	53.89632	-8.29754
+Acres	53.63031	-8.16396
+Acres	52.09352	-7.56292
+Acre West	53.42996	-8.29588
+Adamstown	51.82242	-8.50725
+Adamstown	53.33468	-6.45623
+Adamstown	53.55401	-6.35337
+Adamstown	52.43449	-8.48576
+Adamstown	53.86277	-6.35322
+Adamstown	53.53653	-6.74031
+Adamstown	52.80927	-7.85334
+Adamstown	52.23184	-7.23436
+Adamstown	53.48567	-7.52382
+Adamstown	52.40117	-6.72450
+Adamstown	52.39357	-6.71856
+Adamstown Lower	52.70660	-7.43524
+Adamstown Upper	52.70363	-7.44960
+Adamswood	52.53145	-8.86304
+Adare	52.56158	-8.78504
+Adare	52.56402	-8.79118
+Addane	52.79124	-8.15999
+Addanstown	53.58062	-6.86575
+Addergoole	52.96888	-8.90796
+Addergoole	53.54084	-9.91001
+Addergoole	52.82466	-7.50227
+Addergoole	53.82861	-8.91862
+Addergoole Beg	53.63120	-8.80680
+Addergoole More	53.60131	-8.72650
+Addergoole North	53.39096	-8.26047
+Addergoole South	53.38370	-8.24409
+Addergoole West	53.38577	-8.27584
+Addergown	52.44711	-9.70401
+Adderville	55.23167	-7.44711
+Adderwal	54.90600	-8.17325
+Addinstown	53.61789	-7.00674
+Addragool	53.31917	-9.15170
+Addrigoole	51.99693	-7.71844
+Addroon	52.94646	-8.95888
+Aderavoher	54.28439	-8.95629
+Adereen	53.92032	-8.06031
+Aderg	53.73917	-8.74522
+Aderrig	53.33886	-6.48611
+Admiran	54.81163	-7.76762
+Adoon	53.97362	-7.83727
+Adragool	53.72775	-8.45885
+Adramone Beg	52.16181	-7.50236
+Adramone More	52.15798	-7.51343
+Adraval	52.17922	-9.37953
+Adrigole	51.69712	-9.72956
+Adrigole	51.69420	-9.72281
+Adrigool	51.59443	-9.21804
+Adrivale	52.02228	-9.11531
+Adruel	52.96014	-7.92515
+Afaddy	52.31430	-7.25825
+Affane	52.12262	-7.83551
+Affane Hunter	52.13164	-7.83555
+Affick	52.91401	-8.79469
+Affoley	52.53214	-7.50792
+Affollus	53.41159	-6.55480
+Affouley	52.47160	-9.55855
+Afoley	53.15334	-7.47801
+Agall	53.26076	-7.59230
+Aggard Beg	53.20445	-8.75375
+Aggard More	53.21923	-8.75148
+Agha	52.73348	-6.91518
+Agha	51.61121	-8.72304
+Agha	52.71049	-7.16065
+Aghabane	54.02350	-7.55978
+Aghabeg	52.66456	-6.88549
+Aghabeg	51.66408	-9.77203
+Aghabeg East	52.40798	-9.66784
+Aghabeg Middle	52.40516	-9.68403
+Aghabeg West	52.40952	-9.69209
+Aghabehy	54.09109	-8.15671
+Aghaboe	52.92851	-7.52052
+Aghaboe	52.92036	-7.51191
+Aghabog	54.14724	-7.09589
+Aghaboneill	54.00308	-7.88020
+Aghaboy	53.79982	-7.44576
+Aghaboy	54.18980	-7.75384
+Aghaboy	53.74607	-7.56160
+Aghaboy	54.32879	-6.91999
+Aghaboy	53.27061	-7.81430
+Aghaboy North	54.28963	-7.03431
+Aghaboys	54.03342	-6.37516
+Aghaboy South	54.26394	-7.09126
+Aghabrack	53.75546	-7.48583
+Aghabrack	53.45194	-7.55247
+Aghabrick	54.24118	-6.89726
+Aghabullogue	51.94430	-8.80785
+Aghaburren	52.28638	-8.71760
+Aghacarra	54.03236	-8.27396
+Aghacarrible	52.12867	-10.18078
+Aghacashel	53.85309	-7.15521
+Aghacashel	54.07323	-7.93632
+Aghacashlaun	54.04284	-7.93090
+Aghaclay	54.17533	-7.03791
+Aghaclogha	54.30806	-7.01755
+Aghacloghan	54.02313	-6.77252
+Aghaclogher	53.70938	-8.07914
+Aghacocara	53.42164	-7.92347
+Aghaconny	53.91777	-7.37610
+Aghacoora	52.37729	-9.65155
+Aghacordrinan	53.82297	-7.62502
+Aghacreevy	53.83013	-7.35185
+Aghacross	52.25756	-8.40191
+Aghacunna	51.87593	-9.09403
+Aghacurreen	52.08712	-9.55619
+Aghacurreen	53.85673	-8.56379
+Aghada	51.83787	-8.21816
+Aghada	51.83699	-8.20900
+Aghadachor	55.14653	-7.84077
+Aghadaghly	55.19876	-7.65842
+Aghadangan	53.74756	-8.07354
+Aghadark	54.05289	-7.81472
+Aghadaugh	53.54695	-7.21996
+Aghade	52.76877	-6.75098
+Aghadegnan	53.74193	-7.80665
+Aghaderrard East	54.42297	-8.23392
+Aghaderrard West	54.42890	-8.23713
+Aghaderry	54.40466	-6.98696
+Aghaderry	53.84153	-8.57038
+Aghadiffin	53.86649	-8.71955
+Aghadoe	51.95102	-8.00105
+Aghadonagh	53.69280	-7.59831
+Aghadonagh	53.28750	-7.62324
+Aghadooey Glebe	53.89760	-9.57076
+Aghadoon	53.91107	-7.32489
+Aghadoon	54.27318	-10.03113
+Aghadouglas	52.99348	-7.84393
+Aghadowey	54.58616	-8.05497
+Aghadown	51.54246	-9.37577
+Aghadown	51.56059	-9.39044
+Aghadowry	53.83740	-7.67436
+Aghadreen	52.90898	-7.17942
+Aghadreenagh	54.07580	-7.30999
+Aghadreenan	55.18734	-7.65842
+Aghadreenan	54.07677	-6.71498
+Aghadrestan	53.85454	-8.58528
+Aghadrinagh	53.83320	-9.30735
+Aghadrumcarn	53.95370	-7.88055
+Aghadrumcru	54.40378	-7.00510
+Aghadrumderg	53.92079	-7.85533
+Aghadrumdoney	54.11290	-7.28431
+Aghadrumgowna	54.00767	-7.18838
+Aghadrumgullin	54.03750	-7.36982
+Aghadruminshin	53.98015	-7.70451
+Aghadrumkeen	54.14830	-7.05899
+Aghadrumkeen	54.14813	-7.06007
+Aghaduff	51.96074	-8.30763
+Aghadunvane	54.42690	-8.27048
+Aghafad	53.82870	-7.36227
+Aghafad	53.71295	-7.80335
+Aghafad	53.95802	-6.65707
+Aghafadda	53.37661	-8.64790
+Aghafadda	53.59301	-9.25850
+Aghafarnan	53.87773	-6.82337
+Aghafin	52.96721	-7.52182
+Aghafin	53.70079	-7.59534
+Aghafin	54.21814	-7.19368
+Aghafin	53.31996	-7.83204
+Aghafin	54.06143	-8.07929
+Aghafin	53.39017	-7.76516
+Aghafin	53.51297	-7.75309
+Aghafore	51.61593	-8.80261
+Aghafoy	54.54787	-7.85162
+Aghafullim	53.36229	-6.72245
+Aghagad	53.59915	-8.34410
+Aghagad	54.38557	-8.53738
+Aghagadda	51.89050	-10.31115
+Aghagah	53.92433	-7.63030
+Aghagally	54.30011	-7.01360
+Aghagashlan	54.06099	-7.00687
+Aghagaw	54.22422	-7.13317
+Aghagegna	53.88733	-7.30096
+Aghaginny	54.06743	-7.99478
+Aghaglasheen	54.25922	-9.95440
+Aghaglass	53.97686	-6.57153
+Aghaglassan	55.22253	-7.16745
+Aghaglinny North	53.13890	-9.23662
+Aghaglinny South	53.12740	-9.23486
+Aghagolrick	53.98362	-7.23092
+Aghagoogy	53.17264	-7.81821
+Aghagooheen	51.65088	-9.48159
+Aghagower	53.76215	-9.46220
+Aghagower	53.76340	-9.46509
+Aghagower	53.58949	-8.32212
+Aghagowla	54.04621	-8.27095
+Aghagowla Beg	53.85214	-9.49649
+Aghagowla More	53.84944	-9.51213
+Aghagrania	54.06897	-8.00616
+Aghagreagh	53.80134	-7.63609
+Aghagurty	53.06388	-7.75281
+Aghahull	55.03977	-7.63005
+Aghakee	53.90170	-7.30835
+Aghakeel	53.61459	-8.00949
+Aghakeeran	53.81818	-7.60455
+Aghakilbrack	54.06618	-7.98731
+Aghakilconnell	53.99421	-7.98408
+Aghakilfaughna	53.94453	-7.85589
+Aghakilmore	54.01810	-8.01599
+Aghakilmore	53.79896	-7.59915
+Aghakilmore Lower	53.84249	-7.37383
+Aghakilmore Upper	53.83310	-7.37501
+Aghakine	53.83972	-7.59057
+Aghakinnigh	54.16775	-7.67207
+Aghakista	54.09030	-6.87701
+Aghaknock	53.94043	-7.50951
+Aghalacka	52.59162	-8.98549
+Aghalackan	53.97272	-7.30565
+Aghalahard	53.55734	-9.30570
+Aghalahard	53.71318	-8.08969
+Aghalasty And Ankersland	53.67511	-7.21479
+Aghalateeve	53.61998	-8.43927
+Aghalateeve	54.38417	-8.28658
+Aghalattafraal	53.88048	-7.21816
+Aghalattive	55.15041	-7.89853
+Aghalatty	55.16430	-7.76384
+Aghalaverty	54.24754	-6.90869
+Aghaleague	54.04780	-7.78781
+Aghaleague	54.26029	-9.33674
+Aghalee Beg	52.09497	-9.55681
+Aghalee More	52.09380	-9.54818
+Aghalenane	54.10130	-8.41335
+Aghalenty	54.98928	-7.68383
+Aghalile	53.99047	-6.74807
+Aghalinane	51.74833	-8.97824
+Aghalion	53.84652	-7.16179
+Aghalisk	54.24103	-7.03428
+Aghaliskeevan	54.36266	-6.98010
+Aghalissabeagh	54.26310	-7.12514
+Aghaloaghan	53.86998	-6.82760
+Aghaloonteen	54.01858	-9.34687
+Aghaloory	53.86110	-7.38629
+Aghalough	54.56461	-7.84674
+Aghalough	53.97973	-7.75152
+Aghalough	54.15588	-7.04156
+Aghaloughan	53.87375	-7.17047
+Aghaloughan	53.62956	-7.99211
+Aghaloughan	54.30032	-6.90571
+Aghalour	53.80930	-8.54700
+Aghalusky	53.87291	-9.11252
+Aghalusky	53.29193	-7.59461
+Aghalust	53.68164	-7.77388
+Aghalustia	53.87561	-8.56690
+Aghamackalinn	54.38834	-7.05980
+Aghamaddock	53.00123	-7.14957
+Aghamafir	52.91914	-7.12728
+Aghamannan	53.79560	-8.01679
+Aghamarta	51.79584	-8.33598
+Aghameelick	53.23982	-7.11304
+Aghameelta	54.24592	-8.25336
+Aghameelta Barr	54.27542	-8.26198
+Aghameen	54.03815	-6.27293
+Aghameeny	53.95428	-8.07018
+Aghamilla	51.62810	-8.93550
+Aghamore	53.02162	-7.52532
+Aghamore	54.11618	-8.08541
+Aghamore	53.89900	-7.95399
+Aghamore	53.67535	-7.98502
+Aghamore	53.77669	-9.56435
+Aghamore	53.83149	-8.82409
+Aghamore	53.82769	-8.82447
+Aghamore	53.86401	-6.83213
+Aghamore	53.35272	-7.61125
+Aghamore	53.74594	-8.04040
+Aghamore	53.87155	-8.13829
+Aghamore	53.37123	-7.50282
+Aghamore Far	54.23128	-8.43986
+Aghamore Lower	53.88272	-7.65746
+Aghamore Near	54.23872	-8.45835
+Aghamore North	52.39990	-9.71756
+Aghamore South	52.39240	-9.72007
+Aghamore Upper	53.82879	-7.64578
+Aghamuck	53.70652	-8.10439
+Aghamucky	52.80656	-7.17178
+Aghanacrinna	52.36755	-9.67937
+Aghanageeragh	53.69693	-7.66780
+Aghanagh	54.03858	-8.33264
+Aghanagran Lower	52.53627	-9.50494
+Aghanagran Middle	52.54459	-9.50908
+Aghanagran Upper	52.55075	-9.51539
+Aghanahil	53.42464	-8.52858
+Aghanahown	53.69579	-7.72394
+Aghanameena	54.29932	-7.08723
+Aghananimy	54.23822	-6.95669
+Aghanapisha	53.51269	-7.79441
+Aghanargit	53.39999	-7.73231
+Aghanascortan	53.45590	-6.99774
+Aghanashanamore	53.43153	-7.78665
+Aghanboy	51.89210	-10.30338
+Aghancarnan	53.32013	-7.50981
+Aghancarra	53.95653	-8.06431
+Aghancon	53.03592	-7.77991
+Aghaneenagh	52.17992	-9.01256
+Aghangaddy Glebe	55.01547	-7.66525
+Aghanlish	54.41240	-8.28056
+Aghanoran	53.84762	-7.53906
+Aghanrush	53.21987	-7.43585
+Aghantrah	53.68557	-7.85284
+Aghanure	52.88103	-6.93141
+Aghanure	53.01727	-6.93738
+Aghanure	52.93808	-7.04033
+Aghanursan	55.08906	-7.68484
+Aghanvally	53.60642	-7.72131
+Aghanvilla	53.21193	-7.32007
+Aghanvoneen	53.40462	-7.83345
+Aghany	53.18946	-8.29488
+Aghany	53.76016	-9.89315
+Agharah	53.97677	-6.96199
+Agharahan	53.97138	-7.31974
+Agharanagh	53.62140	-8.01486
+Agharann	53.98658	-7.71463
+Agharanny	53.39104	-7.80465
+Agharaskilly	54.10167	-7.59140
+Aghards	53.34497	-6.55007
+Aghareagh	53.72295	-7.49841
+Aghareagh	54.14106	-7.13678
+Aghareagh Bog	53.71732	-7.85214
+Aghareagh East	54.09832	-7.16211
+Aghareagh West	54.11023	-7.23121
+Agharevagh East	53.37777	-7.75393
+Agharevagh West	53.38147	-7.83627
+Aghareville Lower	53.76094	-9.00972
+Aghareville Upper	53.75588	-9.01614
+Agharickard	53.71988	-7.72648
+Agharinagh	51.91768	-8.73661
+Agharoosky	54.42803	-8.28837
+Agharra	53.59471	-7.62857
+Agharroo	54.45308	-8.33118
+Agharrow	54.38891	-8.57436
+Agharue	52.77791	-7.07128
+Aghasheil	54.81285	-7.79956
+Aghataharn	53.84355	-8.75283
+Aghatamy	53.97728	-6.78702
+Aghatawny Lower	54.04361	-7.79089
+Aghatawny Upper	54.04229	-7.79372
+Aghateeduff	54.03363	-7.32516
+Aghateemore Glebe	53.99488	-7.22186
+Aghateggal	53.93669	-7.30602
+Aghaterry	52.86947	-7.06818
+Aghateskin	54.03026	-6.69812
+Aghathomas	53.57238	-6.85994
+Aghatotan	54.04636	-7.15105
+Aghatubbrid	55.25245	-7.14740
+Aghatubrid	51.88892	-10.20948
+Aghatubrid	51.89435	-10.22489
+Aghatubrid Beg	51.57216	-9.12689
+Aghatubrid More	51.56915	-9.13492
+Aghavadden	54.03498	-7.86144
+Aghavadden	53.60119	-7.96227
+Aghavaddy	53.91602	-7.28636
+Aghavadrin	54.00801	-7.55545
+Aghavannagh	52.92386	-6.41062
+Aghavannagh	52.94121	-6.43678
+Aghavannagh Mountain	52.94417	-6.47037
+Aghavannan Far	55.10365	-7.54962
+Aghavannan Near	55.10175	-7.54207
+Aghavanny	54.34979	-8.00944
+Aghavas	53.95808	-7.71571
+Aghavas	53.95627	-7.71793
+Aghaveagh	54.79629	-7.89253
+Aghaveans	53.87955	-7.52213
+Aghavilla	54.08767	-7.47403
+Aghavilla	54.00332	-7.67418
+Aghavilla	54.00000	-6.71328
+Aghaville	51.65101	-9.36581
+Aghaviller	52.46466	-7.27297
+Aghavine	51.90563	-7.94547
+Aghavoghil	54.40985	-8.22582
+Aghavoher	54.08433	-7.56298
+Aghavoneen	53.38293	-7.81781
+Aghavore	53.97826	-7.60070
+Aghavrin	51.93003	-8.82017
+Aghawaracahill	53.89591	-8.05290
+Aghaward	53.79593	-7.65113
+Aghaward	53.93941	-9.08864
+Aghaway	54.01774	-7.18349
+Aghawee	53.88210	-7.34172
+Aghawee	54.81600	-7.54318
+Aghaweely Lower	53.89489	-7.40248
+Aghaweely Upper	53.90867	-7.41096
+Aghaweenagh	54.07666	-7.58725
+Aghawerriny	53.69894	-8.08677
+Aghawillin	54.07519	-7.72901
+Aghawillin	53.95829	-7.64839
+Aghawinnaun	53.09417	-9.03431
+Aghawonan	53.81274	-7.24705
+Aghawoney	55.04335	-7.73090
+Aghayeevoge	54.66213	-8.41746
+Aghclare	52.55173	-7.00387
+Aghcross	52.87318	-7.04683
+Aghduff	53.01331	-7.63379
+Agheeshal	54.07437	-6.72926
+Aghenderry	52.59447	-7.33965
+Agher	53.45252	-6.74039
+Agheracalkill	54.28467	-7.08339
+Agheragh	53.88483	-6.91334
+Agherakeltan	54.29150	-7.09444
+Agheralane	54.11036	-6.89190
+Aghern East	52.09500	-8.15388
+Aghern West	52.09339	-8.16361
+Aghfarrell	53.23009	-6.41830
+Aghfarrell	53.22980	-6.42004
+Aghills	51.56194	-9.19424
+Aghilly And Lenynarnan	55.13534	-7.43295
+Aghinaspick	53.65568	-7.79708
+Aghinillard	53.97052	-6.81005
+Aghinish	53.65302	-9.28078
+Aghinraheen	52.60855	-7.34908
+Aghintamy	54.23668	-6.91435
+Aghintass	53.89696	-7.95989
+Aghinteeduff	53.81838	-7.88386
+Aghintemple	53.69970	-7.74152
+Aghintober	53.95227	-8.00360
+Aghlacon	54.29262	-8.11416
+Aghlattacru	53.94488	-6.73040
+Aghleam	54.12083	-10.11381
+Aghleam	54.11822	-10.10154
+Aghlehard	54.92611	-7.66250
+Aghlem	54.65511	-8.02980
+Aghlin	54.06839	-7.91112
+Aghlisk	53.54319	-8.81789
+Aghloonagh	53.78249	-8.27497
+Aghmacart	52.82301	-7.51347
+Aghmagree	53.63151	-8.12278
+Aghmakerr	54.06420	-6.83257
+Aghmanister And Spital	51.62578	-8.77969
+Aghnabohy	53.54893	-7.61049
+Aghnacally	54.16704	-7.64537
+Aghnacally Glebe	53.71669	-7.71408
+Aghnaclea	54.15657	-6.92707
+Aghnacliff	53.84387	-7.61162
+Aghnacliff	53.84779	-7.60464
+Aghnaclue	53.87477	-6.97289
+Aghnacollia	54.17174	-7.80150
+Aghnacor	53.97335	-7.54402
+Aghnacranagh	53.62819	-7.81736
+Aghnacreevy	54.03949	-7.58126
+Aghnacross	52.88845	-7.27009
+Aghnacross	53.92434	-7.85826
+Aghnacross	53.60326	-7.95395
+Aghnacue	54.15353	-7.06928
+Aghnadamph	54.15719	-6.66945
+Aghnadaragan	54.03779	-7.21870
+Aghnadrung	53.84297	-7.08138
+Aghnafarcan	54.06291	-6.74602
+Aghnagap	54.32085	-6.92589
+Aghnagarron	53.79939	-7.49884
+Aghnagillagh	53.45699	-7.05736
+Aghnaglear	52.51443	-6.86056
+Aghnaglogh	54.02088	-7.14215
+Aghnaglogh	53.95847	-7.34257
+Aghnaglogh	54.22217	-6.88725
+Aghnagollop	54.03528	-8.02322
+Aghnagore	53.72851	-7.90341
+Aghnagrange	53.96023	-8.30584
+Aghnagross	52.94979	-7.97113
+Aghnaguig	54.06728	-7.40475
+Aghnaha	54.36259	-6.93140
+Aghnahaha	54.38049	-8.15338
+Aghnahaia Glebe	53.90947	-7.34319
+Aghnahederny	53.85083	-7.28885
+Aghnahily	53.02436	-7.21204
+Aghnahily Bog	53.03364	-7.23748
+Aghnahola	54.12299	-7.25888
+Aghnahoo	54.37996	-8.18642
+Aghnahoo	54.02648	-8.00475
+Aghnahoo Glebe	54.53885	-7.85879
+Aghnahunshin	53.82336	-7.91315
+Aghnahunshin	54.25944	-7.09411
+Aghnakeeragh	54.86548	-7.62090
+Aghnamaddoo	53.78344	-7.77824
+Aghnamallagh	54.23568	-7.06188
+Aghnamard	54.14359	-7.21420
+Aghnameadle	52.84656	-7.97806
+Aghnameal	54.19160	-6.85096
+Aghnamona	53.82795	-7.89568
+Aghnamullen	54.09505	-6.95336
+Aghnamullen	54.09506	-6.95954
+Aghnananagh	53.30274	-7.59325
+Aghnaneane	53.82470	-6.85812
+Aghnasedagh	54.24896	-6.93730
+Aghnashalvy	54.25661	-7.13705
+Aghnashannagh	53.78453	-7.66350
+Aghnashingan	53.64359	-7.82522
+Aghnasillagh	53.64305	-7.71532
+Aghnaskea	53.68343	-7.87225
+Aghnaskea	54.18376	-7.12671
+Aghnaskeagh	53.80456	-7.26700
+Aghnaskeagh	54.05524	-6.36631
+Aghnaskerry	53.99253	-7.35392
+Aghnaskew	54.07587	-6.93766
+Aghnaskew	54.11025	-7.25302
+Aghnasullivan	53.38608	-7.83690
+Aghnasurn	54.02312	-8.25374
+Aghnavar	54.40276	-6.99884
+Aghnavealoge	53.62421	-7.58808
+Aghody	52.99134	-7.77983
+Aghoney	52.93411	-7.19312
+Aghoo	54.02720	-7.80318
+Aghoo	54.26644	-9.40480
+Aghoo	54.03844	-8.21645
+Aghoo	54.15021	-8.30923
+Aghoo East	54.02711	-7.79080
+Aghoos	54.24660	-9.77079
+Aghoo West	54.03354	-7.80391
+Aghort	51.84438	-10.32452
+Aghoutereery	53.84360	-7.29043
+Aghowle Lower	52.76384	-6.61717
+Aghowle Lower	52.99211	-6.16648
+Aghowle Upper	52.75447	-6.60302
+Aghowle Upper	52.98855	-6.18522
+Aghpaudeen	53.26209	-6.70637
+Aghraboy	53.11956	-7.68585
+Aghrafinigan	54.01792	-8.22665
+Aghragh	54.65152	-8.65999
+Aghrane	53.54408	-8.33593
+Aghsmear	52.90678	-7.79933
+Aghtaboy	53.81597	-8.87370
+Aghuldred	53.35309	-7.46228
+Aghullaghy	53.99579	-7.52253
+Aghwater	52.81452	-6.81760
+Aghyohil Beg	51.70583	-8.88150
+Aghyohil More	51.70841	-8.89019
+Aghyowla	54.04866	-7.76768
+Aghyrassy	53.38827	-7.46429
+Aglish	52.98702	-8.99991
+Aglish	51.88541	-8.76842
+Aglish	52.11618	-9.59545
+Aglish	52.13327	-10.14020
+Aglish	53.04087	-8.08607
+Aglish	52.12875	-8.02743
+Aglish	52.07151	-7.82226
+Aglish North	52.28445	-7.19776
+Aglish South	52.27761	-7.20918
+Agloragh	53.73141	-8.77991
+Agrimhill	53.12333	-8.29952
+Ahabeg	52.62842	-8.52214
+Ahaclare	52.80079	-8.70188
+Ahacore	52.63759	-8.43005
+Ahadagh	52.38076	-8.89203
+Ahadallane	52.02264	-8.69766
+Ahaga	52.70304	-9.34710
+Ahagilla	51.58598	-8.93124
+Ahaglaslin	51.57220	-8.99960
+Ahaglugger	53.25155	-9.15769
+Ahakeera	51.77690	-9.04057
+Ahakista	51.59990	-9.63219
+Ahalahana	52.50389	-9.40005
+Ahalisky	51.67968	-8.85022
+Ahanagh	53.81353	-7.88083
+Ahanaglogh	52.18927	-7.45565
+Ahanduff Beg	53.17278	-8.31968
+Ahanduff More	53.17550	-8.32087
+Ahane	52.23820	-9.59781
+Ahane	52.71621	-8.38452
+Ahane Beg	52.09470	-9.11810
+Ahaneboy	52.27754	-9.43012
+Ahane Lower	52.09152	-9.13180
+Ahane Upper	52.10101	-9.12741
+Ahanroe	53.83003	-9.24695
+Ahanure North	52.52454	-7.43196
+Ahanure South	52.51920	-7.41553
+Ahapouleen	53.22391	-8.95974
+Ahare	52.71025	-6.18733
+Aharinaghbeg	52.74765	-8.60351
+Aharinaghmore	52.74788	-8.58191
+Aharney	52.80717	-7.41507
+Aharney	53.30396	-7.57346
+Ahascra	52.46897	-9.61258
+Ahascragh	53.39761	-8.33463
+Ahascragh East	53.40001	-8.32713
+Ahascragh West	53.39632	-8.33633
+Ahasla	52.88563	-9.11280
+Ahaun	53.56966	-8.60727
+Ahaun	52.29614	-9.24647
+Ahaun	52.15840	-8.02086
+Ahaun	52.02012	-7.66650
+Ahaunboy North	52.12604	-8.00242
+Ahaunboy South	52.11585	-8.00581
+Ahaveheen	52.38673	-8.91517
+Ahawilk	52.38871	-8.99550
+Ahena	53.71240	-9.08930
+Ahenny	52.41062	-7.39747
+Ahenny	52.41416	-7.39256
+Ahenny Little	52.41656	-7.40173
+Aherla	51.85367	-8.73260
+Aherla Beg	51.85538	-8.75538
+Aherla More	51.85509	-8.73013
+Ahgloragh	53.50632	-8.78111
+Ahidelake	51.60916	-8.84860
+Ahil Beg	51.76531	-9.38137
+Ahildotia	51.76113	-9.37606
+Ahil More	51.75613	-9.39920
+Ahimma	52.49102	-9.65088
+Ahnagurra	52.35619	-8.36896
+Aighan	54.64711	-8.38607
+Aighe	54.73053	-8.43929
+Aillbrack	52.89308	-9.34707
+Ailldavore	52.82342	-9.19827
+Aille	53.24901	-9.39017
+Aille	53.76202	-9.41126
+Aillebaun	53.65466	-9.55777
+Aillebrack	53.41367	-10.12918
+Aillemore	52.80934	-8.51149
+Aillemore	53.70055	-9.87727
+Aillenacally	53.42211	-9.89078
+Aillenaveagh	53.52155	-9.91085
+Aillroe Beg	52.62161	-9.18857
+Aillroe More	52.64082	-9.18504
+Aillvaun	52.94614	-8.65246
+Aillwee	53.08637	-9.11063
+Airgloony	53.52546	-8.87890
+Akip	52.88270	-7.57125
+Alasty	53.27172	-6.60356
+Alderborough	53.24116	-7.33849
+Alderford	54.07200	-8.20232
+Aldridge	52.21389	-6.90384
+Aldworth	52.09460	-8.72898
+Alexander Reid	53.64828	-6.64105
+Alkill	54.25039	-6.86404
+Alla	54.54115	-8.17503
+Allagesh	54.26188	-7.10858
+Allaghee Beg	51.84852	-10.35707
+Allaghee More	51.81252	-10.33296
+Allagh Island	55.07898	-8.36955
+Allagour	53.24266	-6.37336
+Allaphreaghaun	53.25796	-9.23187
+Allardstown	53.99430	-6.48173
+Allcollege	53.56842	-6.42893
+Alleen	52.53021	-8.10958
+Alleendarra East	53.03645	-8.43002
+Alleendarra West	53.04119	-8.44904
+Allenagh	53.74076	-7.75524
+Allengort	52.66608	-7.95121
+Allenstown Big	52.22044	-6.40063
+Allenstown Demesne	53.67654	-6.83169
+Allenstown Little	52.22464	-6.40554
+Allenswood	53.37906	-6.46670
+Allenswood	53.37712	-6.47186
+Allenwood	53.28395	-6.86185
+Allenwood Middle	53.28576	-6.88734
+Allenwood North	53.29411	-6.89087
+Allenwood South	53.27841	-6.89641
+Alliganstown	53.10011	-6.64426
+Allihies	51.64733	-10.05146
+Allihies	51.64126	-10.04416
+Alloonbaun	53.38393	-8.48401
+Alloon Lower	53.39235	-8.47874
+Alloon Upper	53.38850	-8.49348
+Allygola	53.11418	-8.46345
+Allykeolaun	53.10561	-8.49005
+Almondstown	53.78542	-6.27827
+Alohart	52.02261	-9.68227
+Alsmeed	54.16292	-6.65678
+Alt	54.19484	-9.89320
+Altachullion Lower	54.16466	-7.79168
+Altachullion Upper	54.15506	-7.78564
+Altadoo	54.67490	-8.16825
+Altadush	54.93380	-7.96703
+Altaghaderry	54.98995	-7.41219
+Altagowlan	54.11324	-8.15441
+Altahalla	55.24247	-7.40622
+Altakeeran	54.11678	-7.89644
+Altamira	52.27752	-8.79181
+Altamont	52.73613	-6.72028
+Altan	55.04196	-8.07823
+Altanelvick	54.20667	-8.65302
+Altans	54.24124	-8.84506
+Altar	51.51973	-9.63806
+Altartate Glebe	54.18143	-7.21733
+Altashane	55.24877	-7.34751
+Altaskin	54.93096	-7.47282
+Altateskin	54.15157	-7.79509
+Altatraght	54.82922	-8.02431
+Altavilla	52.97115	-7.56781
+Altavilla	52.56069	-8.98779
+Altavra	54.21450	-8.11886
+Altbaun	53.86769	-9.05076
+Altbeagh	53.97014	-7.19590
+Altbrean	54.17071	-7.78106
+Altclogh	54.70742	-8.64655
+Altcor	54.69506	-8.29032
+Altcrock	54.14685	-7.80612
+Altderg	54.23181	-9.48843
+Alteen	54.20416	-7.76241
+Alteen	54.19816	-8.07065
+Alteenacres Glebe	54.19405	-8.05844
+Alternan Park	54.27075	-8.90150
+Altidore Demesne	53.10735	-6.14658
+Altilow	54.70547	-8.09956
+Altinierin	54.91815	-7.96447
+Altinure	54.15901	-7.76771
+Altiquin	54.12413	-8.11688
+Altlahan	54.87468	-7.96421
+Alt Lower	54.77033	-7.58890
+Altmush	53.83306	-6.80002
+Altnabrocky	54.06456	-9.62054
+Altnadarragh	54.16047	-7.81248
+Altnagapple	54.73149	-8.38653
+Altnapaste	54.79692	-7.92543
+Altnapaste	54.81360	-7.88936
+Altnasheen	54.18134	-7.93388
+Altoghil	54.09791	-8.10346
+Altore	53.69864	-8.68193
+Alts	53.97764	-6.79761
+Altshallan	54.17059	-7.91999
+Alt Upper	54.75706	-7.60742
+Altvelid	54.20091	-8.35652
+Alva	52.72679	-9.41353
+Amberhill	52.22536	-7.26500
+Ambrosetown	52.24987	-6.66890
+America	53.32037	-8.07048
+Amogan Beg	52.53142	-8.89962
+Amogan More	52.51764	-8.89119
+Amorset	54.31213	-8.19277
+Anablaha	52.12685	-9.38762
+Anaglog	53.81585	-6.52840
+Anaharlick	51.78360	-9.02129
+Anascaul	52.15108	-10.05675
+Anatrim	52.98050	-7.56188
+Anaverna	54.06642	-6.33151
+Anbally	53.41992	-8.89743
+Andresna	54.04342	-8.28532
+Anglesborough	52.33716	-8.26968
+Anglesborough	52.34030	-8.28954
+Angliham	53.32192	-9.05935
+Anglode	52.60946	-8.52099
+Anglont	52.10167	-9.75457
+Anglore	52.24245	-9.44816
+Angram	51.64300	-9.29221
+Anhid East	52.50203	-8.71331
+Anhid West	52.50055	-8.72628
+Ankail	51.83250	-9.84489
+Ankers Bower	53.41944	-7.92862
+Anna Beg	52.20299	-9.47751
+Annabella	52.14015	-8.66752
+Annacarney	53.09079	-6.52564
+Annacarriga	51.75885	-8.34964
+Annacarty	52.56442	-8.11039
+Annacatty	54.30682	-6.86427
+Annacloghan	54.05586	-8.10036
+Annacotty	52.66805	-8.53768
+Annacramph	54.25879	-6.88539
+Annacrivey	53.19172	-6.22225
+Annacroff	53.96981	-6.67632
+Annadale	52.09564	-9.76566
+Annadrumman	54.09429	-6.69875
+Annaduff	53.92259	-7.98946
+Annaduff Glebe	53.92637	-7.97742
+Annafarney	54.01139	-6.95452
+Annagally	54.30855	-7.03865
+Annagannihy	52.01710	-8.88326
+Annagap	52.15892	-10.06773
+Annagar	52.71482	-7.06835
+Annagary	55.00603	-8.31970
+Annagary	55.02198	-8.32028
+Annagassan	53.88262	-6.34349
+Annagelliff	53.98758	-7.34099
+Annagerril	54.00548	-6.62268
+Annagh	53.91319	-6.81541
+Annagh	52.89929	-8.65010
+Annagh	55.27440	-7.41547
+Annagh	53.41762	-8.82646
+Annagh	53.38594	-8.45756
+Annagh	53.07965	-8.77475
+Annagh	52.23339	-9.77017
+Annagh	52.17268	-9.71163
+Annagh	52.99157	-7.58311
+Annagh	54.21251	-8.19680
+Annagh	52.67630	-8.45502
+Annagh	52.41412	-8.30497
+Annagh	53.54630	-7.83795
+Annagh	53.87768	-7.66920
+Annagh	53.91977	-6.64592
+Annagh	54.23723	-10.08907
+Annagh	53.60960	-9.29281
+Annagh	53.78424	-8.78344
+Annagh	53.83163	-9.36441
+Annagh	53.42711	-7.02678
+Annagh	53.71632	-7.22523
+Annagh	54.35111	-6.95584
+Annagh	53.72229	-8.50878
+Annagh	54.09890	-8.36893
+Annagh	53.91646	-8.46724
+Annagh	54.05748	-8.83103
+Annagh	54.05815	-8.82000
+Annagh	53.12898	-7.99516
+Annagh	53.44905	-7.86046
+Annagh	52.56874	-6.29122
+Annaghaderg	54.01905	-7.91443
+Annaghanerrig	53.11408	-7.95534
+Annaghanmoney	53.97007	-6.62842
+Annaghard	54.04692	-7.05391
+Annagharnet	53.87275	-7.05517
+Annagharvey	53.25559	-7.39496
+Annaghaskin	53.21081	-6.17364
+Annaghasna	53.97942	-7.95978
+Annaghbeg	53.37401	-8.27012
+Annaghbeg	52.11452	-9.34516
+Annaghbeg	53.66016	-7.90788
+Annaghbeg	54.33430	-6.89448
+Annaghbeg	53.78937	-8.14346
+Annaghbeg	53.98228	-8.07969
+Annaghbeg	53.92783	-8.48956
+Annaghbeg	52.91129	-8.25738
+Annagh Beg	51.79367	-8.60907
+Annagh Beg	52.01655	-9.31915
+Annagh Beg	54.23519	-9.36215
+Annagh Beg	54.17316	-8.54672
+Annagh Bogs	52.29770	-8.75275
+Annaghboy	54.24854	-8.18927
+Annaghbrack	54.20451	-7.06660
+Annaghbrack Glebe	53.18216	-7.57102
+Annaghbradican	53.98025	-7.98576
+Annaghbride	53.18931	-8.47167
+Annaghcallow	53.21941	-8.20996
+Annaghcarthy	54.12492	-8.32591
+Annagh Central	52.73852	-6.35192
+Annaghcooleen	53.80006	-7.86806
+Annaghcor	54.08437	-8.36950
+Annaghcorrib	53.25817	-8.10424
+Annaghdaniel	53.87430	-7.64724
+Annaghderg Lower	53.98486	-7.85276
+Annaghderg Upper	53.98769	-7.84475
+Annaghdown	53.39428	-9.07513
+Annaghdown	53.38813	-9.07104
+Annaghduff	54.05475	-7.33519
+Annagheane	54.11194	-7.29158
+Annaghearly	53.98855	-7.98966
+Annagh East	53.40621	-9.04432
+Annaghervy	54.23982	-7.05349
+Annaghfin	52.51124	-6.49250
+Annaghgap	52.75078	-6.36658
+Annaghgerry	54.16347	-8.11210
+Annaghgortagh	53.43847	-7.86917
+Annaghgowan	54.05614	-8.29753
+Annaghhill	52.74456	-6.37651
+Annagh Hill	53.40339	-8.82339
+Annagh Hill	53.86479	-9.01607
+Annaghierin	53.98201	-6.94501
+Annaghilymore	52.09368	-9.35323
+Annagh Island	53.98317	-9.86719
+Annaghkeelaun	53.42563	-9.27993
+Annaghkeen	53.44746	-9.19039
+Annaghkeenty	53.99704	-7.96675
+Annaghkilly	54.17435	-7.18924
+Annaghlee	54.05932	-7.10038
+Annagh Long	52.74721	-6.35097
+Annagh Lower	54.17045	-8.04372
+Annagh Lower	52.73365	-6.34018
+Annaghloy	54.05121	-8.31060
+Annaghmaconway	53.94222	-7.81023
+Annaghmacullen	53.95053	-7.77939
+Annaghmaghera	53.79976	-8.54753
+Annaghmagurthan	53.97435	-8.13819
+Annaghmartin	54.22823	-7.11489
+Annagh Middle	52.72934	-6.36203
+Annaghminnan	53.95141	-6.61357
+Annaghmona	53.97031	-8.14729
+Annaghmore	53.88834	-7.79282
+Annaghmore	53.89459	-7.78921
+Annaghmore	53.65270	-7.91084
+Annaghmore	53.19283	-7.54947
+Annaghmore	53.26702	-7.95675
+Annaghmore	53.79743	-8.15385
+Annaghmore	53.97661	-8.58739
+Annagh More	51.79344	-8.63217
+Annagh More	52.00777	-9.31059
+Annagh More	54.24290	-9.36547
+Annagh More	54.15856	-8.52991
+Annagh More	52.72549	-6.34523
+Annaghmore And Annaghbeg	53.13054	-7.73389
+Annaghmore East	53.51068	-8.55145
+Annaghmore West	53.51092	-8.58462
+Annaghnamaddoo	53.97412	-7.97206
+Annaghneal	52.88545	-8.67687
+Annagh North	52.30029	-8.73389
+Annaghoash	54.07092	-7.30789
+Annaghoney	53.87176	-7.77588
+Annaghraw	54.12768	-7.31228
+Annaghs	52.37755	-6.97711
+Annaghselherny	53.98547	-7.97361
+Annagh South	52.29099	-8.72958
+Annagh Upper	54.18554	-8.03187
+Annagh Upper	52.73610	-6.37203
+Annaghvaan	53.31535	-9.64599
+Annaghvacky	54.03542	-6.54676
+Annagh West	53.40242	-9.05690
+Annaghwood	53.46214	-9.34374
+Annaghybane	54.12735	-7.06450
+Annaghyduff	54.12851	-7.07907
+Annagleve	54.09184	-6.76754
+Annaglogh	54.18487	-6.76738
+Annagloor	52.06862	-9.11440
+Annagola	54.29360	-6.85987
+Annagolan	53.02742	-6.19435
+Annagor	53.67311	-6.36625
+Annagose	54.17270	-7.11210
+Annahagh	54.25132	-6.95423
+Annahagh North	54.25945	-7.13679
+Annahagh South	54.23447	-7.13474
+Annahaia	54.01334	-6.71858
+Annahaia	54.08912	-6.86175
+Annahaia	54.08690	-6.86412
+Annahalabog	51.87971	-8.97393
+Annahala East	51.88353	-8.98593
+Annahala West	51.87907	-9.00536
+Annahale	54.10852	-6.72471
+Annahean	53.92291	-6.66124
+Annaholty	52.72917	-8.45585
+Annahuby	54.20049	-6.87986
+Anna Island	55.02386	-8.42460
+Annakisha	52.17396	-8.57671
+Annakisha North	52.18579	-8.58389
+Annakisha South	52.17830	-8.56533
+Annalecka	53.86817	-9.28291
+Annaleck Lower	52.59048	-7.03702
+Annaleck Upper	52.58181	-7.03229
+Annalecky	53.03583	-6.64309
+Annalittin	54.08801	-6.70585
+Annalough	53.03271	-6.78674
+Annaloughan	54.01217	-6.27557
+Annamacneill	54.16420	-6.92893
+Annamakiff	54.18282	-7.16410
+Annamarran	53.93711	-6.66552
+Annamoe	53.15044	-7.24162
+Annamoe	53.03152	-6.25423
+Anna More	52.20122	-9.46354
+Annamult	52.55776	-7.20569
+Annaneese	54.11974	-6.91528
+Annareagh North	54.30854	-6.87187
+Annareagh South	54.29001	-6.86869
+Annaroe	54.21356	-6.91946
+Annaseeragh	54.23067	-6.83758
+Annaskinnan	53.49173	-7.12217
+Annaslee	55.10074	-7.39116
+Annaveagh	54.12906	-7.27479
+Annayalla	54.16641	-6.79566
+Annayalla	54.16608	-6.79678
+Annees	51.73324	-9.23302
+Annefield	51.71386	-8.43418
+Annefield	52.40500	-6.94860
+Annefield	53.62043	-9.07540
+Annefield	52.40093	-6.94700
+Annesgift	52.49224	-7.73085
+Annesgrove	52.19429	-8.47758
+Annestown	52.14280	-7.27815
+Annestown	52.14059	-7.27193
+Anneville	52.95664	-9.07334
+Anneville	52.88411	-6.95172
+Anneville	53.46037	-7.00562
+Anneville	53.47305	-7.34266
+Annfield	53.37399	-6.40730
+Annfield	52.62176	-7.14825
+Annfield	52.71389	-7.94232
+Anngrove	51.91776	-8.28431
+Annies	54.04113	-6.40737
+Annies	53.70336	-9.21266
+Annies	54.14252	-7.25738
+Annistown	51.94297	-8.03915
+Annsbrook	53.52455	-6.23383
+Anny	54.10685	-6.98324
+Annyalty	54.25239	-7.05516
+Annyart	54.13038	-6.72496
+Annyeeb	54.24276	-7.08190
+Annyerk	54.25095	-7.06239
+Anny Far And Near	55.15241	-7.57286
+Anrittabeg	53.66959	-8.05039
+Anskert	53.87602	-7.78614
+Anster	52.89113	-7.44901
+Antfield	53.90415	-7.95158
+Antylstown	53.68625	-6.66543
+Anveyerg	54.08627	-6.93616
+Aphort	54.97983	-8.54785
+Applefort	52.79962	-8.81109
+Appletown	52.38297	-8.98326
+Applevale	52.93072	-9.11887
+Ara	53.85480	-9.11221
+Arabela	52.24809	-9.59704
+Araghty	53.55768	-8.27254
+Araglin	52.20716	-8.10662
+Aran Island	54.99918	-8.52998
+Arbatt	54.88449	-7.98317
+Arbourhill	52.53226	-7.74105
+Arbourhill	53.10730	-7.97073
+Archdeaconry Glebe	53.73608	-6.88277
+Archersgrove	52.64089	-7.22936
+Archersleas	52.63559	-7.27069
+Archersrath	52.65912	-7.21792
+Archerstown	52.81456	-7.40509
+Archerstown	53.50718	-6.38232
+Archerstown	52.66471	-7.78189
+Archerstown	53.65358	-7.10969
+Archerstown	53.65608	-7.10427
+Archerstreet Lot	52.64338	-7.24644
+Arch Hall	53.72193	-6.73455
+Arclintagh	54.18562	-6.84885
+Ard	53.43081	-9.24463
+Ard	53.21323	-7.34160
+Ardabaun	52.15427	-9.77656
+Ardabrone	54.25575	-8.69895
+Ardacarha	53.91597	-9.07934
+Ardachrin	54.93919	-8.03029
+Ardacluckeen	52.07790	-9.77084
+Ardacluggin	51.67999	-9.99582
+Ardacong	53.54011	-8.85428
+Ardacrow	51.66420	-8.71585
+Ardadam	52.23775	-8.58866
+Ardagannive	51.66006	-9.80502
+Ardaganny	54.91878	-7.73669
+Ardagawna	53.41250	-8.01385
+Ardagh	51.50504	-9.40933
+Ardagh	55.28640	-7.40136
+Ardagh	53.65763	-8.48323
+Ardagh	53.46939	-10.00946
+Ardagh	52.44765	-9.73603
+Ardagh	54.01103	-7.82175
+Ardagh	52.49496	-9.06993
+Ardagh	52.49412	-9.06372
+Ardagh	53.73442	-6.46413
+Ardagh	54.09740	-9.23087
+Ardagh	53.88998	-9.61280
+Ardagh	53.89970	-6.73610
+Ardagh	53.87812	-8.33503
+Ardagh	54.11887	-8.36667
+Ardagh Demesne	53.67058	-7.69464
+Ardagh East	51.58749	-9.04321
+Ardagh North	51.50578	-9.32469
+Ardagh South	51.49713	-9.32988
+Ardagh West	51.58149	-9.04129
+Ardaghy	54.08474	-6.29106
+Ardaghy	54.21548	-6.90621
+Ardaghy Glebe	54.65748	-8.29216
+Ardaghy Kill	54.22216	-6.99021
+Ardagilla	51.50700	-9.26888
+Ardagullion	53.73312	-7.53736
+Ardahee	54.92968	-7.79902
+Ardahill	51.58521	-9.71350
+Ardakillin	53.76118	-8.18581
+Ardakip Beg	54.22382	-8.30361
+Ardakip More	54.21928	-8.30993
+Ardaloo	52.71548	-7.30734
+Ardamadane	51.94842	-8.56812
+Ardamagh	54.06246	-7.29037
+Ardamore	52.13462	-10.16880
+Ardamullivan	53.00878	-8.82952
+Ardan	54.06002	-7.45158
+Ardan	53.29848	-7.49620
+Ardan	53.35527	-7.44351
+Ardanaffrin	53.91835	-8.02959
+Ardanairy	52.86263	-6.07476
+Ardane	53.16692	-8.32009
+Ardane	52.39804	-8.08227
+Ardaneanig	52.05421	-9.43935
+Ardaneer	52.60266	-9.08772
+Ardaneneen	51.84574	-8.95996
+Ardanenig	51.60364	-9.66938
+Ardanew	53.48262	-6.87991
+Ardanragh	53.61089	-7.62674
+Ardanreagh	52.50101	-8.54611
+Ardaprior	52.22965	-8.77705
+Ardara	54.76761	-8.41049
+Ardara	54.76714	-8.40929
+Ardaragh East	51.64066	-9.79707
+Ardaragh West	51.63355	-9.80482
+Ardaravan	55.13344	-7.44914
+Ardarawer	54.96898	-7.70059
+Ardardagh	53.96136	-7.19551
+Ardarostig	51.86880	-8.53260
+Ardarou	52.06504	-8.41995
+Ardarragh	53.99105	-7.51985
+Ardarrig	51.87051	-8.43576
+Ardass	53.76980	-8.44558
+Ardataggle	52.75475	-8.53848
+Ardatedaun	52.20024	-9.69150
+Ardateggle	52.83466	-7.04909
+Ardatowel	54.69948	-8.01990
+Ardattin	52.75780	-6.70953
+Ardattin	52.75503	-6.70616
+Ardaturr	54.99035	-7.94515
+Ardaturrish Beg	51.73091	-9.50244
+Ardaturrish More	51.72586	-9.49184
+Ardaturr Mountain	54.98609	-7.98080
+Ardaun	53.28484	-8.96224
+Ardaun East	53.52743	-9.34318
+Ardaun West	53.52930	-9.35411
+Ardavagga	53.00175	-7.92917
+Ardavullane	52.43656	-8.23040
+Ardawarry	53.47733	-8.76631
+Ardballan	53.84803	-6.31718
+Ardballymore	53.36809	-7.54713
+Ardbane	55.21404	-7.85616
+Ardbane	52.41399	-7.47728
+Ardbash	53.32495	-7.09960
+Ardbaun	52.69707	-7.83139
+Ardbear	53.48221	-10.02905
+Ardbearn	52.77363	-6.81311
+Ardbearn And Torman	52.76029	-6.79637
+Ardbeg	52.24807	-10.06997
+Ardbeg	52.33152	-7.08638
+Ardberreen	53.22780	-8.34518
+Ardboghil	53.67131	-7.63299
+Ardbohil	52.50294	-8.97803
+Ardboley North	53.79506	-9.12452
+Ardboley South	53.78743	-9.12448
+Ardbolies	53.81298	-6.30739
+Ardbooly Lower	52.89803	-8.77469
+Ardbooly Upper	52.90096	-8.78088
+Ardborra	53.47286	-7.73502
+Ardboy	52.66130	-7.30145
+Ardbraccan	53.65394	-6.75648
+Ardbrack	51.70637	-8.50706
+Ardbrackan	53.54254	-6.71852
+Ardbrennan	53.49276	-7.58864
+Ardbuckan	53.46686	-7.73257
+Ardcahan	51.75772	-9.08567
+Ardcalf	53.74274	-6.57952
+Ardcanaght	52.16471	-9.73603
+Ardcandrisk	52.35245	-6.54635
+Ardcarn	53.96492	-8.20614
+Ardcarn	53.30642	-8.18276
+Ardcarney	52.89504	-8.99192
+Ardcath	53.60913	-6.39165
+Ardcavan	52.35775	-6.44515
+Ardchamoyle	53.94005	-8.14809
+Ardchicken	54.64310	-8.11568
+Ardclogh	53.29045	-6.57645
+Ardclone	52.34023	-7.33032
+Ardcloon	53.61938	-8.82337
+Ardcloon	53.92081	-9.11568
+Ardcloony	52.77025	-8.47750
+Ardcloyne	51.71711	-8.57257
+Ardcolagh	53.90068	-8.29020
+Ardcollum	54.08824	-8.09937
+Ardcolm	52.37418	-6.43772
+Ardcolman	53.44952	-8.21639
+Ardcolum	54.04161	-8.06418
+Ardconnell	52.34678	-9.78436
+Ardconnell	54.07754	-8.55463
+Ardconra	53.95754	-8.18497
+Ardcoohig	51.60313	-8.72040
+Ardcorcoran	53.94338	-8.30204
+Ardcorky	53.76936	-9.14745
+Ardcost	51.90151	-10.26961
+Ardcotten	54.18330	-8.50789
+Ardcree	54.15460	-8.55529
+Ardcrone	52.18727	-9.54999
+Ardcrony	52.93762	-8.16170
+Ardcrony	52.93552	-8.15610
+Ardcullen	52.46806	-9.65224
+Ardcullen-Marshes	52.46305	-9.63854
+Ardcumber	54.13858	-8.40628
+Ardcurley	54.15968	-8.47433
+Ardderroo	53.34217	-9.30081
+Ardderrynagleragh	53.44668	-9.52824
+Arddrine	52.44922	-9.01231
+Ardea	51.69855	-9.02604
+Ardea	51.80536	-9.76388
+Ardeamush	53.03229	-9.32507
+Ardeash	53.94630	-8.22391
+Ard East	53.31989	-9.87233
+Ardee	54.99700	-7.55801
+Ardee	53.85162	-6.55420
+Ardee	53.85762	-6.54001
+Ardeelan Lower	54.54931	-8.20630
+Ardeelan Upper	54.54595	-8.19803
+Ardeen	51.93566	-9.08632
+Ardeen	51.87124	-9.86318
+Ardeenloun East	52.22451	-7.32298
+Ardeenloun West	52.22078	-7.33275
+Ardeevin	54.69311	-8.02519
+Ardeevin	53.63977	-8.55664
+Ardeevin	53.74940	-8.32568
+Ardellis Lower	53.05441	-6.92001
+Ardellis Upper	53.04753	-6.92111
+Ardenagh Great	52.29570	-6.69116
+Ardenagh Little	52.30301	-6.69797
+Arderra	52.31662	-7.22720
+Arderrawinny	51.52683	-9.62087
+Arderrow	51.92212	-8.44405
+Arderry	54.12255	-7.73479
+Arderry	54.00528	-7.73961
+Arderry	53.72519	-9.44118
+Ardeskin	54.64853	-8.09853
+Ardfarn	54.46816	-8.25701
+Ardfert	52.32739	-9.76931
+Ardfert	52.32695	-9.78073
+Ardfert Oughter	52.31890	-9.79487
+Ardfield	51.56697	-8.91024
+Ardfinnan	52.31467	-7.88480
+Ardfinnan	52.30925	-7.88422
+Ardfintan	53.47501	-9.13702
+Ardfrail	53.78306	-7.18314
+Ardfry	53.23755	-8.97432
+Ardgaineen	53.40937	-8.94272
+Ardgallagher	53.86747	-8.03917
+Ardgallin	53.94649	-8.37389
+Ardgeeha	52.36127	-7.72475
+Ardgeeha Lower	52.36817	-7.71187
+Ardgeeha Upper	52.37042	-7.71116
+Ardgehane	51.49705	-9.24633
+Ardgehane	51.60319	-8.80528
+Ardgillan Demesne	53.58781	-6.16041
+Ardgillew	54.52671	-8.16006
+Ardginny	54.40710	-7.03359
+Ardgivna	54.24522	-8.78596
+Ardglare	52.26683	-8.20789
+Ardglass	52.31610	-8.75215
+Ardglass	55.20554	-7.64498
+Ardglass	53.93644	-8.18939
+Ardglassan	53.71205	-7.03794
+Ardglushin	54.06849	-7.23942
+Ardgort	51.44549	-9.47722
+Ardgoulbeg	52.54573	-8.97854
+Ardgoul North	52.55785	-8.97248
+Ardgoul South	52.55356	-8.96262
+Ardgraigue	53.17923	-8.24755
+Ardgreagh	53.58336	-6.77433
+Ardgregane	52.88316	-8.27204
+Ardgroom	51.73350	-9.89694
+Ardgroom Inward	51.74232	-9.90966
+Ardgroom Outward	51.73493	-9.86976
+Ardhoom	53.93625	-9.04374
+Ardillaun	53.51731	-9.31532
+Ardillon	53.49685	-7.30710
+Ardinawark	54.70763	-7.98540
+Ardinode East	53.12370	-6.64268
+Ardinode West	53.12010	-6.65230
+Ardintenant	51.52226	-9.51553
+Ardivaghan	53.52629	-7.38607
+Ardkearagh	51.80030	-10.16702
+Ardkeel	53.62359	-8.23116
+Ardkeen	53.84336	-9.60002
+Ardkeen	52.77309	-7.91947
+Ardkeenagh	53.77851	-8.23788
+Ardkeenan	53.38590	-8.05058
+Ardkeeran	54.05545	-8.54313
+Ardkeeran	54.12556	-8.40070
+Ardkill	53.36216	-6.94479
+Ardkill	53.60825	-9.11028
+Ardkill	53.90929	-8.65889
+Ardkill	54.24613	-8.82230
+Ardkill Beg	53.92043	-7.32812
+Ardkilleen	51.75769	-8.96870
+Ardkill More	53.91870	-7.34009
+Ardkilly	51.68163	-8.53217
+Ardkilmartin	52.41130	-8.56269
+Ardkirk	54.38009	-7.01327
+Ardkirk	54.06648	-6.67059
+Ardkitt East	51.72521	-8.91142
+Ardkitt West	51.72681	-8.92472
+Ardkyle	52.73168	-8.82566
+Ardkyle	53.56821	-10.04455
+Ardla	53.57530	-6.13667
+Ardlaghas	52.07950	-9.72764
+Ardlagheen Beg	53.69789	-8.31290
+Ardlagheen More	53.70831	-8.30831
+Ardlahan	52.64100	-8.81510
+Ardlaman	52.54714	-8.99740
+Ardlaman	52.50067	-8.24935
+Ardlaraghan	53.81824	-6.48216
+Ardlavagh	53.92730	-8.16418
+Ardlea	52.98024	-7.38417
+Ardleag	52.20678	-8.46416
+Ardleckna	53.86927	-8.14990
+Ardlee	53.90270	-8.96812
+Ardlee	54.09132	-8.41567
+Ardleebeg	54.17408	-8.40669
+Ardlenagh	54.63339	-8.12180
+Ardleny	53.86468	-7.37594
+Ardline	54.07456	-8.22403
+Ardloman	52.43732	-8.19718
+Ardlona	53.94374	-8.40888
+Ardlonan	53.78525	-6.81518
+Ardlougher	53.92893	-7.36859
+Ardlougher	54.06303	-7.57632
+Ardlougher	54.06328	-7.57597
+Ardlougher	54.20123	-8.04552
+Ardlougher	54.74593	-8.39004
+Ardlougher	54.11459	-8.10496
+Ardlougher	53.87988	-8.11145
+Ardloughill	54.47335	-8.17162
+Ardlow	53.85825	-7.03714
+Ardloy	54.09791	-8.40636
+Ardmaclancy	52.77044	-8.79226
+Ardmacroan	53.89044	-8.03716
+Ardmaghbreague	53.83086	-6.83656
+Ardmalin	55.36998	-7.37459
+Ardmanagh	51.53832	-9.56338
+Ardmartin	51.71636	-8.54793
+Ardmayle	52.56940	-7.92253
+Ardmayle East	52.56830	-7.91068
+Ardmayle West	52.56709	-7.92995
+Ardmeelode	52.14859	-9.67949
+Ardmeen	54.97384	-8.26721
+Ardmeenan	54.03834	-7.78197
+Ardminnan	54.04201	-8.55146
+Ardmone	53.98334	-7.07352
+Ardmone East	53.98668	-7.06863
+Ardmoneel	52.09667	-9.78314
+Ardmoneen	54.11315	-7.83189
+Ardmoneen	54.30495	-7.99141
+Ardmone West	53.97842	-7.08750
+Ardmoran	53.55251	-9.14678
+Ardmore	52.93725	-9.23116
+Ardmore	51.87077	-8.35858
+Ardmore	51.64891	-8.78161
+Ardmore	52.34205	-8.72345
+Ardmore	55.07719	-7.27179
+Ardmore	53.50290	-10.12513
+Ardmore	53.31072	-9.77348
+Ardmore	53.30686	-9.76937
+Ardmore	51.80026	-9.99517
+Ardmore	53.03152	-6.96469
+Ardmore	52.42263	-8.38410
+Ardmore	54.19558	-10.01404
+Ardmore	53.79412	-9.54974
+Ardmore	53.92004	-8.23999
+Ardmore	51.95108	-7.72533
+Ardmore	53.51477	-7.31695
+Ardmore Point	54.18638	-10.01612
+Ardmorney	53.38177	-7.44428
+Ardmoyle	53.92381	-8.38529
+Ardmoyle	53.94464	-8.38651
+Ardmulchan	53.66928	-6.63219
+Ardmulchan	53.66718	-6.63070
+Ardmullan	53.48744	-8.07425
+Ardnableask	54.69609	-8.01488
+Ardnaboha	51.71286	-8.46110
+Ardnabourkey	51.81838	-8.22990
+Ardnaboy	52.86727	-6.49538
+Ardnacally	53.69657	-9.14012
+Ardnacassagh	53.72734	-7.78041
+Ardnacloghy	51.73467	-9.42890
+Ardnacloghy	51.82807	-8.40544
+Ardnaclug	51.76266	-8.67990
+Ardnacraa	52.95627	-9.43027
+Ardnacrany North	53.52306	-7.75930
+Ardnacrany South	53.50644	-7.75781
+Ardnacrohy	52.42860	-9.03579
+Ardnacross Island	53.29816	-9.88051
+Ardnacrusha	52.70910	-8.61394
+Ardnacrushy	51.92740	-9.00122
+Ardnacullia North	52.93632	-9.29548
+Ardnacullia South	52.92661	-9.30854
+Ardnaditian	54.98502	-7.59698
+Ardnadoman East	53.21217	-8.61111
+Ardnadoman West	53.21075	-8.62273
+Ardnagall	53.58600	-8.84666
+Ardnagalliagh	54.58138	-8.14460
+Ardnagannagh	54.78569	-7.67749
+Ardnagappary	55.07162	-8.29429
+Ardnagashel	51.72373	-9.47553
+Ardnagassan	54.65125	-8.04436
+Ardnagassane	52.58996	-8.18192
+Ardnageeha	52.12151	-9.09804
+Ardnageeha	53.52543	-9.32489
+Ardnageehy	52.31964	-8.69225
+Ardnageehy Beg	51.67976	-9.41967
+Ardnageehy East	52.02478	-8.38221
+Ardnageehy More	51.67651	-9.42811
+Ardnageehy West	52.02221	-8.39743
+Ardnagla	52.71764	-9.09886
+Ardnaglass	54.55231	-7.83862
+Ardnaglass	54.81350	-7.55733
+Ardnaglass	54.12939	-8.53941
+Ardnaglass Lower	54.38520	-8.50969
+Ardnaglass Upper	54.37448	-8.48141
+Ardnaglew	53.36168	-7.45908
+Ardnaglug	53.36994	-8.15690
+Ardnaglug	53.42247	-7.91118
+Ardnagno	53.10822	-8.93050
+Ardnagor	54.20519	-9.31577
+Ardnagowna	53.84863	-8.16718
+Ardnagragh	53.46626	-7.81236
+Ardnagreevagh	53.60304	-10.02546
+Ardnagrena	51.49378	-9.38097
+Ardnagroghery	51.51984	-9.40395
+Ardnagross	53.03253	-6.91887
+Ardnagross	53.75267	-7.31854
+Ardnahea	52.95762	-9.39009
+Ardnahinch	51.85459	-8.01353
+Ardnahow	52.16643	-7.25710
+Ardnamanagh	51.71768	-9.48653
+Ardnamoghill	54.96500	-7.41291
+Ardnamoher	52.40256	-8.26010
+Ardnamullagh	53.72639	-8.41497
+Ardnamullan	53.44751	-7.06585
+Ardnamweely	52.06755	-9.51588
+Ardnanagh	53.62693	-8.20081
+Ardnanean	52.49874	-8.97565
+Ardnanure	53.40085	-8.05433
+Ardnaponra	53.39366	-7.69944
+Ardnapreaghaun	52.52034	-8.86986
+Ardnaree	55.06150	-7.63423
+Ardnaree	54.10439	-9.14162
+Ardnasallem	54.31762	-6.99577
+Ardnasillagh	53.41919	-9.26810
+Ardnasodan	53.40860	-8.79039
+Ardnasool	54.84759	-7.56113
+Ardnaveagh	52.51853	-8.97640
+Ardneeskan	54.13969	-8.43144
+Ardnehue	52.83381	-6.83385
+Ardnurcher	53.40175	-7.59296
+Ardnurcher Glebe	53.38098	-7.57969
+Ardobireen	52.49749	-8.02429
+Ardocheasty	51.94366	-7.73416
+Ardogeena	51.61261	-9.52658
+Ardogelly	54.25020	-8.78029
+Ardoghil	53.57481	-7.83317
+Ardoginna	51.94363	-7.74808
+Ardogommon	53.78874	-9.48191
+Ardohill	52.43916	-8.32863
+Ardoley	53.78107	-9.55326
+Ardonan	54.05387	-7.45497
+Ardoohy	54.14953	-7.44427
+Ardoslough	53.59123	-8.55126
+Ardough	52.80285	-7.06076
+Ardoughan	54.12367	-9.17782
+Ardoughter	52.46203	-9.70688
+Ardour	53.57658	-9.01828
+Ardowen	54.23503	-10.04594
+Ardowen Common	54.23989	-10.03083
+Ardoyne	52.78516	-6.69163
+Ardpaddin	52.28780	-7.78405
+Ardpatrick	52.33935	-8.53530
+Ardpatrick	52.34145	-8.52536
+Ardpatrick	53.94228	-6.52884
+Ardpattan	54.53153	-8.16534
+Ardra	53.95185	-7.53854
+Ardra	52.05910	-8.17460
+Ardra	51.53760	-9.13460
+Ardra	52.81637	-7.19997
+Ardra	53.20480	-7.10973
+Ardra Beg	51.82190	-8.17371
+Ardragh	54.00890	-6.85242
+Ardragh	52.61892	-7.49946
+Ardrah	51.82076	-8.84507
+Ardrahan	53.15643	-8.80587
+Ardrahan	52.35197	-9.74891
+Ardrahan North	53.15940	-8.80784
+Ardrahan South	53.15330	-8.81611
+Ardraheen Beg	54.02510	-8.55012
+Ardraheen More	54.02113	-8.55148
+Ardrahin	52.39291	-8.29930
+Ardraly	51.53687	-9.34354
+Ardra More	51.81958	-8.16220
+Ardranny Beg	53.26012	-8.29271
+Ardranny More	53.25150	-8.29406
+Ardrass	54.05119	-9.10050
+Ardrass Lower	53.32870	-6.58651
+Ardrass Upper	53.32248	-6.59170
+Ardraw	52.08608	-9.72021
+Ardrea	54.09939	-8.48314
+Ardreagh	52.71600	-7.57469
+Ardree	52.97416	-6.96405
+Ardree	54.06695	-8.50614
+Ardrew	52.98235	-6.99165
+Ardrinane	52.14346	-10.05200
+Ardristan	52.77926	-6.75701
+Ardroe	52.14781	-9.98973
+Ardroe	52.56394	-8.41701
+Ardroe	53.72737	-9.01980
+Ardros	53.31599	-8.38612
+Ardross	52.40119	-6.93865
+Ardrum	51.91640	-8.65536
+Ardrum	54.04428	-7.82563
+Ardrumkilla	53.51354	-8.97708
+Ardrumman	55.00679	-7.63182
+Ardrums Great	53.43663	-6.75933
+Ardrums Little	53.44078	-6.76893
+Ardrush	52.93792	-9.16952
+Ards	55.16014	-7.87870
+Ards	52.07798	-9.67748
+Ards	53.64518	-7.85079
+Ardsallagh	53.61445	-6.65971
+Ardsallagh	53.96404	-8.35242
+Ardsallagh	54.07219	-8.48454
+Ardsallagh	52.48948	-7.75627
+Ardsallagh	51.99203	-7.87007
+Ardsallagh Beg	53.62229	-8.18246
+Ardsallagh More	53.62842	-8.18007
+Ards Beg	51.72539	-9.34916
+Ards Beg	55.11131	-8.17995
+Ards Big	55.01932	-7.68617
+Ardscradaun	52.64062	-7.26322
+Ardscull	53.01664	-6.91692
+Ardshanavooly	52.06234	-9.50042
+Ardshanbally	52.57400	-8.78932
+Ardsheelhane East	51.86883	-9.88280
+Ardsheelhane West	51.85925	-9.89106
+Ardskea Beg	53.43518	-8.83020
+Ardskeagh	52.80751	-8.62456
+Ardskeagh	52.33027	-8.63408
+Ardskeagh	52.20551	-8.75074
+Ardskea More	53.42169	-8.85606
+Ards Little	55.01852	-7.70611
+Ards More	51.72390	-9.36310
+Ards More	55.12344	-8.14365
+Ardsmore Mountain	55.09153	-8.18840
+Ardsollus	52.80021	-8.89379
+Ardsoreen	53.92854	-8.40174
+Ardteegalvan	52.04633	-9.39425
+Ardtermon	54.33763	-8.63194
+Ardtomin	52.57030	-8.95050
+Ardtrasna	54.36726	-8.61733
+Ardtully	51.90291	-9.48628
+Ardtully Beg	53.99295	-6.17873
+Ardtully More	53.99556	-6.16995
+Ardue	54.10499	-7.53484
+Ardultagh	53.21044	-8.26858
+Ardun	54.79880	-8.22232
+Arduns	55.03243	-8.21673
+Ardunsaghan	54.03589	-7.73000
+Ardura Beg	51.55877	-9.41654
+Ardura More	51.56847	-9.42841
+Arduslough	51.47203	-9.74744
+Ardvagh	54.19596	-7.87842
+Ardvally	54.74785	-8.39646
+Ardvally	54.14611	-9.11964
+Ardvarna	53.42440	-9.31447
+Ardvarna	52.66538	-8.47514
+Ardvarney	52.92054	-7.58885
+Ardvarney	54.27192	-8.03904
+Ardvarney	54.16213	-9.34373
+Ardvarney	53.90289	-9.30770
+Ardvarney	53.55594	-9.13106
+Ardvarney	54.12335	-8.37589
+Ardvarnock Glebe	54.87104	-7.64820
+Ardvarny	53.93476	-7.35624
+Ardvone	52.48868	-9.06692
+Ard West	53.32265	-9.87832
+Ardydonagan	52.39665	-9.46518
+Ardyduffy	53.42980	-7.79266
+Ardyhoolihane	51.65880	-9.47681
+Ardykeohane	52.47483	-8.53597
+Ardyoul	52.40639	-8.58607
+Ardywanig	52.14827	-9.66156
+Arigna	54.07634	-8.11252
+Arignagh	53.65896	-8.35397
+Arkeen Beg	53.44057	-9.89685
+Arkeen More	53.44455	-9.91240
+Arklow	52.27127	-6.79407
+Arklow	52.79786	-6.15765
+Arklow	52.79769	-6.15994
+Arlands	55.00189	-8.43573
+Arlinstown	51.77601	-8.54351
+Arlonstown	53.55862	-6.62962
+Arm	53.76690	-8.51147
+Armyhill	52.86842	-7.96239
+Arnaghan	53.86995	-7.56929
+Arnasbrack	54.20928	-8.42694
+Arnestown	52.37796	-6.92052
+Arnestown	52.28928	-6.72577
+Aroddy	54.00777	-7.86431
+Arodstown	53.49441	-6.66988
+Arpinstown	52.28370	-6.57603
+Arraghan	53.82947	-8.42073
+Arragh Beg	53.04743	-8.01108
+Arragh More	53.05915	-8.03653
+Arraglen	52.22508	-10.04789
+Arragorteen	52.63313	-6.29403
+Arranagh	52.40590	-9.07842
+Arrigal	53.80589	-6.73430
+Arroo	54.41219	-8.25319
+Arrybreaga	52.51255	-8.30338
+Arryheernabin	55.26878	-7.63979
+Artane	53.38300	-6.20514
+Arthurstown	53.23056	-6.57231
+Arthurstown	53.90917	-6.59231
+Arthurstown	52.24202	-6.95137
+Arthurstown Little	53.90147	-6.56847
+Artidowney	54.09213	-7.51216
+Artikellys	54.88203	-7.71066
+Artiteige	51.66969	-8.63596
+Artnalevery	53.87824	-6.58121
+Artonagh	54.05778	-7.49720
+Artonagh	54.00467	-7.17396
+Artoney	53.94760	-6.55434
+Artramon	52.38181	-6.48393
+Arundelmills	51.61350	-8.84816
+Arvagh	53.92144	-7.57992
+Arywee	52.57213	-8.57801
+Ash Big	53.98698	-6.51967
+Ashbourne	53.51116	-6.39738
+Ashbrook	53.29154	-8.46610
+Ashbrook	53.14640	-7.50453
+Ashbrook	53.91376	-9.10588
+Ashbrook	53.75770	-8.07091
+Ashbury	52.96587	-7.77909
+Ashfield	53.31218	-6.38010
+Ashfield	53.15284	-8.19383
+Ashfield	52.88961	-7.04903
+Ashfield	53.45253	-6.98459
+Ashfield	53.32432	-7.57904
+Ashfield Demesne	53.01999	-8.84476
+Ashford	53.53802	-9.29457
+Ashford	53.34473	-8.23773
+Ashford	52.35974	-9.05921
+Ashford	53.01075	-6.11090
+Ashford	53.01079	-6.10829
+Ashfort	52.60333	-8.67151
+Ashglen	52.54375	-7.16183
+Ashgrove	54.06298	-7.43343
+Ashgrove	51.62161	-8.86525
+Ashgrove	52.15514	-8.66238
+Ashgrove	51.87272	-8.24062
+Ashgrove	53.08154	-7.03091
+Ashgrove	52.46661	-9.10141
+Ashgrove	52.41990	-8.07086
+Ashhill	52.59683	-7.79836
+Ash Hill	52.39732	-8.58599
+Ash-Hill	52.23123	-9.62604
+Ashleypark	52.93104	-8.18723
+Ash Little	53.98233	-6.52682
+Ashpark	53.57945	-6.41212
+Ashpark	53.70685	-8.38426
+Ashpark	53.07699	-8.05270
+Ashroe	52.68315	-8.39839
+Ashtown	53.37541	-6.34271
+Ashtown	53.37251	-6.33164
+Ashtown	52.39291	-7.28257
+Ashtown	52.23103	-7.48137
+Ashtown	52.97620	-6.07815
+Ashwell's-Lot	52.51224	-7.89527
+Ashwood Lower	52.75861	-6.19321
+Ashwood Upper	52.76480	-6.19556
+Ask	52.70209	-6.26128
+Askabeg	52.47823	-6.40118
+Aska Beg	52.66616	-6.49452
+Askaheige	52.69439	-6.63664
+Askakeagh	52.84626	-6.42116
+Askakeel	52.73259	-6.43592
+Askamore	52.67241	-6.47976
+Aska More	52.67356	-6.47487
+Askanagap	52.87127	-6.42638
+Askanagap	52.87221	-6.41051
+Askasilla	52.45927	-6.38788
+Aske	53.21904	-6.12379
+Askeaton	52.59545	-8.97002
+Askeaton	52.60066	-8.97175
+Askill	54.45211	-8.19054
+Askillaun	53.75808	-9.85503
+Askillaun	54.00347	-9.03663
+Askinamoe	52.60963	-6.52216
+Askinch Lower	52.78166	-6.26279
+Askinch Upper	52.78835	-6.27130
+Askinfarney	52.48245	-6.67890
+Askingarran Lower	52.60351	-6.21656
+Askingarran Upper	52.60378	-6.23132
+Askintinny	52.76501	-6.15390
+Askinvillar Lower	52.55036	-6.75550
+Askinvillar Upper	52.55228	-6.77205
+Askunshin	52.52583	-6.61396
+Asnagh	53.72823	-7.55234
+Assagart	52.35582	-6.72854
+Assaly Great	52.26310	-6.45204
+Assaly Little	52.25997	-6.45976
+Assan	53.90655	-7.15361
+Assaun	53.89088	-8.22254
+Assey	53.58760	-6.68182
+Assolas	52.17101	-8.84467
+Astagob	53.36181	-6.39599
+Astee	52.55184	-9.56000
+Astee East	52.55675	-9.54804
+Astee West	52.55462	-9.56843
+Astrish Beg	54.37881	-6.96378
+Astrish More	54.37983	-6.95271
+Atateemore	52.31575	-7.08479
+Athasselabbey North	52.48360	-7.99857
+Athasselabbey South	52.47909	-8.00833
+Athboy	53.62363	-6.91565
+Athcarne	53.62063	-6.44639
+Athclare	53.81668	-6.39928
+Athdown	53.17682	-6.39692
+Athea	52.46099	-9.28962
+Athea Lower	52.46738	-9.32396
+Athea Upper	52.45047	-9.31416
+Athenboy	53.71026	-7.46119
+Athenry	53.29607	-8.75127
+Athenry	53.30433	-8.75018
+Athgaine Great	53.68330	-6.84546
+Athgaine Little	53.69032	-6.84497
+Athgarrett	53.18895	-6.57303
+Athgarvan	53.15289	-6.77770
+Athgarvan	53.11065	-6.59797
+Athgoe	53.28526	-6.51285
+Athgoe North	53.29087	-6.52492
+Athgoe South	53.28451	-6.53060
+Athgreany	53.07220	-6.61505
+Athlacca	52.45801	-8.65008
+Athlacca North	52.46104	-8.66669
+Athlacca South	52.45200	-8.66381
+Athleague	53.56740	-8.26009
+Athleague	53.56763	-8.25674
+Athlone	53.42701	-7.94291
+Athlone	53.42393	-7.94069
+Athlone And Bigmeadow	53.41999	-7.94653
+Athlummon	52.68962	-7.74147
+Athlumney	53.64847	-6.67164
+Athlunkard	52.68198	-8.60463
+Athnid Beg	52.72067	-7.76615
+Athnid More	52.72246	-7.77725
+Athroe	53.84458	-8.29592
+Athronan	53.54238	-6.64451
+Athry	53.45054	-9.79465
+Athy	52.99127	-6.98142
+Athy	52.99183	-6.98573
+Atshanboe	52.68618	-8.00000
+Attanagh	52.83329	-7.35323
+Attatantee	55.07833	-8.22260
+Attateenoe Lower	52.52218	-7.44287
+Attateenoe Upper	52.52614	-7.45157
+Attavally	54.15486	-9.77650
+Atteagh	53.46149	-8.06697
+Attiaghygrana	53.88370	-8.22079
+Attiantaggart	53.93501	-8.59730
+Attiappleton	53.97378	-9.23970
+Attiballa	53.79133	-8.23988
+Attiblaney	53.38345	-7.58457
+Attibrassil	53.28232	-8.29835
+Atticahill	53.88491	-9.14022
+Attichree	54.18429	-9.07273
+Atticlogh	53.51114	-10.01029
+Atticloghy	54.22928	-9.32212
+Atticoffey East	53.26085	-8.23934
+Atticoffey West	53.25845	-8.24396
+Atticonaun	54.21047	-9.94928
+Atticonor	53.34487	-7.43819
+Atticorra	53.34429	-8.20506
+Atticorra	53.34788	-8.19461
+Attidavock	53.52575	-8.56800
+Attidermot	53.29575	-8.32459
+Attiduff	54.36551	-6.98719
+Attiduff	54.09701	-7.10987
+Attiduff	54.36894	-8.59890
+Attifarry	53.56518	-8.37515
+Attifineen	53.00053	-8.86120
+Attifinlay	53.94643	-8.07845
+Attiflynn	53.65848	-8.69525
+Attigara	53.10413	-8.24386
+Attigoddaun	53.54868	-10.12790
+Attikee	53.22783	-8.29162
+Attiknockan	53.54174	-8.21482
+Attimachugh	54.01173	-9.02212
+Attimachugh	54.00955	-9.02572
+Attimanus	53.97291	-7.94033
+Attimany	53.35240	-8.58493
+Attimonbeg	53.32869	-8.62104
+Attimonmore North	53.32415	-8.62090
+Attimonmore South	53.31716	-8.62247
+Attimurtagh	53.37594	-7.74961
+Attinadague	54.97565	-7.99767
+Attinaskollia	54.00356	-8.96139
+Attinkee	53.21015	-7.92055
+Attiquin	51.90164	-8.08627
+Attireesh	53.81033	-9.52419
+Attiregan	53.37042	-8.44367
+Attirory	53.93944	-8.07735
+Attirory	53.36017	-8.15328
+Attirowerty	53.53410	-9.96738
+Attishane	54.14443	-9.37069
+Attishane	53.70602	-8.71066
+Attiville	54.02177	-8.48923
+Attybrick	52.53015	-8.08676
+Attycristora	52.92655	-9.33255
+Attyflin	52.58472	-8.71699
+Attyjames	52.42698	-7.44230
+Attykit	52.46629	-7.86205
+Attymass	54.05132	-9.08326
+Attymon	53.32300	-8.60859
+Attyshonock	53.31018	-9.12180
+Attyslany North	53.02241	-8.90413
+Attyslany South	53.01467	-8.90725
+Attyterrila	52.90122	-8.98959
+Auburn	53.44248	-6.18702
+Auburn	53.49912	-7.84107
+Aubwee	53.31014	-9.14689
+Aucloggeen	53.39892	-8.96632
+Augeris	51.87044	-9.22854
+Aughabrack	51.67087	-9.99048
+Aughacasla North	52.24230	-9.98906
+Aughacasla South	52.23548	-9.98413
+Aughagarna	52.69834	-9.45811
+Aughagault	54.86914	-7.72784
+Aughagault Big	54.86333	-7.74319
+Aughaleigue Beg	51.57722	-9.75278
+Aughaleigue More	51.57553	-9.73771
+Aughalin	52.46196	-8.94351
+Aughall Beg	52.79464	-7.80320
+Aughall Middle	52.79993	-7.80286
+Aughall More	52.78877	-7.81325
+Aughane	51.84979	-8.14204
+Aughanna	52.24094	-10.07082
+Aughans	53.19323	-7.38318
+Aughathlappa	52.51925	-6.70807
+Aughatubbrid	52.88073	-7.19674
+Aughavanlomaun	52.23592	-7.77099
+Aughavehir	52.76212	-8.31289
+Aughavinna	53.01588	-9.35897
+Aughboy	52.74022	-8.54251
+Aughclare	52.33139	-6.92177
+Aughermon	52.28532	-6.67981
+Aughernagalliagh	54.27219	-10.05942
+Augherskea	53.50413	-6.61757
+Aughfad	52.30583	-6.64257
+Aughils	52.16942	-9.87279
+Aughine	53.66460	-7.79166
+Aughinida	51.93179	-8.91331
+Aughinish	52.88610	-8.43638
+Aughinish	53.16400	-9.07945
+Aughinish	53.16296	-9.07214
+Aughinish East	52.62330	-9.06165
+Aughinish West	52.61598	-9.07856
+Aughiska Beg	53.02070	-9.30580
+Aughiska More	53.01480	-9.32321
+Aughkeely	54.86558	-7.81061
+Aughkiletaun	52.57893	-6.99548
+Aughmore	52.31777	-7.50424
+Aughmore	52.45409	-6.42180
+Aughmore	52.22516	-6.39231
+Aughnacloy	54.23663	-7.11389
+Aughnacloy	54.09233	-8.24108
+Aughnacrumpane	52.57470	-7.46638
+Aughnacurraveel	52.00494	-7.77682
+Aughnagalley	52.48407	-6.54645
+Aughnagan	52.29012	-6.62552
+Aughnagomaun	52.60047	-7.82066
+Aughnaheela	52.77521	-7.96198
+Aughnalyra	52.00191	-8.06911
+Aughnamaulmeen	52.72520	-6.44224
+Aughnanure	53.41481	-9.27869
+Aughness	54.08661	-9.83239
+Aughnish	55.03981	-7.60844
+Aughnish Isle	55.05232	-7.60003
+Aughrim	54.13816	-7.58650
+Aughrim	53.01348	-8.95742
+Aughrim	52.29426	-8.83024
+Aughrim	53.30237	-8.31652
+Aughrim	52.51639	-9.35112
+Aughrim	53.18570	-7.13565
+Aughrim	54.14687	-7.96564
+Aughrim	53.86771	-8.10985
+Aughrim	52.85593	-6.32594
+Aughriman	54.02807	-8.04736
+Aughriman South	53.94668	-8.03898
+Aughrim Beg	54.02887	-6.63165
+Aughrim Lower	52.85751	-6.32828
+Aughrim More	54.02772	-6.64009
+Aughrim Upper	52.86844	-6.34015
+Aughris	54.27059	-8.78129
+Aughris	54.06878	-8.54481
+Aughrus Beg	53.55788	-10.17412
+Aughrus More	53.54918	-10.16430
+Aughry	53.85938	-7.93310
+Aught	55.12163	-7.27789
+Aughtanny	52.62567	-7.32800
+Aughtreagh	54.11243	-7.32367
+Aughullen	52.74984	-6.31051
+Aughvallydeag	52.66598	-8.08693
+Aughvolyshane	52.74127	-7.94935
+Augullies	54.96150	-8.26889
+Aulanebane	52.35784	-9.67790
+Aulaneduff	52.35468	-9.66808
+Aultagh	51.77051	-9.09324
+Aultaghreagh	51.77747	-9.09640
+Aunamihoonagh	52.08215	-8.37658
+Aungierstown And Ballybane	53.31380	-6.45259
+Aurora	53.19053	-6.29089
+Auskurra Big	52.16500	-6.99417
+Auskurra Little	52.16301	-6.99889
+Avalbane	54.18762	-6.84006
+Avalreagh	54.19090	-6.82964
+Avaltygort	54.78175	-7.68961
+Avenue	52.05827	-9.49833
+Avery Island	53.30397	-9.89427
+Avoca	52.85796	-6.21302
+Avoley	53.12278	-7.36500
+Avondale	52.91247	-6.22495
+Awnaskirtaun	52.03470	-9.22722
+Ayle	52.47301	-9.65275
+Ayle	52.56243	-8.22162
+Ayleacotty	52.79550	-8.88542
+Ayle Lower	52.90183	-8.69172
+Ayle Upper	52.91206	-8.70649
+Aylmerstown	52.94497	-6.80217
+Aylwardstown	52.34021	-7.02831
+Ayresfields	52.65994	-7.26668

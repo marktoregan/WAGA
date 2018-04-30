@@ -39,6 +39,7 @@ class JourneyAllocation(object):
         return journey
 
     def get_fitness(self, preloaded):
+        JourneyConfig = namedtuple("JourneyConfig", ["ev_stop", "point"])
         arrival_time = datetime.now()
         journeys = list()
         #print(self.journey_allocation)
@@ -59,7 +60,7 @@ class JourneyAllocation(object):
         for index, alloc in enumerate(self.journey_allocation):
             a_journey = self.journey_manager.get_journey(index)
             ev_point = preloaded['evp_details'].get(alloc)
-            JourneyConfig = namedtuple("JourneyConfig", ["ev_stop", "point"])
+
 
             point_start = JourneyConfig(ev_stop=(ev_point.location[0],ev_point.location[1]),
                                         point=(a_journey.starting_point[0], a_journey.starting_point[1]))

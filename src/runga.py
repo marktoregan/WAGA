@@ -10,7 +10,7 @@ from collections import namedtuple
 class RunGA(object):
     def __init__(self, **kwargs):
         jm = pjm.PopulateJourneyManager()
-        self.journey_manager = jm.get_journey_manager(20)
+        self.journey_manager = jm.get_journey_manager(200)
         self.available_stops = []
         self.preloaded = []
         self.population_size = kwargs.get("population_size", 200)
