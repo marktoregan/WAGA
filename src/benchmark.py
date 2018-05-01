@@ -9,17 +9,8 @@ class Benchmark(object):
 
     def __init__(self, **kwargs):
         #jm = pjm.PopulateJourneyManager()
-        self.journey_manager = kwargs.get("journey_manager")
-        self.charge_types = kwargs.get("charge_types",['Fast AC Type-2 44kW',
-                                                          'Fast AC Type-2 50kW'
-                                                            'Fast AC Type-2 43kW',
-                                                            'CHAdeMO DC 44kW',
-                                                            'CHAdeMO DC 45kW',
-                                                            'CHAdeMO DC 50kW',
-                                                            'CHAdeMO DC 22kW',
-                                                            'Combo DC 44kW',
-                                                            'Combo DC 45kW',
-                                                            'Combo DC 50kW'])
+        self.journey_manager = kwargs.get("journey_manager",0)
+        self.charge_type = kwargs.get("charge_types")
         self.journey_allocation = []
 
 
@@ -33,7 +24,7 @@ class Benchmark(object):
 
     def midpoints(self):
         cpoints = evp.EvChargePoint()
-        all_points, all = cpoints.get_ev_charge_point_by_type(self.charge_types)
+        all_points, all = cpoints.get_ev_charge_point_by_type(self.charge_type)
         evps_locations = list(map(lambda x: (x.location), all_points))
         mid_points = []
         for j in self.journey_manager.stops:
@@ -46,6 +37,9 @@ class Benchmark(object):
         closest_index = distance.cdist([node], nodes).argmin()
         return nodes[closest_index]
 
+    #build allocation list is broken, just pass in the existing one!!
+    #In fact this is not broken,  they are two diffenet lists!! Just get rid of the pre-loaded one below,
+    # load youself from db
     def build_allocation_list(self, midpoints):
         cpoints = evp.EvChargePoint()
         all_points, all = cpoints.get_ev_charge_point_by_location(midpoints)
@@ -54,11 +48,11 @@ class Benchmark(object):
             alloc = random.choice(filter_points)
             self.journey_allocation.append(alloc.id)
 
-    def get_fitness(self, preloaded):
+    def get_fitness(self):
         arrival_time = datetime.now()
         journeys = list()
         for index, allocation in enumerate(self.journey_allocation):
-            ev_point = preloaded['evp_details'].get(allocation) #evp.EvChargePoint(id=allocation)
+            ev_point = evp.EvChargePoint(id=allocation)
             journey = self.journey_manager.get_journey(index)
             journey.stop = [allocation]
             stop = js.JourneyStop(ev_point_id=allocation,
@@ -73,7 +67,8 @@ class Benchmark(object):
 
         for index, alloc in enumerate(self.journey_allocation):
             a_journey = self.journey_manager.get_journey(index)
-            ev_point = preloaded['evp_details'].get(alloc)
+            ev = evp.EvChargePoint()
+            ev_point = ev_point.get_ev_charge_point(alloc)
             JourneyConfig = namedtuple("JourneyConfig", ["ev_stop", "point"])
 
             point_start = JourneyConfig(ev_stop=(ev_point.location[0],ev_point.location[1]),
@@ -81,8 +76,10 @@ class Benchmark(object):
 
             point_end = JourneyConfig(ev_stop=(ev_point.location[0], ev_point.location[1]),
                                        point=(a_journey.end_point[0], a_journey.end_point[1]))
-            start_dis = preloaded['distances'][point_start]
-            ed_dis = preloaded['distances'][point_end]
+            #print(f'start {point_start} evloc {ev_point.location} end {point_end}')
+            start_dis = 0#preloaded['distances'][point_start]
+            ed_dis = 0#preloaded['distances'][point_end]
+
             tots = start_dis + ed_dis
             time = tots / 100
             time *= 60
@@ -93,7 +90,7 @@ class Benchmark(object):
     def run(self, preloaded):
         midpoints = self.midpoints()
         self.build_allocation_list(midpoints)
-        totals = self.get_fitness(preloaded)
+        totals = self.get_fitness()
         return totals
 
 

@@ -8,8 +8,9 @@ class JourneyAllocation(object):
 
     def __init__(self, **kwargs):
         self.journey_allocation = []
-        self.journey_manager = kwargs.get("journey_manager")
-        self.available_stops = kwargs.get("available_stops")
+        self.journey_manager = kwargs.get("journey_manager",[])
+        self.available_stops = kwargs.get("available_stops",[])
+        #print(f'second {len(self.available_stops), self.journey_manager.number_of_stops()}')
         for i in range(0, self.journey_manager.number_of_stops()):
             self.journey_allocation.append(None)
 
@@ -42,7 +43,6 @@ class JourneyAllocation(object):
         JourneyConfig = namedtuple("JourneyConfig", ["ev_stop", "point"])
         arrival_time = datetime.now()
         journeys = list()
-        #print(self.journey_allocation)
         for index, allocation in enumerate(self.journey_allocation):
             ev_point = preloaded['evp_details'].get(allocation) #evp.EvChargePoint(id=allocation)
             journey = self.journey_manager.get_journey(index)
@@ -60,11 +60,8 @@ class JourneyAllocation(object):
         for index, alloc in enumerate(self.journey_allocation):
             a_journey = self.journey_manager.get_journey(index)
             ev_point = preloaded['evp_details'].get(alloc)
-
-
             point_start = JourneyConfig(ev_stop=(ev_point.location[0],ev_point.location[1]),
                                         point=(a_journey.starting_point[0], a_journey.starting_point[1]))
-
             point_end = JourneyConfig(ev_stop=(ev_point.location[0], ev_point.location[1]),
                                        point=(a_journey.end_point[0], a_journey.end_point[1]))
             start_dis = preloaded['distances'][point_start]
@@ -74,7 +71,6 @@ class JourneyAllocation(object):
             time *= 60
             journey_time += time
         total_time = charge_time_total + journey_time
-
         return total_time
 
     def journey_allocation_size(self):

@@ -6,9 +6,9 @@ class Population(object):
 
     def __init__(self, **kwargs):
         self.journey_allocations = []
-        self.population_size = kwargs.get("population_size", 0)
-        self.available_stops = kwargs.get("available_stops", [])
-        self.journey_manager = kwargs.get("journey_manager", [])
+        self.population_size = kwargs.get("population_size")
+        self.available_stops = kwargs.get("available_stops")
+        self.journey_manager = kwargs.get("journey_manager")
         self.preloaded_stops = kwargs.get("preloaded_stops")
         for i in range(0, self.population_size):
             self.journey_allocations.append(None)

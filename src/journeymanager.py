@@ -1,5 +1,6 @@
 class JourneyManager:
-    stops = []
+    def __init__(self):
+        self.stops = []
 
     def add_journey(self, stop):
         self.stops.append(stop)
