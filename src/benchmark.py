@@ -1,4 +1,5 @@
 from src import populatejourneymanager as pjm, evchargepoint as evp, journeystop as js, journeystops as jss
+from src.calc import distance as dis
 from datetime import datetime
 from scipy.spatial import distance
 from collections import namedtuple
@@ -42,7 +43,8 @@ class Benchmark(object):
     # load youself from db
     def build_allocation_list(self, midpoints):
         cpoints = evp.EvChargePoint()
-        all_points, all = cpoints.get_ev_charge_point_by_location(midpoints)
+        all_points, all = cpoints.get_ev_charge_point_by_type(self.charge_type)
+        ## cpoints.get_ev_charge_point_by_location(midpoints)
         for mid in midpoints:
             filter_points = list(filter(lambda x: x.location == mid, all_points))
             alloc = random.choice(filter_points)
@@ -71,14 +73,16 @@ class Benchmark(object):
             ev_point = ev_point.get_ev_charge_point(alloc)
             JourneyConfig = namedtuple("JourneyConfig", ["ev_stop", "point"])
 
-            point_start = JourneyConfig(ev_stop=(ev_point.location[0],ev_point.location[1]),
-                                        point=(a_journey.starting_point[0], a_journey.starting_point[1]))
 
-            point_end = JourneyConfig(ev_stop=(ev_point.location[0], ev_point.location[1]),
-                                       point=(a_journey.end_point[0], a_journey.end_point[1]))
+            #point_start = JourneyConfig(ev_stop=(ev_point.location[0],ev_point.location[1]),
+                                        #point=(a_journey.starting_point[0], a_journey.starting_point[1]))
+
+            #point_end = JourneyConfig(ev_stop=(ev_point.location[0], ev_point.location[1]),
+                                     #  point=(a_journey.end_point[0], a_journey.end_point[1]))
             #print(f'start {point_start} evloc {ev_point.location} end {point_end}')
-            start_dis = 0#preloaded['distances'][point_start]
-            ed_dis = 0#preloaded['distances'][point_end]
+            disobj = dis.Distance([],1)
+            start_dis = disobj.distance_between_points(a_journey.starting_point, ev_point.location) # 0#preloaded['distances'][point_start]
+            ed_dis = disobj.distance_between_points(ev_point.location,a_journey.end_point)
 
             tots = start_dis + ed_dis
             time = tots / 100
@@ -90,6 +94,7 @@ class Benchmark(object):
     def run(self, preloaded):
         midpoints = self.midpoints()
         self.build_allocation_list(midpoints)
+        #print(self.journey_allocation)
         totals = self.get_fitness()
         return totals
 

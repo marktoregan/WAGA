@@ -1,110 +1,34 @@
-# import random
-# from functools import reduce
-# from datetime import datetime, timedelta
-# from src import journeystop as js, journeystops as jss, evchargepoint as evp
-# from itertools import groupby
-# from tinydb import TinyDB, Query
-#
-#
-# class Sample():
-#
-#     charge_time = 25
-#     current_time = datetime.now()
-#     stop1 = js.JourneyStop(ev_point_id='b',
-#                                 arrival_time=current_time,
-#                                 departure_time=0,
-#                                 wait_time=0,
-#                                 charge_time=charge_time)
-#     stop2 = js.JourneyStop(ev_point_id='a',
-#                                 arrival_time=current_time,
-#                                 departure_time=0,
-#                                 wait_time=0,
-#                                 charge_time=charge_time)
-#     stop3 = js.JourneyStop(ev_point_id='b',
-#                                 arrival_time=current_time,
-#                                 departure_time=0,
-#                                 wait_time=0,
-#                                 charge_time=charge_time)
-#     stop4 = js.JourneyStop(ev_point_id='a',
-#                                 arrival_time=current_time,
-#                                 departure_time=0,
-#                                 wait_time=0,
-#                                 charge_time=charge_time)
-#     stop5 = js.JourneyStop(ev_point_id='b',
-#                                 arrival_time=current_time,
-#                                 departure_time=0,
-#                                 wait_time=0,
-#                                 charge_time=charge_time)
-#     stop6 = js.JourneyStop(ev_point_id='c',
-#                            arrival_time=current_time,
-#                            departure_time=0,
-#                            wait_time=0,
-#                            charge_time=charge_time)
-#
-#     journeys = list()
-#     journeys.append(stop1)
-#     journeys.append(stop2)
-#     journeys.append(stop3)
-#     journeys.append(stop4)
-#     journeys.append(stop5)
-#     journeys.append(stop6)
-#     jstops = jss.JourneyStops()
-#
-#     print(jstops.total_time_of_stops(journeys))
-#
-#     evt1 = datetime.now()
-#     evt2 = datetime.now() + timedelta(minutes=5)
-#     evt3 = datetime.now() + timedelta(minutes=10)
-#     evt4 = datetime.now() + timedelta(minutes=15)
-#
-#     charge_time = 25
-#
-#     stop1 = js.JourneyStop(ev_point_id='a',
-#                            arrival_time=evt1,
-#                            departure_time=0,
-#                            wait_time=0,
-#                            charge_time=charge_time)
-#     stop2 = js.JourneyStop(ev_point_id='a',
-#                            arrival_time=evt2,
-#                            departure_time=0,
-#                            wait_time=0,
-#                            charge_time=charge_time)
-#     stop3 = js.JourneyStop(ev_point_id='a',
-#                            arrival_time=evt3,
-#                            departure_time=0,
-#                            wait_time=0,
-#                            charge_time=charge_time)
-#     stop4 = js.JourneyStop(ev_point_id='a',
-#                            arrival_time=evt4,
-#                            departure_time=0,
-#                            wait_time=0,
-#                            charge_time=charge_time)
-#
-#     journeys = list()
-#     journeys.append(stop1)
-#     journeys.append(stop2)
-#     journeys.append(stop3)
-#     journeys.append(stop4)
-#     jstops1 = jss.JourneyStops()
-#
-#     print(jstops1.total_time_of_stops(journeys))
+from src import evchargepoints as evps
 
-#s = (1,2)
-#print(s[0], s[1])
+charge_types = ['Fast AC Type-2 44kW', 'Fast AC Type-2 50kW']
+a, b = evps.EvChargePoints.get_by_type(charge_types)
+print(len(a))
+print(len(b))
+#
+# #print(a)
+# #print(b)
+#
+# names = [k for k,v  in b.items()]
+# print(len(names))
+#
+# print(list(set(names) - set(a)))
+#
+#
+# ['mnmk3rzvj7vx-797','mnw5wx1023br-799']
 
-from numpy import random
-from scipy.spatial import distance
+crunched = [[5, 776.7443471681083, 747.3927500018164],
+[25, 5988.81446830129, 6847.416793996776],
+[45, 14457.091662778079, 17932.146139342858],
+[65, 25846.675052364262, 31198.35912640958],
+[85, 40037.777833015425, 53268.816777230124],
+[105, 57175.28014059953, 76955.51210174963],
+[125, 77128.30897707536, 106708.97286222168],
+[145, 99695.89595531326, 142606.33138398017],
+[165, 125669.00928930144, 183005.59869888544],
+[185, 154016.5297949988, 229220.7455804435]]
 
-def closest_node(node, nodes):
-    closest_index = distance.cdist([node], nodes).argmin()
-    return nodes[closest_index]
+time = [x[0] for x in crunched]
+fit_mean = [x[1] for x in crunched]
+bench_mean = [x[2] for x in crunched ]
 
-a = random.randint(1000, size=(50000, 2))
-
-print(a)
-
-some_pt = (10, 2)
-
-p = closest_node(some_pt, a)
-
-print(p)
+print(time, fit_mean, bench_mean)

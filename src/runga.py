@@ -39,7 +39,7 @@ class RunGA(object):
         generation_results = [None] * self.generations
 
         for i in range(0, self.generations):
-            print(f'gen {i}')
+            #print(f'gen {i}')
             pop = ga.evolve_population(pop)
             generation_results[i] = pop.get_fittest().get_fitness(pop.preloaded_stops)
 

@@ -49,7 +49,6 @@ class GeneticAlgorithm:
         return child
 
     def mutate(self, journey_allocation):
-        #print('mutate')
         for allocationPos1 in range(0, journey_allocation.journey_allocation_size()):
             if random.random() < self.mutation_rate:
                 #print('does mutate')

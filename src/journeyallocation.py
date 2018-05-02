@@ -44,6 +44,7 @@ class JourneyAllocation(object):
         arrival_time = datetime.now()
         journeys = list()
         for index, allocation in enumerate(self.journey_allocation):
+            #print(f"real {preloaded['evp_details']}")
             ev_point = preloaded['evp_details'].get(allocation) #evp.EvChargePoint(id=allocation)
             journey = self.journey_manager.get_journey(index)
             journey.stop = [allocation]
