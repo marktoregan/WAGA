@@ -51,9 +51,7 @@ class GeneticAlgorithm:
     def mutate(self, journey_allocation):
         for allocationPos1 in range(0, journey_allocation.journey_allocation_size()):
             if random.random() < self.mutation_rate:
-                #print('does mutate')
                 allocationPos2 = int(journey_allocation.journey_allocation_size() * random.random())
-
                 allocation1 = journey_allocation.get_allocation(allocationPos1)
                 allocation2 = journey_allocation.get_allocation(allocationPos2)
 
