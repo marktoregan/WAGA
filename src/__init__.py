@@ -37,7 +37,7 @@ if __name__ == '__main__':
              #           'CHAdeMO DC 45kW', 'CHAdeMO DC 50kW', 'CHAdeMO DC 22kW', 'Combo DC 44kW', 'Combo DC 45kW',
               #          'Combo DC 50kW']
 
-            run = rga.RunGA(generations=1, population_size=1, num_of_journeys=10, initialise=True)
+            run = rga.RunGA(generations=10, population_size=100, num_of_journeys=100, initialise=True)
             fit, ben = run.process(charge_types)
 
             fitness.append(fit)
