@@ -5,9 +5,7 @@ from collections import namedtuple
 
 if __name__ == '__main__':
 
-    default_charge_types = {'Type-2 AC Socket 3.7kW': 480,
-                            'Type-2 AC Socket 7kW': 270,
-                            'Type-2 AC Socket 22kW': 90,
+    default_charge_types = {'Type-2 AC Socket 22kW': 90,
                             'CHAdeMO DC 22kW': 60,
                             'Fast AC Type-2 43kW': 45,
                             'CHAdeMO DC 45kW': 45,
@@ -25,7 +23,7 @@ if __name__ == '__main__':
     num_journeys =5
     totals=[]
     Results = namedtuple('Results', 'journney_num fit_mean bench_mean')
-    for j in range(1,14):
+    for j in range(1,2): #14
         keys = [k for k, v in default_charge_types.items()]
         newlist = keys[:j]
         fitness = []
@@ -37,7 +35,7 @@ if __name__ == '__main__':
              #           'CHAdeMO DC 45kW', 'CHAdeMO DC 50kW', 'CHAdeMO DC 22kW', 'Combo DC 44kW', 'Combo DC 45kW',
               #          'Combo DC 50kW']
 
-            run = rga.RunGA(generations=10, population_size=100, num_of_journeys=100, initialise=True)
+            run = rga.RunGA(generations=10, population_size=10, num_of_journeys=3, initialise=True)
             fit, ben = run.process(charge_types)
 
             fitness.append(fit)

@@ -22,6 +22,7 @@ class JourneyStops:
                 departure_time_wait = arrival_time + timedelta(minutes=charge_time)
                 val.departure_time = departure_time_wait
                 val.wait_time = 0
+                #print(f'lookup id: {val.location_in_journey_manager}')
             else:
                 arrival_time = val.arrival_time
                 previous_depart_time = charge_point[idx - 1].departure_time
@@ -34,6 +35,8 @@ class JourneyStops:
                 departure_time_wait += timedelta(minutes=charge_time)
                 dt = arrival_time + departure_time_wait
                 val.departure_time = dt
+            #if not val.location_in_journey_manager == None:
+                #print(f'lookup id: {val.location_in_journey_manager} arr: {arrival_time} dept {val.departure_time} wait: {val.wait_time}')
  
 
     def total_time_of_stops(self, journeys):

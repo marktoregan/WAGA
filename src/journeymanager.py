@@ -10,3 +10,7 @@ class JourneyManager:
 
     def number_of_stops(self):
         return len(self.stops)
+
+    def set_journey_stop_details(self, index, details):
+        jd = self.stops[index]
+        jd.set_stop_details(details)

@@ -18,6 +18,7 @@ class Journey(object):
         self.current_location = kwargs.get("current_point")
         self.total_journey_time = kwargs.get("total_journey_time", 0)
         self.stop = kwargs.get("stop")
+        self.stop_details = kwargs.get("stop_details", {})
 
 
     def _euclidean_distance(self, point1, point2):
@@ -60,3 +61,6 @@ class Journey(object):
         s = random.choice(stops)
         a_stop = js.JourneyStop(s)
         self.stop.append(a_stop)
+
+    def set_stop_details(self, details):
+        self.stop_details = details

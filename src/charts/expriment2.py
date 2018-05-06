@@ -4,36 +4,37 @@ import matplotlib.pyplot as plt
 plt.style.use('seaborn-whitegrid')
 
 
-crunched3 = [[75, 83183.19985099109, 20555.040456111426],
-[106, 66401.06025326622, 17746.69935997649],
-[571, 26295.57008029251, 11705.449166303879],
-[572, 26311.37901528037, 12242.956195692244],
-[683, 23941.58110125631, 11163.646836378142],
-[716, 23543.47509907076, 11359.708815095164],
-[720, 23539.269192006257, 11503.774984041658],
-[745, 23175.109826328546, 11352.704790820413],
-[747, 23167.574178083476, 11175.900354392881],
-[759, 23259.38162791772, 11300.787878664583],
-[825, 22005.754368685215, 11065.596740057386],
-[837, 22434.37818830002, 11309.69235985205],
-[872, 21766.53286591194, 11238.003864507287]]
+crunched1 = [[75, 81660.75401146119, 137473.99970016265],
+[106, 65760.03596832865, 137473.99970016265],
+[571, 25880.406445724446, 137473.99970016265],
+[572, 25977.222911474477, 137473.99970016265],
+[683, 23665.653423732845, 137473.99970016265],
+[716, 23311.466202071497, 137473.99970016265],
+[720, 23153.001692608133, 137473.99970016265],
+[745, 22828.32815946241, 137473.99970016265],
+[747, 22856.53842105502, 137473.99970016265],
+[759, 22428.220064748337, 137473.99970016265],
+[825, 21566.815698861254, 137473.99970016265],
+[837, 21649.27944417213, 137473.99970016265],
+[872, 21388.91051808237, 137473.99970016265]]
 
-time3 = [x[0] for x in crunched3]
-fit_mean3 = [x[1] for x in crunched3]
-bench_mean3 = [x[2] for x in crunched3]
+time1 = [x[0] for x in crunched1]
+fit_mean1 = [x[1] for x in crunched1]
+bench_mean1 = [x[2] for x in crunched1]
 
-print(time3, fit_mean3, bench_mean3)
+print(time1, fit_mean1, bench_mean1)
 
-times3 = time3
-fit3 = fit_mean3
-bench3 = bench_mean3
-plt.plot(times3, fit3, color='green', label='GA')
-plt.plot(times3, bench3, color='blue' , label='Bench Mark')
+times1 = time1
+fit1 = fit_mean1
+bench1 = bench_mean1
+plt.plot(times1, fit1, color='green', label='GA')
+plt.plot(times1, bench1, color='blue' , label='Bench Mark')
 plt.xlabel('Number of journeys')
 plt.ylabel('Cumulative wait time')
-plt.title('5 charge points available - multi times and multi start and finish points')
+plt.title('5 charge points available - same point and time')
 plt.legend()
 plt.show()
+
 #
 # #################################
 #
@@ -70,34 +71,34 @@ plt.show()
 
 ####################################
 
-crunched1 = [[75, 81660.75401146119, 137473.99970016265],
-[106, 65760.03596832865, 137473.99970016265],
-[571, 25880.406445724446, 137473.99970016265],
-[572, 25977.222911474477, 137473.99970016265],
-[683, 23665.653423732845, 137473.99970016265],
-[716, 23311.466202071497, 137473.99970016265],
-[720, 23153.001692608133, 137473.99970016265],
-[745, 22828.32815946241, 137473.99970016265],
-[747, 22856.53842105502, 137473.99970016265],
-[759, 22428.220064748337, 137473.99970016265],
-[825, 21566.815698861254, 137473.99970016265],
-[837, 21649.27944417213, 137473.99970016265],
-[872, 21388.91051808237, 137473.99970016265]]
 
-time1 = [x[0] for x in crunched1]
-fit_mean1 = [x[1] for x in crunched1]
-bench_mean1 = [x[2] for x in crunched1]
+crunched3 = [[75, 83183.19985099109, 20555.040456111426],
+[106, 66401.06025326622, 17746.69935997649],
+[571, 26295.57008029251, 11705.449166303879],
+[572, 26311.37901528037, 12242.956195692244],
+[683, 23941.58110125631, 11163.646836378142],
+[716, 23543.47509907076, 11359.708815095164],
+[720, 23539.269192006257, 11503.774984041658],
+[745, 23175.109826328546, 11352.704790820413],
+[747, 23167.574178083476, 11175.900354392881],
+[759, 23259.38162791772, 11300.787878664583],
+[825, 22005.754368685215, 11065.596740057386],
+[837, 22434.37818830002, 11309.69235985205],
+[872, 21766.53286591194, 11238.003864507287]]
 
-print(time1, fit_mean1, bench_mean1)
+time3 = [x[0] for x in crunched3]
+fit_mean3 = [x[1] for x in crunched3]
+bench_mean3 = [x[2] for x in crunched3]
 
-times1 = time1
-fit1 = fit_mean1
-bench1 = bench_mean1
-plt.plot(times1, fit1, color='green', label='GA')
-plt.plot(times1, bench1, color='blue' , label='Bench Mark')
+print(time3, fit_mean3, bench_mean3)
+
+times3 = time3
+fit3 = fit_mean3
+bench3 = bench_mean3
+plt.plot(times3, fit3, color='green', label='GA')
+plt.plot(times3, bench3, color='blue' , label='Bench Mark')
 plt.xlabel('Number of journeys')
 plt.ylabel('Cumulative wait time')
-plt.title('5 charge points available - same point and time')
+plt.title('5 charge points available - multi times and multi start and finish points')
 plt.legend()
 plt.show()
-

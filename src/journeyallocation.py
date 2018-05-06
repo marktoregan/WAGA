@@ -52,7 +52,8 @@ class JourneyAllocation(object):
                                         arrival_time=arrival_time,
                                         departure_time=0,
                                         wait_time=0,
-                                        charge_time=ev_point.charge_time_required)
+                                        charge_time=ev_point.charge_time_required,
+                                        location_in_journey_manager=index)
             journeys.append(stop)
         jstops = jss.JourneyStops()
         charge_time_total = jstops.total_time_of_stops(journeys)
