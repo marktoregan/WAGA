@@ -4,7 +4,8 @@ from functools import reduce
 from collections import namedtuple
 
 if __name__ == '__main__':
-
+    #Type-2 AC Socket 7kW, 270
+    #Type-2 AC Socket 3.7kW, 480
     default_charge_types = {'Type-2 AC Socket 22kW': 90,
                             'CHAdeMO DC 22kW': 60,
                             'Fast AC Type-2 43kW': 45,

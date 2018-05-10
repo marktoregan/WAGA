@@ -14,7 +14,3 @@ class JourneyStop:
         self.wait_time = kwargs.get("wait_time")
         self.charge_time = kwargs.get("charge_time", 25)
         self.location_in_journey_manager = kwargs.get("location_in_journey_manager")
-
-
-
-
