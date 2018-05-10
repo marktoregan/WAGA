@@ -1,12 +1,9 @@
-import time
 from src import population as p, \
                 geneticalgorithm as gen, \
                 populatejourneymanager as pjm, \
                 evchargepoints as evcps, \
                 benchmark as bk
 from src.calc import distance as dis
-from collections import namedtuple
-import gc
 
 class RunGA(object):
     def __init__(self, **kwargs):
@@ -22,7 +19,7 @@ class RunGA(object):
     def process(self, charge_types):
 
         self.available_stops, preloaded_point_details = evcps.EvChargePoints.get_ev_charge_point_by_ids(charge_types)
-        print(self.available_stops, preloaded_point_details)
+        #print(self.available_stops, preloaded_point_details)
         distances_loaded = self.method_name(preloaded_point_details)
         pre_loaded = {'evp_details':preloaded_point_details, 'distances':distances_loaded}
 
@@ -38,14 +35,15 @@ class RunGA(object):
         #print(f'Starting evolve.')
         #print('any before here??')
         pop = ga.evolve_population(pop)
-        generation_results = [None] * self.generations
+        generation_results = []
 
+        current_res = 2
         for i in range(0, self.generations):
-            #print(f'gen {i}')
             pop = ga.evolve_population(pop)
-            generation_results[i] = pop.get_fittest().get_fitness(pop.preloaded_stops)
-
-        #print(generation_results)
+            res = pop.get_fittest().get_fitness(pop.preloaded_stops)
+            generation_results.append(res)
+            print(f"gen {i} {generation_results[i]} ")
+        print(generation_results)
         #print(pop)
         #print(f'stops {len(pop.get_fittest().journey_allocation)}')
         #print(f'stops {pop.get_fittest().journey_allocation}')
@@ -54,7 +52,6 @@ class RunGA(object):
         bench_charge_types = charge_types[:]
         ben = bk.Benchmark(journey_manager=self.journey_manager, charge_types=bench_charge_types)
         ben_result = ben.run(pre_loaded)
-        #print(f'bench result {ben_result}')
         fit = pop.get_fittest().get_fitness(pop.preloaded_stops)
         benres = ben_result
         return fit, benres

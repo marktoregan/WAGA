@@ -25,7 +25,7 @@ class Benchmark(object):
 
     def midpoints(self):
         cpoints = evp.EvChargePoint()
-        all_points, all = cpoints.get_ev_charge_point_by_type(self.charge_type)
+        all_points, all = cpoints.get_ev_charge_point_by_ids(self.charge_type)
         evps_locations = list(map(lambda x: (x.location), all_points))
         mid_points = []
         for j in self.journey_manager.stops:
@@ -43,7 +43,7 @@ class Benchmark(object):
     # load youself from db
     def build_allocation_list(self, midpoints):
         cpoints = evp.EvChargePoint()
-        all_points, all = cpoints.get_ev_charge_point_by_type(self.charge_type)
+        all_points, all = cpoints.get_ev_charge_point_by_ids(self.charge_type)
         ## cpoints.get_ev_charge_point_by_location(midpoints)
         for mid in midpoints:
             filter_points = list(filter(lambda x: x.location == mid, all_points))
@@ -71,17 +71,9 @@ class Benchmark(object):
             a_journey = self.journey_manager.get_journey(index)
             ev = evp.EvChargePoint()
             ev_point = ev_point.get_ev_charge_point(alloc)
-            JourneyConfig = namedtuple("JourneyConfig", ["ev_stop", "point"])
-
-
-            #point_start = JourneyConfig(ev_stop=(ev_point.location[0],ev_point.location[1]),
-                                        #point=(a_journey.starting_point[0], a_journey.starting_point[1]))
-
-            #point_end = JourneyConfig(ev_stop=(ev_point.location[0], ev_point.location[1]),
-                                     #  point=(a_journey.end_point[0], a_journey.end_point[1]))
-            #print(f'start {point_start} evloc {ev_point.location} end {point_end}')
+            #JourneyConfig = namedtuple("JourneyConfig", ["ev_stop", "point"])
             disobj = dis.Distance([],1)
-            start_dis = disobj.distance_between_points(a_journey.starting_point, ev_point.location) # 0#preloaded['distances'][point_start]
+            start_dis = disobj.distance_between_points(a_journey.starting_point, ev_point.location)
             ed_dis = disobj.distance_between_points(ev_point.location,a_journey.end_point)
 
             tots = start_dis + ed_dis
