@@ -20,7 +20,9 @@ class RunGA(object):
         self.generations = kwargs.get("generations", 10)
 
     def process(self, charge_types):
-        self.available_stops, preloaded_point_details = evcps.EvChargePoints.get_by_type(charge_types)
+
+        self.available_stops, preloaded_point_details = evcps.EvChargePoints.get_ev_charge_point_by_ids(charge_types)
+        print(self.available_stops, preloaded_point_details)
         distances_loaded = self.method_name(preloaded_point_details)
         pre_loaded = {'evp_details':preloaded_point_details, 'distances':distances_loaded}
 

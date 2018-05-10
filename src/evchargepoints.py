@@ -39,6 +39,14 @@ class EvChargePoints:
         return stop_ids, preloaded
 
     @staticmethod
+    def get_ev_charge_point_by_ids(ids):
+        cpoints = evp.EvChargePoint()
+        all_stops, preloaded = cpoints.get_ev_charge_point_by_ids(ids)
+        stop_ids = [stop.id for stop in all_stops]
+        return stop_ids, preloaded
+
+
+    @staticmethod
     def prints():
         evp1 = EvChargePoints()
         print(evp1.all_evps())

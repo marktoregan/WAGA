@@ -24,7 +24,10 @@ class EvChargePoint(object):
         evp = EvChargePoint(id=results[0]["evp"],
                             charge_type=results[0]["charge_type"],
                             location=results[0]["location"],
-                            charge_time_required=results[0]["charge_time_required"])
+                            charge_time_required=results[0]["charge_time_required"],
+                            longitude = results[0]["longitude"],
+                            latitude = results[0]["latitude"],
+                            name = results[0]["name"])
         return evp
 
 
@@ -44,12 +47,13 @@ class EvChargePoint(object):
         results = db.all()
         all_charge_points = []
         for r in results:
-            result_evp = EvChargePoint(id=r["evp"], charge_type=r["charge_type"],
-                                    location=r["location"],
-                                    charge_time_required=r["charge_time_required"],
-                                    longitude=r["longitude"],
-                                    latitude=r["latitude"],
-                                    name=r["name"])
+            result_evp = EvChargePoint(id=r["evp"],
+                                       charge_type=r["charge_type"],
+                                       location=r["location"],
+                                       charge_time_required=r["charge_time_required"],
+                                       longitude=r["longitude"],
+                                       latitude=r["latitude"],
+                                       name=r["name"])
             all_charge_points.append(result_evp)
         return all_charge_points
 
@@ -82,3 +86,13 @@ class EvChargePoint(object):
                 evps.append(evp)
                 preloaded[r["evp"]] = evp
         return evps, preloaded
+
+    def get_ev_charge_point_by_ids(self, ids):
+        evps = []
+        preloaded = {}
+        for id in ids:
+            evp = self.get_ev_charge_point(id)
+            evps.append(evp)
+            preloaded[evp.id] = evp
+        return evps, preloaded
+

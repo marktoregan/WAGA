@@ -15,15 +15,13 @@ if __name__ == '__main__':
     num_journeys =5
     totals=[]
     Results = namedtuple('Results', 'journney_num fit_mean bench_mean')
-    for j in range(0,10): 
-        newlist = stopIDs
+    for j in range(0,10):
         fitness = []
         bench = []
         for i in range(0,10):
             print(f'on {i} of {j}')
-            charge_types = stopIDs
-            run = rga.RunGA(generations=10, population_size=10, num_of_journeys=3, initialise=True)
-            fit, ben = run.process(charge_types)
+            run = rga.RunGA(generations=1, population_size=15, num_of_journeys=3, initialise=True)
+            fit, ben = run.process(stopIDs)
             fitness.append(fit)
             bench.append(ben)
 
