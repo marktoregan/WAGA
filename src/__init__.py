@@ -4,41 +4,26 @@ from functools import reduce
 from collections import namedtuple
 
 if __name__ == '__main__':
-    #Type-2 AC Socket 7kW, 270
-    #Type-2 AC Socket 3.7kW, 480
-    default_charge_types = {'Type-2 AC Socket 22kW': 90,
-                            'CHAdeMO DC 22kW': 60,
-                            'Fast AC Type-2 43kW': 45,
-                            'CHAdeMO DC 45kW': 45,
-                            'Fast AC Type-2 44kW': 40,
-                            'CHAdeMO DC 44kW': 30,
-                            'Fast AC Type-2 50kW': 30,
-                            'Combo DC 44kW': 30,
-                            'Combo DC 45kW': 30,
-                            'Combo DC 50kW': 25,
-                            'CHAdeMO DC 50kW': 25}
-
+    print('V1')
     print(datetime.now())
+    stopIDs =['mnvgub2px9b3-703','mnvf57xc8p2b-778','mntwqrh1bf1v-789','mntwqrh1bf1v-789','mntesudtd1rg-823',
+              'mntesudtd1rg-824','mntesudtd1rg-825','mnmrnj9x9d0g-708']
+
+
     fitness_mean =[]
     bench_mean = []
     num_journeys =5
     totals=[]
     Results = namedtuple('Results', 'journney_num fit_mean bench_mean')
-    for j in range(1,2): #14
-        keys = [k for k, v in default_charge_types.items()]
-        newlist = keys[:j]
+    for j in range(0,10): 
+        newlist = stopIDs
         fitness = []
         bench = []
         for i in range(0,10):
             print(f'on {i} of {j}')
-            charge_types = newlist #['Fast AC Type-2 44kW', 'Fast AC Type-2 50kW']
-            #'CHAdeMO DC 44kW',
-             #           'CHAdeMO DC 45kW', 'CHAdeMO DC 50kW', 'CHAdeMO DC 22kW', 'Combo DC 44kW', 'Combo DC 45kW',
-              #          'Combo DC 50kW']
-
+            charge_types = stopIDs
             run = rga.RunGA(generations=10, population_size=10, num_of_journeys=3, initialise=True)
             fit, ben = run.process(charge_types)
-
             fitness.append(fit)
             bench.append(ben)
 
