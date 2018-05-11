@@ -1,0 +1,9 @@
+##more cars/journeys added
+run = rga.RunGA(generations=100, population_size=50, num_of_journeys=num_journeys, initialise=True)
+[RunResult(id=5, fitness=739.2983735573557, bench=789.3331290082816), RunResult(id=15, fitness=2548.705996417555, bench=2992.9993870248445), RunResult(id=25, fitness=4843.113619277754, bench=5896.665645041408), RunResult(id=35, fitness=7637.03163796427, bench=10150.331903057973), RunResult(id=45, fitness=10917.222743688988, bench=14378.998161074538), RunResult(id=55, fitness=14696.63036654919, bench=20157.664419091103), RunResult(id=65, fitness=18976.037989409393, bench=26186.330677107668), RunResult(id=75, fitness=23769.928615214936, bench=34264.99693512423), RunResult(id=85, fitness=29034.551993869005, bench=40968.6631931408), RunResult(id=95, fitness=34799.26085799, bench=53147.32945115736)]
+
+####
+run = rga.RunGA(generations=200, population_size=100, num_of_journeys=num_journeys, initialise=True)
+whats [RunResult(id=5, fitness=739.2983735573557, bench=789.3331290082816), RunResult(id=15, fitness=2548.705996417555, bench=3042.9993870248445), RunResult(id=25, fitness=4843.113619277754, bench=6146.665645041408), RunResult(id=35, fitness=7637.03163796427, bench=9650.331903057973), RunResult(id=45, fitness=10917.222743688986, bench=14103.998161074538), RunResult(id=55, fitness=14696.630366549189, bench=20057.664419091103), RunResult(id=65, fitness=18976.03798940939, bench=26361.330677107668), RunResult(id=75, fitness=23755.445612269592, bench=34064.99693512423), RunResult(id=85, fitness=29034.336238075135, bench=41368.6631931408), RunResult(id=95, fitness=34798.743860935334, bench=49772.32945115736)]
+
+####

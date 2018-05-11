@@ -43,7 +43,7 @@ class RunGA(object):
             res = pop.get_fittest().get_fitness(pop.preloaded_stops)
             generation_results.append(res)
             print(f"gen {i} {generation_results[i]} ")
-        print(generation_results)
+        #print(generation_results)
         #print(pop)
         #print(f'stops {len(pop.get_fittest().journey_allocation)}')
         #print(f'stops {pop.get_fittest().journey_allocation}')

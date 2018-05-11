@@ -6,7 +6,7 @@ class GeneticAlgorithm:
       
     def __init__(self, journey_manager):
         self.journey_manager = journey_manager
-        self.mutation_rate = 0.015
+        self.mutation_rate = 0.2
         self.tournament_size = 5
         self.elitism = True
 
