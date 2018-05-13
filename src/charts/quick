@@ -131,3 +131,9 @@ whats [RunResult(id=10, fitness=683828.4039454291, bench=1113308.3129008275, con
 
 Process finished with exit code 0
 
+pop of 10, 100 journeys
+[RunResult(id=10, fitness=37858.06962737367, bench=57436.66258016565, converged=58), RunResult(id=10, fitness=37898.370868634454, bench=55611.66258016565, converged=32), RunResult(id=10, fitness=37889.34271441187, bench=54336.66258016565, converged=58), RunResult(id=10, fitness=37898.336113183526, bench=54711.66258016565, converged=34), RunResult(id=10, fitness=37919.04147315108, bench=54436.66258016565, converged=40), RunResult(id=10, fitness=37913.04223449269, bench=54261.66258016565, converged=57), RunResult(id=10, fitness=37868.55923154735, bench=54561.66258016565, converged=64), RunResult(id=10, fitness=37889.636593102696, bench=54811.66258016565, converged=57), RunResult(id=10, fitness=37889.636593102696, bench=54711.66258016565, converged=35), RunResult(id=10, fitness=37904.34271441187, bench=54861.66258016565, converged=39)]
+
+pop 100 , 100 jouneys
+
+

@@ -48,7 +48,7 @@ class RunGA(object):
             generation_results.append(res)
             current = res
             prev = generation_results[i - 1]
-            print(f"gen {i} {generation_results[i]} ")
+            #print(f"gen {i} {generation_results[i]} ")
 
         bench_charge_types = charge_types[:]
         ben = bk.Benchmark(journey_manager=self.journey_manager, charge_types=bench_charge_types)

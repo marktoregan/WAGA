@@ -25,7 +25,7 @@ if __name__ == '__main__':
         for i in range(0,10):
             print(f'on {i} of 10')
             #run = rga.RunG1(generations=100, population_size=50, num_of_journeys=100, initialise=True)
-            run = rga.RunGA(generations=200, population_size=num_population, num_of_journeys=100, initialise=True)
+            run = rga.RunGA(generations=200, population_size=100, num_of_journeys=100, initialise=True)
             res_dict = run.process(stopIDs)
             fit = res_dict['fit']
             ben = res_dict['ben']
@@ -48,6 +48,7 @@ if __name__ == '__main__':
 
     #print(f'jour: {i} fit: {fit_mean} bench: {bench_mean}')
     print(totals)
+    print(datetime.now())
 
 
 
