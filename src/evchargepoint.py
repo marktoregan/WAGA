@@ -96,3 +96,18 @@ class EvChargePoint(object):
             preloaded[evp.id] = evp
         return evps, preloaded
 
+
+    def get_ev_charge_point_by_name(self, name):
+        db = TinyDB(EvChargePoint.dbconn)
+        evps = []
+        preloaded = {}
+        for t in type:
+            results = db.search(where('name') == name)
+            for r in results:
+                evp = EvChargePoint(id=r["evp"],
+                                    charge_type=r["charge_type"],
+                                    location=r["location"],
+                                    charge_time_required=r["charge_time_required"])
+                evps.append(evp)
+                preloaded[r["evp"]] = evp
+        return evps, preloaded

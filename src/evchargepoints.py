@@ -45,6 +45,9 @@ class EvChargePoints:
         stop_ids = [stop.id for stop in all_stops]
         return stop_ids, preloaded
 
+    def get_stop_ids(self, journey_manager, speeds):
+        print(journey_manager, speeds)
+
 
     @staticmethod
     def prints():

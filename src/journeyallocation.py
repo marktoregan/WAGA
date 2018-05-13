@@ -56,7 +56,7 @@ class JourneyAllocation(object):
                                         location_in_journey_manager=index)
             journeys.append(stop)
         jstops = jss.JourneyStops()
-        charge_time_total = jstops.total_time_of_stops(journeys)
+        charge_time_total = jstops.total_time_of_stops(journeys, jm=self.journey_manager)
         journey_time = 0
 
         for index, alloc in enumerate(self.journey_allocation):

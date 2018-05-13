@@ -14,7 +14,8 @@ class JourneyStops:
             total_time += total_min
         return total_time
 
-    def calculate_stops_waits(self, charge_time, charge_point):
+    def calculate_stops_waits(self, charge_time, charge_point,**kwargs):
+        jm = kwargs.get('jm')
         for idx, val in enumerate(charge_point):
             if idx == 0:
                 arrival_time = val.arrival_time
@@ -34,11 +35,17 @@ class JourneyStops:
                 departure_time_wait += timedelta(minutes=charge_time)
                 dt = arrival_time + departure_time_wait
                 val.departure_time = dt
-            #if not val.location_in_journey_manager == None:
-                #print(f'lookup id: {val.location_in_journey_manager} arr: {arrival_time} dept {val.departure_time} wait: {val.wait_time}')
- 
+            if not val.location_in_journey_manager == None:
+                di = {'arr': val.arrival_time,
+                      'dept': val.departure_time,
+                      'wait':val.wait_time,
+                      'jour_id':val.location_in_journey_manager}
+                jm.stops[val.location_in_journey_manager].stop_details = di
 
-    def total_time_of_stops(self, journeys):
+
+    def total_time_of_stops(self, journeys, **kwargs):
+        #print(kwargs)
+        jm = kwargs.get('jm')
         total_time = 0
         unique_cp = set()
         for journey in journeys:
@@ -46,6 +53,7 @@ class JourneyStops:
         for point in unique_cp:
             c_point = list(filter(lambda x: x.ev_point_id.lower() == point, journeys))
             c_points = sorted(c_point, key=lambda x: x.arrival_time, reverse=False)
-            self.calculate_stops_waits(c_point[0].charge_time, c_points)
+            #self.calculate_stops_waits(c_point[0].charge_time, c_points)
+            self.calculate_stops_waits(c_point[0].charge_time, c_points,jm=jm)
             total_time += self.total_time_of_stop(c_points)
         return total_time

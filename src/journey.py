@@ -19,6 +19,8 @@ class Journey(object):
         self.total_journey_time = kwargs.get("total_journey_time", 0)
         self.stop = kwargs.get("stop")
         self.stop_details = kwargs.get("stop_details", {})
+        self.from_city = kwargs.get("from_city")
+        self.to_city = kwargs.get("to_city")
 
 
     def _euclidean_distance(self, point1, point2):

@@ -17,7 +17,6 @@ class RunGA(object):
         self.generations = kwargs.get("generations", 10)
 
     def process(self, charge_types):
-
         self.available_stops, preloaded_point_details = evcps.EvChargePoints.get_ev_charge_point_by_ids(charge_types)
         distances_loaded = self.method_name(preloaded_point_details)
         pre_loaded = {'evp_details':preloaded_point_details, 'distances':distances_loaded}
@@ -30,7 +29,6 @@ class RunGA(object):
         ga = gen.GeneticAlgorithm(self.journey_manager)
         pop = ga.evolve_population(pop)
         generation_results = []
-        ##
         current = None
         prev = None
         converge_count = 0
@@ -48,17 +46,18 @@ class RunGA(object):
             generation_results.append(res)
             current = res
             prev = generation_results[i - 1]
-            #print(f"gen {i} {generation_results[i]} ")
+
+        fit = pop.get_fittest().get_fitness(pop.preloaded_stops)
 
         bench_charge_types = charge_types[:]
         ben = bk.Benchmark(journey_manager=self.journey_manager, charge_types=bench_charge_types)
         ben_result = ben.run(pre_loaded)
-        fit = pop.get_fittest().get_fitness(pop.preloaded_stops)
         benres = ben_result
         result_dict = {}
         result_dict['fit'] = fit
         result_dict['ben'] = benres
         result_dict['converged'] = convered_at
+        result_dict['pop'] = pop
         return result_dict
 
     def method_name(self, preloaded_point_details):
