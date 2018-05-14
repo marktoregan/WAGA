@@ -1,0 +1,58 @@
+if __name__ == '__main__':
+    print('V2')
+    print(datetime.now())
+    RunResult = namedtuple('RunResult', 'id fitness bench converged')
+    fitness_mean =[]
+    bench_mean = []
+    increase = 3
+    totals=[]
+    result_lst = []
+    Results = namedtuple('Results', 'journney_num fit_mean bench_mean')
+    fitness = []
+    bench = []
+    converge = []
+    stop_details ={}
+    runs = 9
+    number_of_times = 10
+    for j in range(0,runs): #7
+        for i in range(0,number_of_times): #10
+            print(f'on {i} of {number_of_times} and {j} of {runs}')
+            run = rga.RunGA(generations=200, population_size=30, num_of_journeys=250, initialise=True)
+            jo = run.journey_manager
+            evp = evps.EvChargePoints()
+            points, preloaded = evp.get_stop_ids(journey_manager=jo,speeds=['fast'])
+            x = [k for k, v in preloaded.items()]
+            #print(x)
+            #print("say what ", len(points))
+            stps = x[:increase]
+            #print(stps)
+            res_dict = run.process(stps)
+            fit = res_dict['fit']
+            ben = res_dict['ben']
+            converged = res_dict['converged']
+            converge.append(converged)
+            #fit, ben = run.process(stopIDs)
+            fitness.append(fit)
+            bench.append(ben)
+            res = RunResult(id=increase, fitness=fit, bench=ben, converged=converged)
+            result_lst.append(res)
+            pop = res_dict['pop']
+            jm = pop.journey_manager
+            details = []
+            for jou in jm.stops:
+                details.append(jou.stop_details)
+            stop_details[f'outer{j}-inner{i}'] = details
+
+        print(f'whats {result_lst}')
+        fit_mean = reduce(lambda x, y: x + y, fitness) / len(fitness)
+        con_mean = reduce(lambda x, y: x + y, converge) / len(converge)
+        bench_mean =reduce(lambda x, y: x + y, bench) / len(bench)
+        res2 = [increase, con_mean]
+        #print(res2)
+        totals.append([increase, fit_mean, bench_mean, con_mean])
+        increase += 10
+
+
+whats [RunResult(id=3, fitness=380323.61237929686, bench=301051.21628998965, converged=39), RunResult(id=3, fitness=380126.27137344325, bench=298660.1379812821, converged=23), RunResult(id=3, fitness=379923.6848009535, bench=299174.8341136939, converged=43), RunResult(id=3, fitness=380098.1155943587, bench=303726.59661741124, converged=78), RunResult(id=3, fitness=380040.71458160854, bench=305060.38722847507, converged=80), RunResult(id=3, fitness=379729.216813517, bench=303555.66691050533, converged=35), RunResult(id=3, fitness=379824.96133485675, bench=317322.69286801736, converged=34), RunResult(id=3, fitness=379842.65164964565, bench=317021.1004192567, converged=31), RunResult(id=3, fitness=379399.17402998847, bench=299091.5593001689, converged=67), RunResult(id=3, fitness=380508.0022816324, bench=300530.5544608093, converged=29), RunResult(id=13, fitness=122228.57663641707, bench=239671.84561214165, converged=35), RunResult(id=13, fitness=122142.5341069933, bench=219821.99446640586, converged=57), RunResult(id=13, fitness=121534.16339208762, bench=198014.4471563298, converged=39), RunResult(id=13, fitness=122470.51348733083, bench=212998.4103925102, converged=31), RunResult(id=13, fitness=121759.72648006877, bench=216528.5361361337, converged=55), RunResult(id=13, fitness=122219.21732771772, bench=213744.36860283924, converged=41), RunResult(id=13, fitness=121684.36784496818, bench=192716.34037612757, converged=47), RunResult(id=13, fitness=122122.44615577447, bench=212033.42042764366, converged=57), RunResult(id=13, fitness=121923.61825022049, bench=209974.02095030903, converged=64), RunResult(id=13, fitness=121564.5563967775, bench=209392.41094593302, converged=60), RunResult(id=23, fitness=81814.56466910006, bench=187919.433113908, converged=41), RunResult(id=23, fitness=81588.22934843179, bench=159343.60419957404, converged=116), RunResult(id=23, fitness=81708.31230513933, bench=232261.59962194582, converged=42), RunResult(id=23, fitness=81865.09824069869, bench=173421.03554162482, converged=40), RunResult(id=23, fitness=82102.32204363274, bench=171948.57217302392, converged=56), RunResult(id=23, fitness=81921.27810372674, bench=217812.91521716042, converged=90), RunResult(id=23, fitness=82528.937431494, bench=221869.4895148029, converged=29), RunResult(id=23, fitness=81533.77794008303, bench=221159.12428786122, converged=69), RunResult(id=23, fitness=82224.64098615746, bench=181690.06231517377, converged=48), RunResult(id=23, fitness=82470.28317923874, bench=199616.5724918153, converged=40), RunResult(id=33, fitness=67470.56654610921, bench=96791.44290866685, converged=27), RunResult(id=33, fitness=66613.73720979398, bench=103458.02568431429, converged=59), RunResult(id=33, fitness=67517.90315043749, bench=90028.79023486642, converged=31), RunResult(id=33, fitness=67187.42415880435, bench=108135.81678574957, converged=34), RunResult(id=33, fitness=66987.52872206212, bench=94768.43182085486, converged=51), RunResult(id=33, fitness=67702.03857196678, bench=86125.19194957124, converged=27), RunResult(id=33, fitness=66981.19215728217, bench=89966.97250903676, converged=81), RunResult(id=33, fitness=66364.45825543528, bench=98886.93225567095, converged=89), RunResult(id=33, fitness=66770.74651144016, bench=100793.83844246599, converged=52), RunResult(id=33, fitness=68291.92634100551, bench=86962.20529571878, converged=31), RunResult(id=43, fitness=61676.28399330728, bench=99967.71980742324, converged=19), RunResult(id=43, fitness=60385.36001834335, bench=100068.27472240059, converged=34), RunResult(id=43, fitness=61082.10236830241, bench=90476.9139543626, converged=42), RunResult(id=43, fitness=60805.9407099361, bench=104961.925995692, converged=21), RunResult(id=43, fitness=60466.646498580936, bench=98891.31427749655, converged=26), RunResult(id=43, fitness=61073.53251341189, bench=88596.96862964143, converged=39), RunResult(id=43, fitness=61005.358974731425, bench=98285.53766373439, converged=28), RunResult(id=43, fitness=60250.855132152865, bench=103687.73970515496, converged=32), RunResult(id=43, fitness=59731.557376934084, bench=103054.38462800704, converged=47), RunResult(id=43, fitness=61453.235949099486, bench=96067.18421835435, converged=33), RunResult(id=53, fitness=54578.0782449113, bench=105081.41202712196, converged=57), RunResult(id=53, fitness=55504.46441266787, bench=88922.026165911, converged=29), RunResult(id=53, fitness=54875.303023711065, bench=89237.3000010798, converged=35), RunResult(id=53, fitness=55991.917533509855, bench=97915.10399235769, converged=36), RunResult(id=53, fitness=54919.429258989214, bench=97971.53513474239, converged=19), RunResult(id=53, fitness=55379.803613721764, bench=88891.33902451833, converged=27), RunResult(id=53, fitness=55665.915170352375, bench=93990.6253517991, converged=26), RunResult(id=53, fitness=54832.63511858711, bench=86814.00129656043, converged=37), RunResult(id=53, fitness=54234.874355644744, bench=94590.59988778029, converged=91), RunResult(id=53, fitness=54821.74221908928, bench=95828.97908024432, converged=57), RunResult(id=63, fitness=52233.78410178676, bench=97183.88394217059, converged=19), RunResult(id=63, fitness=51076.21195584635, bench=102007.27273064828, converged=47), RunResult(id=63, fitness=52207.31589870938, bench=95133.85867217003, converged=39), RunResult(id=63, fitness=50964.46869354226, bench=94342.99159354831, converged=29), RunResult(id=63, fitness=52050.07040532953, bench=94561.07845750083, converged=29), RunResult(id=63, fitness=51523.2000639309, bench=100111.52509392989, converged=87), RunResult(id=63, fitness=51777.96404756146, bench=97784.22948452794, converged=31), RunResult(id=63, fitness=51134.88014083906, bench=104343.9967686359, converged=41), RunResult(id=63, fitness=52354.76750291498, bench=92833.0664793142, converged=31), RunResult(id=63, fitness=52000.097361348206, bench=95785.15165792748, converged=27), RunResult(id=73, fitness=50082.4603778008, bench=87535.97369436122, converged=53), RunResult(id=73, fitness=48380.31951348504, bench=103124.4309808749, converged=28), RunResult(id=73, fitness=49667.85135918118, bench=87624.38476794232, converged=19), RunResult(id=73, fitness=49216.47348049206, bench=91688.48935561311, converged=40), RunResult(id=73, fitness=50121.49912025317, bench=98564.76463176994, converged=47), RunResult(id=73, fitness=49255.78129448611, bench=95126.68566743797, converged=22), RunResult(id=73, fitness=49388.2941359454, bench=101599.94265544167, converged=55), RunResult(id=73, fitness=49449.55695163476, bench=99828.64615170227, converged=36), RunResult(id=73, fitness=49272.43111368571, bench=91097.05396210187, converged=35), RunResult(id=73, fitness=49333.31024264041, bench=94689.69939805666, converged=60), RunResult(id=83, fitness=46379.407467987825, bench=98136.48366869192, converged=30), RunResult(id=83, fitness=47965.64538615386, bench=85141.1947097076, converged=21), RunResult(id=83, fitness=47605.47578145582, bench=89629.67181814113, converged=28), RunResult(id=83, fitness=46564.511919414785, bench=95797.39711805162, converged=34), RunResult(id=83, fitness=47298.85495179554, bench=90827.77736228256, converged=25), RunResult(id=83, fitness=47073.04376447222, bench=97364.35767734257, converged=37), RunResult(id=83, fitness=47439.32802051722, bench=92359.70941448878, converged=23), RunResult(id=83, fitness=47493.84875538126, bench=93797.60026545389, converged=30), RunResult(id=83, fitness=47812.77720506663, bench=103087.58311776274, converged=31), RunResult(id=83, fitness=48118.982613106244, bench=96178.33661798494, converged=19)]
+jour: 9 fit: 101723.20823224937 bench: 143151.54134555292
+[[3, 379981.64048393007, 304519.4746189609, 45.9], [13, 250973.30624588276, 258504.52706279914, 47.25], [23, 194640.78563884523, 237904.4316577624, 50.53333333333333], [33, 162777.77726974236, 202326.26494049473, 49.95], [43, 142380.8392864899, 181542.17122444112, 46.38], [53, 127830.76878792798, 166939.19138640288, 45.55], [63, 116959.55553496412, 157006.26482949354, 44.47142857142857], [73, 108516.71081296366, 149266.48261662314, 43.85], [83, 101723.20823224937, 143151.54134555292, 42.06666666666667]]
