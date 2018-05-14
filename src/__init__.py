@@ -14,7 +14,7 @@ if __name__ == '__main__':
 
     fitness_mean =[]
     bench_mean = []
-    num_population =10
+    num_population = 10
     totals=[]
     result_lst = []
     Results = namedtuple('Results', 'journney_num fit_mean bench_mean')
@@ -23,17 +23,19 @@ if __name__ == '__main__':
     bench = []
     converge = []
     stop_details ={}
-    for j in range(0,1): #7
-        for i in range(0,1): #10
-            print(f'on {i} of 10')
+    runs = 7
+    number_of_times = 10
+    for j in range(0,runs): #7
+        for i in range(0,number_of_times): #10
+            print(f'on {i} of {number_of_times} and {j} of {runs}')
             #run = rga.RunG1(generations=100, population_size=50, num_of_journeys=100, initialise=True)
-            run = rga.RunGA(generations=200, population_size=30, num_of_journeys=100, initialise=True)
+            run = rga.RunGA(generations=200, population_size=30, num_of_journeys=10, initialise=True)
             jo = run.journey_manager
             evp = evps.EvChargePoints()
-            evps, preloaded = evp.get_stop_ids(journey_manager=jo,speeds=['fast','slow'])
+            points, preloaded = evp.get_stop_ids(journey_manager=jo,speeds=['fast'])
             x = [k for k, v in preloaded.items()]
-            print(x)
-            print("say what ", len(evps))
+            #print(x)
+            #print("say what ", len(points))
             res_dict = run.process(x)
             fit = res_dict['fit']
             ben = res_dict['ben']
