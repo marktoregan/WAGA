@@ -27,11 +27,14 @@ if __name__ == '__main__':
         for i in range(0,1): #10
             print(f'on {i} of 10')
             #run = rga.RunG1(generations=100, population_size=50, num_of_journeys=100, initialise=True)
-            run = rga.RunGA(generations=2, population_size=10, num_of_journeys=2, initialise=True)
+            run = rga.RunGA(generations=200, population_size=30, num_of_journeys=100, initialise=True)
             jo = run.journey_manager
             evp = evps.EvChargePoints()
-            points = evp.get_stop_ids(journey_manager=jo,speeds=['fast','slow'])
-            res_dict = run.process(stopIDs)
+            evps, preloaded = evp.get_stop_ids(journey_manager=jo,speeds=['fast','slow'])
+            x = [k for k, v in preloaded.items()]
+            print(x)
+            print("say what ", len(evps))
+            res_dict = run.process(x)
             fit = res_dict['fit']
             ben = res_dict['ben']
             converged = res_dict['converged']

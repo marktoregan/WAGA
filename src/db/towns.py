@@ -6,10 +6,10 @@ class Towns(object):
 
     start_towns = {'dublin': nl.Normalize(latitude=53.350140, longitude=-6.266155)}
     end_towns = {'cork': nl.Normalize(latitude=51.903614, longitude=-8.468399),
-                 'limerick': nl.Normalize(latitude=52.668018, longitude=-8.630498),
-                 'galway': nl.Normalize(latitude=53.270962, longitude=-9.062691),
-                 'waterford': nl.Normalize(latitude=52.2500, longitude=-7.5000),
-                 'wexford': nl.Normalize(latitude=52.336918, longitude=-6.463338)}
+                  'limerick': nl.Normalize(latitude=52.668018, longitude=-8.630498),
+                  'galway': nl.Normalize(latitude=53.270962, longitude=-9.062691),
+                  'waterford': nl.Normalize(latitude=52.2500, longitude=-7.5000),
+                  'wexford': nl.Normalize(latitude=52.336918, longitude=-6.463338)}
 
     @staticmethod
     def get_start_town():
@@ -21,7 +21,7 @@ class Towns(object):
     @staticmethod
     def get_end_town():
         City = namedtuple('City', 'name location')
-        ed_t = random.choice(['cork', 'limerick', 'galway', 'waterford', 'wexford'])
+        ed_t = random.choice(['limerick', 'galway', 'waterford', 'wexford', 'wexford'])
         cord = Towns.end_towns[ed_t]
         return City(name=ed_t, location=cord)
 

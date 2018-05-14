@@ -46,8 +46,28 @@ class EvChargePoints:
         return stop_ids, preloaded
 
     def get_stop_ids(self, journey_manager, speeds):
-        print(journey_manager, speeds)
+        ctypes = self.load_speeds(speeds)
+        city_names = self.load_names(journey_manager)
+        cpoints = evp.EvChargePoint()
+        evps, preloaded = cpoints.all_evps_for_destinations(city_names,ctypes)
+        return evps, preloaded
 
+    def load_speeds(self, speeds):
+        ctypes = []
+        if speeds == ['slow']:
+            ctypes = [k for k,v  in EvChargePoints.default_charge_types.items() if v > 45]
+        if speeds ==['fast']:
+            ctypes = [k for k, v in EvChargePoints.default_charge_types.items() if v <= 45]
+        if len(speeds) == 2:
+            ctypes = [k for k, v in EvChargePoints.default_charge_types.items()]
+        return ctypes
+
+    def load_names(self, journey_manager):
+        to_cities = set()
+        for journey in journey_manager.stops:
+            to_cities.add(journey.to_city)
+            #print(journey.to_city)
+        return to_cities
 
     @staticmethod
     def prints():
