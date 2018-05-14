@@ -52,9 +52,10 @@ if __name__ == '__main__':
         con_mean = reduce(lambda x, y: x + y, converge) / len(converge)
         bench_mean =reduce(lambda x, y: x + y, bench) / len(bench)
         res2 = [increase, con_mean]
-        print(res2)
+        #print(res2)
+        totals.append([increase, fit_mean, bench_mean, con_mean])
         increase += 30
-        totals.append([increase, con_mean])
+
 
     print(f'jour: {i} fit: {fit_mean} bench: {bench_mean}')
     print(totals)
