@@ -5,12 +5,12 @@ from collections import namedtuple
 from src import evchargepoints as evps
 
 if __name__ == '__main__':
-    print('V2')
+    print('V3')
     print(datetime.now())
     RunResult = namedtuple('RunResult', 'id fitness bench converged')
     fitness_mean =[]
     bench_mean = []
-    increase = 3
+    increase = 10
     totals=[]
     result_lst = []
     Results = namedtuple('Results', 'journney_num fit_mean bench_mean')
@@ -18,21 +18,21 @@ if __name__ == '__main__':
     bench = []
     converge = []
     stop_details ={}
-    runs = 9
+    runs = 10
     number_of_times = 10
     for j in range(0,runs): #7
         for i in range(0,number_of_times): #10
             print(f'on {i} of {number_of_times} and {j} of {runs}')
-            run = rga.RunGA(generations=200, population_size=30, num_of_journeys=250, initialise=True)
+            run = rga.RunGA(generations=200, population_size=50, num_of_journeys=increase, initialise=True)
             jo = run.journey_manager
             evp = evps.EvChargePoints()
             points, preloaded = evp.get_stop_ids(journey_manager=jo,speeds=['fast'])
             x = [k for k, v in preloaded.items()]
             #print(x)
             #print("say what ", len(points))
-            stps = x[:increase]
+            #stps = x[:increase]
             #print(stps)
-            res_dict = run.process(stps)
+            res_dict = run.process(x)
             fit = res_dict['fit']
             ben = res_dict['ben']
             converged = res_dict['converged']
@@ -56,7 +56,7 @@ if __name__ == '__main__':
         res2 = [increase, con_mean]
         #print(res2)
         totals.append([increase, fit_mean, bench_mean, con_mean])
-        increase += 10
+        increase += 20
 
 
     print(f'jour: {i} fit: {fit_mean} bench: {bench_mean}')

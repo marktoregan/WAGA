@@ -13,8 +13,9 @@ class PopulateJourneyManager(object):
 
     def get_journey_manager(self, amount_of_journeys):
         City = namedtuple('City', 'name location')
-        time = datetime.now()
+        #time = datetime.now()
         for i in range(0,amount_of_journeys):
+            time = rd.random_time("28/4/2018 1:30 PM", "28/4/2018 3:30 PM", random.random())
             s_town = tn.Towns.get_start_town()
             e_town = tn.Towns.get_end_town()
             journey = jy.Journey(start_time=time,
