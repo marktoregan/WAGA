@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     fitness_mean =[]
     bench_mean = []
-    num_population =10
+    increase =10
     totals=[]
     result_lst = []
     Results = namedtuple('Results', 'journney_num fit_mean bench_mean')
@@ -21,11 +21,11 @@ if __name__ == '__main__':
     fitness = []
     bench = []
     converge = []
-    for j in range(0,7):
-        for i in range(0,10):
+    for j in range(0,2):
+        for i in range(0,2):
             print(f'on {i} of 10')
             #run = rga.RunG1(generations=100, population_size=50, num_of_journeys=100, initialise=True)
-            run = rga.RunGA(generations=200, population_size=100, num_of_journeys=100, initialise=True)
+            run = rga.RunGA(generations=200, population_size=increase, num_of_journeys=100, initialise=True)
             res_dict = run.process(stopIDs)
             fit = res_dict['fit']
             ben = res_dict['ben']
@@ -34,17 +34,17 @@ if __name__ == '__main__':
             #fit, ben = run.process(stopIDs)
             fitness.append(fit)
             bench.append(ben)
-            res = RunResult(id=num_population, fitness=fit, bench=ben, converged=converged)
+            res = RunResult(id=increase, fitness=fit, bench=ben, converged=converged)
             result_lst.append(res)
 
         print(f'whats {result_lst}')
         #fit_mean = reduce(lambda x, y: x + y, fitness) / len(fitness)
         con_mean = reduce(lambda x, y: x + y, converge) / len(converge)
         #bench_mean =reduce(lambda x, y: x + y, bench) / len(bench)
-        res2 = [num_population, con_mean]
+        res2 = [increase, con_mean]
         print(res2)
-        num_population += 30
-        totals.append([num_population, con_mean])
+        increase += 20
+        totals.append([increase, con_mean])
 
     #print(f'jour: {i} fit: {fit_mean} bench: {bench_mean}')
     print(totals)
