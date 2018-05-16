@@ -23,7 +23,7 @@ if __name__ == '__main__':
     for j in range(0,runs): #7
         for i in range(0,number_of_times): #10
             print(f'on {i} of {number_of_times} and {j} of {runs}')
-            run = rga.RunGA(generations=200, population_size=50, num_of_journeys=increase, initialise=True)
+            run = rga.RunGA(generations=200, population_size=increase, num_of_journeys=150, initialise=True)
             jo = run.journey_manager
             evp = evps.EvChargePoints()
             points, preloaded = evp.get_stop_ids(journey_manager=jo,speeds=['fast'])
