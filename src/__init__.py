@@ -21,11 +21,11 @@ if __name__ == '__main__':
     fitness = []
     bench = []
     converge = []
-    for j in range(0,2):
-        for i in range(0,2):
+    for j in range(0,5):
+        for i in range(0,10):
             print(f'on {i} of 10')
             #run = rga.RunG1(generations=100, population_size=50, num_of_journeys=100, initialise=True)
-            run = rga.RunGA(generations=200, population_size=increase, num_of_journeys=100, initialise=True)
+            run = rga.RunGA(generations=200, population_size=increase, num_of_journeys=80, initialise=True)
             res_dict = run.process(stopIDs)
             fit = res_dict['fit']
             ben = res_dict['ben']
@@ -38,23 +38,15 @@ if __name__ == '__main__':
             result_lst.append(res)
 
         print(f'whats {result_lst}')
-        #fit_mean = reduce(lambda x, y: x + y, fitness) / len(fitness)
+        fit_mean = reduce(lambda x, y: x + y, fitness) / len(fitness)
         con_mean = reduce(lambda x, y: x + y, converge) / len(converge)
-        #bench_mean =reduce(lambda x, y: x + y, bench) / len(bench)
+        bench_mean =reduce(lambda x, y: x + y, bench) / len(bench)
         res2 = [increase, con_mean]
         print(res2)
-        increase += 20
-        totals.append([increase, con_mean])
+        increase += 40
+        #totals.append([increase, con_mean])
+        totals.append([increase, fit_mean, bench_mean, con_mean])
 
     #print(f'jour: {i} fit: {fit_mean} bench: {bench_mean}')
     print(totals)
     print(datetime.now())
-
-
-
-
-
-
-
-
-
