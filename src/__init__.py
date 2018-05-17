@@ -18,15 +18,15 @@ if __name__ == '__main__':
     bench = []
     converge = []
     stop_details ={}
-    runs = 10
-    number_of_times = 10
+    runs = 1
+    number_of_times = 1
     for j in range(0,runs): #7
         for i in range(0,number_of_times): #10
             print(f'on {i} of {number_of_times} and {j} of {runs}')
-            run = rga.RunGA(generations=200, population_size=increase, num_of_journeys=150, initialise=True)
+            run = rga.RunGA(generations=200, population_size=100, num_of_journeys=500, initialise=True)
             jo = run.journey_manager
             evp = evps.EvChargePoints()
-            points, preloaded = evp.get_stop_ids(journey_manager=jo,speeds=['fast'])
+            points, preloaded = evp.get_stop_ids(journey_manager=jo,speeds=['slow','fast'])
             x = [k for k, v in preloaded.items()]
             #print(x)
             #print("say what ", len(points))
@@ -44,11 +44,17 @@ if __name__ == '__main__':
             result_lst.append(res)
             pop = res_dict['pop']
             jm = pop.journey_manager
+
+            wait_times = []
+            for joureny in pop.journey_manager.stops:
+                print(joureny.stop_details['wait'])
+                wait_times.append(joureny.stop_details['wait'])
             details = []
             for jou in jm.stops:
                 details.append(jou.stop_details)
             stop_details[f'outer{j}-inner{i}'] = details
 
+        print(f'wait_times {wait_times}')
         print(f'whats {result_lst}')
         fit_mean = reduce(lambda x, y: x + y, fitness) / len(fitness)
         con_mean = reduce(lambda x, y: x + y, converge) / len(converge)
