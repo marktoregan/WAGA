@@ -21,8 +21,8 @@ if __name__ == '__main__':
     fitness = []
     bench = []
     converge = []
-    for j in range(0,5):
-        for i in range(0,10):
+    for j in range(0,1):
+        for i in range(0,1):
             print(f'on {i} of 10')
             #run = rga.RunG1(generations=100, population_size=50, num_of_journeys=100, initialise=True)
             run = rga.RunGA(generations=200, population_size=increase, num_of_journeys=80, initialise=True)
