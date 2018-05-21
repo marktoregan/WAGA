@@ -25,7 +25,7 @@ if __name__ == '__main__':
         for i in range(0,1):
             print(f'on {i} of 10')
             #run = rga.RunG1(generations=100, population_size=50, num_of_journeys=100, initialise=True)
-            run = rga.RunGA(generations=200, population_size=increase, num_of_journeys=80, initialise=True)
+            run = rga.RunGA(generations=200, population_size=5, num_of_journeys=1000, initialise=True)
             res_dict = run.process(stopIDs)
             fit = res_dict['fit']
             ben = res_dict['ben']
